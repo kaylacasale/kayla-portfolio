@@ -1,5 +1,5 @@
 {
-  "name": "00-practice-app",
+  "name": "kayla-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,8 +12,10 @@
     "react": "17.0.2",
     "react-animated-cursor": "^2.5.2",
     "react-animations": "^1.0.0",
-    "react-dom": "17.0.2",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "webkit-npm": "^3.1.1"
@@ -41,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.0.11"
   }
 }
