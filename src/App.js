@@ -6,6 +6,7 @@ import AnimatedCursor from "react-animated-cursor";
 // import Head from "./components/Head";
 import Background from "./components/Background"
 import { Helmet } from "react-helmet"
+// import { animations } from 'react-animations'
 
 function App() {
   return (
@@ -31,3 +32,5 @@ export default App;
 //* install and import npm react-helmet (substitutes <head> tag in react)
 //* install and import npm webkit ('npm i webkit-npm`)
 // https://www.npmjs.com/package/webkit-npm
+//* install npm react animation ('npm i react-animation')
+// https://www.npmjs.com/package/react-animation
