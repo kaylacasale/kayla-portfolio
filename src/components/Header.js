@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Here we import the Header.css file to grant access to some additional classNames
 import '../styles/Header.css';
 
@@ -27,20 +28,21 @@ function Header() {
   return (
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg px-3">
-        <a class="navbar-brand" href="/">Portfolio</a>
+        <a class="navbar-brand" href="/">Kayla Casale</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              <Link to="/" className="nav-link">Home <span className="sr-only">(current)</span></Link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My Work</a>
+              <a class="nav-link" href="/portfolio">Portfolio</a>
+              <Link to="/portfolio" class="nav-link" href="/portfolio">Portfolio</Link>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

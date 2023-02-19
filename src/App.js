@@ -18,6 +18,7 @@ import Background from "./components/Background"
 import { Helmet } from "react-helmet"
 // import { animations } from 'react-animations'
 import Home from './pages/Home'
+import Portfolio from './pages/Portfolio'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
 
           {/* <Link to="/" element={<Home />} /> */}
@@ -71,3 +73,4 @@ export default App;
 //* 'npm i react-dom'
 //* 'npm i react-bootstrap'
 //* 'npm install react-bootstrap bootstrap'
+//* 'npm install @mui/material @emotion/react @emotion/styled'
