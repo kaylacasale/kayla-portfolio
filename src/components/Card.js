@@ -45,7 +45,7 @@ export default function RecipeReviewCard() {
 
     return (
 
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 }} style={{ boxShadow: '1px 2px 9px #CBDCCB' }}>
 
             <CardHeader
                 avatar={

@@ -7,6 +7,9 @@ import IconButton from "@mui/material/IconButton";
 import Card from '../components/Card'
 // import PortfolioBackground from '../components/PortfolioBackground'
 import '../styles/Background.css'
+import Background from '../components/Background';
+
+// import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
 // import IconButton from '@mui/material/IconButton';
 // import InfoIcon from '@mui/icons-material/Info';
@@ -19,25 +22,36 @@ import '../styles/Background.css'
 //         backgroundColor: 'black'
 //     }
 // }
-
+// const styles = {
+//     boxShadow: '1px 2px 9px #00FFFF',
+//     margin: '4em',
+//     padding: '1em'
+// }
 // added style to section, ImageListItem
+// const styles = {
+//     Background: {
+//         color: 'black'
+//     }
+// }
 
 function Portfolio() {
     return (
-        <section style={{ marginTop: '3em' }}>
-            <div className='cardEl' style={{ float: "right", marginTop: "3em" }}>
-                <div className='title'>
+        <section style={{ marginTop: '3em', background: `${<Background />}` }}>
+
+            <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em" }}>
+                <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
                     <h1>My Portfolio</h1>
                 </div>
                 <Card />
             </div>
-            <ImageList sx={{ width: 700, height: 650 }}>
-                <ImageListItem key="Subheader" cols={2}>
-                    <ListSubheader component="div">Work</ListSubheader>
+            <ImageList sx={{ width: 750, height: 700 }} className='shadow-lg'>
+                <ImageListItem key="Subheader" cols={2} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
+                    <ListSubheader component="div" className='shadow-lg shadow-intensity-lg rounded' >Work</ListSubheader>
                 </ImageListItem >
                 {itemData.map((item) => (
-                    <a href={item.link}><ImageListItem key={item.img}>
+                    <a href={item.link}><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
                         <img
+                            className='rounded'
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                             href={item.link}
@@ -45,6 +59,7 @@ function Portfolio() {
                             loading="lazy"
                         />
                         <ImageListItemBar
+                            className='rounded'
                             title={item.title}
                             subtitle={item.author}
                             actionIcon={
@@ -59,6 +74,11 @@ function Portfolio() {
                     </ImageListItem></a>
                 ))}
             </ImageList>
+
+            {/* <Background style={styles.Background}>
+
+
+            </Background> */}
             {/* <div>
                 <Card />
             </div> */}
@@ -69,8 +89,8 @@ function Portfolio() {
 const itemData = [
     {
         img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmQ5OGM1MGIzNjc0MzAwYzliZDk2OWNmZTU4OWU0NDMyY2UyZjJjNSZjdD1n/emFmKxgQdkMOumVPhf/giphy.gif',
-        title: 'Etiquette - Book Nail Salon Appointments',
-        author: '@kaylacasale, @bharatrai, @salmaloum',
+        title: 'Etiquette - Nail Salon Booking',
+        author: '@kaylacasale @bharatrai @salmaloum',
         rows: 2,
         cols: 2,
         featured: true,
@@ -83,39 +103,45 @@ const itemData = [
         link: 'https://guarded-headland-91004.herokuapp.com/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-        title: 'Camera',
-        author: '@helloimnik',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODMzM2ZlYmMzZTU3MjVhOGE0OThlMTdhOTg0NjE2YzdiYTgyYjY4NSZjdD1n/cqMuhqltXsS7QlGU50/giphy.gif',
+        title: `What's the Weather - US Weather Dashboard`,
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/whats-the-weather/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-        title: 'Coffee',
-        author: '@nolanissac',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzQ0OWViNGVhZGIyZjkzNzI4YTVjN2Q4MDgxNDFkZjBiZjM0NWM1YiZjdD1n/OaKJCdN4PbLMUjRFAt/giphy.gif',
+        title: 'WAKO - Real-time Real Estate',
+        author: '@kaylacasale @williamvoit @ambergreenberg @owengarret',
         cols: 2,
+        link: 'https://wvoigt722.github.io/uclaTeamProject/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-        title: 'Hats',
-        author: '@hjrc33',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWY4YTgyZGQzZDNmY2ViOGJjMTZlMGExZTgxZTUzNjVhMDBhZTg0YyZjdD1n/548usG7ovvdlAjwGQo/giphy.gif',
+        title: 'Gs56thPick - Horse Racing Updates',
+        author: '@kaylacasale',
         cols: 2,
+        link: 'https://gsbdaypicks.herokuapp.com/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-        title: 'Honey',
-        author: '@arwinneil',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif',
+        title: 'Jotter - Note-Taking App',
+        author: '@kaylacasale',
         rows: 2,
         cols: 2,
         featured: true,
+        link: 'https://jotter-notetakerapp.herokuapp.com/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-        title: 'Basketball',
-        author: '@tjdragotta',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTRlZDRjZTM1NDFmOWNiZjJhNzdjZDFjNTg2Y2RkNTE2MDg4Y2IzMyZjdD1n/DeaZM3tmUZnUdRZZ27/giphy.gif',
+        title: 'My Metro Buddy - Quick & Reliable Metro Data',
+        author: '@kaylacasale @williamvoit @ambergreenberg @owengarret',
+        link: 'https://metro-buddy.herokuapp.com/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-        title: 'Fern',
-        author: '@katie_wasserman',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmI4YmQ3YTFmMTM0YWYwYjIxMjliNDczOTQzM2VjYjczZTM4ODJjOCZjdD1n/Nlhf6GgN46IyYgRcuE/giphy.gif',
+        title: 'Work Your Schedule - Workday Scheduler',
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/work-your-schedule/'
     },
     {
         img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',

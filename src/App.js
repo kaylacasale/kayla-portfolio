@@ -77,3 +77,4 @@ export default App;
 //* 'npm install react-bootstrap bootstrap'
 //* 'npm install @mui/material @emotion/react @emotion/styled'
 //* 'npm i @mui/icons-material'
+//* 'npm i react-native-shadow'

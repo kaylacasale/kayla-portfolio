@@ -1,7 +1,9 @@
+
 import React from 'react';
 // import { animations } from 'react-animations'
 
 import '../styles/Background.css'
+
 
 function Background() {
     return (
