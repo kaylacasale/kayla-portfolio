@@ -10,9 +10,9 @@ function Background() {
             <div className="stars"></div>
             <div className="twinkling"></div>
             <div className="clouds"></div>
-            {/* <div className='title'>
+            <div className='title'>
                 <h1>Kayla's Portfolio</h1>
-            </div> */}
+            </div>
         </section>
 
     )

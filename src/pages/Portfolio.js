@@ -5,6 +5,8 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from "@mui/material/IconButton";
 import Card from '../components/Card'
+// import PortfolioBackground from '../components/PortfolioBackground'
+import '../styles/Background.css'
 // import InfoIcon from "@mui/material/InfoIcon";
 // import IconButton from '@mui/material/IconButton';
 // import InfoIcon from '@mui/icons-material/Info';
@@ -12,27 +14,36 @@ import Card from '../components/Card'
 //* Portfolio  ~ Project List (page)
 //* SingleProject ~ Single Project (component)
 
+// const styles = {
+//     section: {
+//         backgroundColor: 'black'
+//     }
+// }
+
 // added style to section, ImageListItem
 
 function Portfolio() {
     return (
-        <section>
+        <section style={{ marginTop: '3em' }}>
             <div className='cardEl' style={{ float: "right", marginTop: "3em" }}>
+                <div className='title'>
+                    <h1>My Portfolio</h1>
+                </div>
                 <Card />
             </div>
-            <ImageList sx={{ width: 750, height: 700 }}>
+            <ImageList sx={{ width: 700, height: 650 }}>
                 <ImageListItem key="Subheader" cols={2}>
-                    <ListSubheader component="div">My Work</ListSubheader>
+                    <ListSubheader component="div">Work</ListSubheader>
                 </ImageListItem >
                 {itemData.map((item) => (
-                    <ImageListItem key={item.img} sx={{ width: 400 }}>
-                        <a href={item.link}><img
+                    <a href={item.link}><ImageListItem key={item.img}>
+                        <img
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                             href={item.link}
                             alt={item.title}
                             loading="lazy"
-                        /></a>
+                        />
                         <ImageListItemBar
                             title={item.title}
                             subtitle={item.author}
@@ -45,7 +56,7 @@ function Portfolio() {
                                 </IconButton>
                             }
                         />
-                    </ImageListItem>
+                    </ImageListItem></a>
                 ))}
             </ImageList>
             {/* <div>

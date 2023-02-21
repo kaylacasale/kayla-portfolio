@@ -27,13 +27,13 @@ function App() {
 
       <div className="App">
         <Header />
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
         <Helmet>
           <title>Kayla's Portfolio</title>
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -41,7 +41,9 @@ function App() {
           <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300&family=Lobster&family=Roboto:wght@100&family=Rubik+Microbe&display=swap" rel="stylesheet"></link>
         </Helmet>
         <Background />
-        <AnimatedCursor />
+        <AnimatedCursor
+          color="137, 196, 244"
+        />
 
         <div className="container">
           <Routes>
