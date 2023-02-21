@@ -74,3 +74,4 @@ export default App;
 //* 'npm i react-bootstrap'
 //* 'npm install react-bootstrap bootstrap'
 //* 'npm install @mui/material @emotion/react @emotion/styled'
+//* 'npm i @mui/icons-material'

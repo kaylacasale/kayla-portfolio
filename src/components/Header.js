@@ -42,7 +42,7 @@ function Header() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/portfolio">Portfolio</a>
-              <Link to="/portfolio" class="nav-link" href="/portfolio">Portfolio</Link>
+              {/* <Link to="/portfolio" class="nav-link" href="/portfolio">Portfolio</Link> */}
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
