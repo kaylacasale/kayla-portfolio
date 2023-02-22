@@ -2,6 +2,9 @@ import React from 'react'
 import TypeAnimate from '../components/TypeAnimate'
 import MovingComponent from 'react-moving-text'
 import Header from '../components/Header'
+import ReactCarousel from '../components/ReactCarousel'
+
+
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 const Home = () => {
@@ -17,7 +20,14 @@ const Home = () => {
                 fillMode="none">
                 Kayla Casale
             </MovingComponent> */}
-            <TypeAnimate />
+            <div style={{ marginBottom: '10px' }}>
+                <TypeAnimate />
+            </div>
+            <div>
+                <ReactCarousel />
+            </div>
+
+
         </div>
 
         // <h1> Here's a few things about me... </h1>

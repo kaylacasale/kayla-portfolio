@@ -45,7 +45,7 @@ function App() {
 
         <Background />
         <AnimatedCursor
-          color="137, 196, 244"
+          color="255, 105, 180"
         />
 
         <div className="container">
@@ -89,4 +89,13 @@ export default App;
 // https://yidaoj.github.io/react-moving-text/
 //* 'npm i react-moving-text'
 //* 'mdb-react-ui-kit'
+
+// react animate (home) - about me
+// https://www.npmjs.com/package/react-type-animation
 //* 'npm install --save react-type-animation'
+
+//* 'npm i three'
+//* npm install three @react-three/fiber
+//* npm install @react-three/drei
+//* npm i react-carousel3
+//* npm i react-bootstrap-carousel

@@ -44,7 +44,7 @@ export default function RecipeReviewCard() {
     };
 
     return (
-
+        //* do item.map for cards
         <Card sx={{ maxWidth: 345 }} style={{ boxShadow: '1px 2px 9px #CBDCCB' }}>
 
             <CardHeader
