@@ -44,7 +44,7 @@ function Portfolio() {
                 </div>
                 <Card />
             </div>
-            <ImageList sx={{ width: 750, height: 700 }} className='shadow-lg'>
+            <ImageList sx={{ width: 900, height: 850 }} className='shadow-lg'>
                 <ImageListItem key="Subheader" cols={2} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
                     <ListSubheader component="div" className='shadow-lg shadow-intensity-lg rounded' >Work</ListSubheader>
                 </ImageListItem >
@@ -144,21 +144,24 @@ const itemData = [
         link: 'https://kaylacasale.github.io/work-your-schedule/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-        title: 'Mushrooms',
-        author: '@silverdalex',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWY1NzNlZmM0YTNmYTY3MGJmZWY4NmNkNDAzM2YxYjQ2NjhjMDk1MCZjdD1n/7LzJHaURMv7FzogBtW/giphy.gif',
+        title: 'Coding Quiz - Assessment for Developers',
+        author: '@kaylacasale',
         rows: 2,
         cols: 2,
+        link: 'https://kaylacasale.github.io/code-quiz/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-        title: 'Tomato basil',
-        author: '@shelleypauls',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Q4ZWNkNDNkM2UzMDYzMTJmN2M5YWFmNTM0ZDI0MGEzNjA0YjNhYSZjdD1n/uEEXByvQixnkNSla4Y/giphy.gif',
+        title: 'pA$sWoRd gEuerA+oR - Generate Random Strings',
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/generate-password/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-        title: 'Sea star',
-        author: '@peterlaster',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTBkYzI1Y2NkNTBlMDM2MTQ2YjQ1YjA3YjkyZDc2YzNjZGYwMTdlNiZjdD1n/6JDvCpOmLp1jkElkBb/giphy.gif',
+        title: 'Portfolio - Version 1',
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/portfolio/'
     },
     {
         img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
