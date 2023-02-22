@@ -8,7 +8,7 @@ import Card from '../components/Card'
 // import PortfolioBackground from '../components/PortfolioBackground'
 import '../styles/Background.css'
 import Background from '../components/Background';
-
+import MovingComponent from 'react-moving-text'
 // import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
 // import IconButton from '@mui/material/IconButton';
@@ -36,11 +36,20 @@ import Background from '../components/Background';
 
 function Portfolio() {
     return (
-        <section style={{ marginTop: '3em', background: `${<Background />}` }}>
+        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Anonymous Pro' }}>
 
             <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em" }}>
-                <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
-                    <h1>My Portfolio</h1>
+                <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em', textAlign: 'center', fontSize: '32px', color: 'white' }}>
+                    <MovingComponent
+                        type="blur"
+                        duration="1700ms"
+                        delay=".5s"
+                        direction="alternate"
+                        timing="ease-in"
+                        iteration="infinite"
+                        fillMode="none">
+                        Kayla's Portfolio
+                    </MovingComponent>
                 </div>
                 <Card />
             </div>
@@ -82,6 +91,7 @@ function Portfolio() {
             {/* <div>
                 <Card />
             </div> */}
+
         </section>
     );
 }

@@ -24,7 +24,9 @@ import Portfolio from './pages/Portfolio'
 function App() {
   return (
     <>
-
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
+      </style>
       <div className="App">
         <Header />
         {/* <nav>
@@ -40,6 +42,7 @@ function App() {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
           <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300&family=Lobster&family=Roboto:wght@100&family=Rubik+Microbe&display=swap" rel="stylesheet"></link>
         </Helmet>
+
         <Background />
         <AnimatedCursor
           color="137, 196, 244"
@@ -78,3 +81,12 @@ export default App;
 //* 'npm install @mui/material @emotion/react @emotion/styled'
 //* 'npm i @mui/icons-material'
 //* 'npm i react-native-shadow'
+//* 'npm i @babel/runtime'
+//* 'npm i react-spring'
+//* npm i react-use-gesture'
+
+// react moving text link below
+// https://yidaoj.github.io/react-moving-text/
+//* 'npm i react-moving-text'
+//* 'mdb-react-ui-kit'
+//* 'npm install --save react-type-animation'
