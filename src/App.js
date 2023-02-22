@@ -99,3 +99,6 @@ export default App;
 //* npm install @react-three/drei
 //* npm i react-carousel3
 //* npm i react-bootstrap-carousel
+//* 'npm i react-slider'
+
+//* 'npm i rc-slider'
