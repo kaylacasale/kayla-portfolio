@@ -3,6 +3,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 // import myImage from '../assets/clouds.png'
 import DNA from '../assets/DNA-for-portfolio.png'
+import selectiveAttention from '../assets/mouse-studies.webp'
 import SfnPoster from '../assets/SfN-poster.png'
 import MovingComponent from 'react-moving-text'
 
@@ -41,10 +42,12 @@ function ReactCarousel() {
                                     timing="ease-in"
                                     iteration="infinite"
                                     fillMode="none"
-                                    className='rounded' style={{ fontSize: '32px', textAlign: 'center', color: 'white', background: 'rgba(0, 0, 0, 0.3)', padding: '4px' }}>
+                                    className='rounded' style={{ fontSize: '32px', textAlign: 'center', color: 'white', background: 'rgba(0, 0, 0, 0.4)', padding: '4px', borderBlock: 'solid' }}>
                                     {item.title}
                                 </MovingComponent>
-                                <p style={{ fontSize: '20px', background: 'rgba(0, 0, 0, 0.1)', color: 'black', textShadow: '2px 2px #ffffff' }}>{item.info}</p>
+
+                                <p style={{ fontSize: '16px', background: 'rgba(0, 0, 0, 0.2)', color: 'black', textShadow: '2px 2px #ffffff' }} className='rounded'>{item.info}</p>
+
                             </Carousel.Caption>
                         </div>
 
@@ -58,9 +61,19 @@ function ReactCarousel() {
 // https://www.december.com/html/spec/colorrgbadec.html
 const itemData = [
     {
+        img: `${selectiveAttention}`,
+        title: 'Neuroscience Research',
+        info: '6+ years of Cognitive and Molecular Neuroscience research at UCLA and UC Berkeley',
+        // author: '@kaylacasale @bharatrai @salmaloum',
+        // rows: 2,
+        // cols: 2,
+        featured: true,
+        link: 'https://etiquette.herokuapp.com/'
+    },
+    {
         img: `${SfnPoster}`,
         title: 'Neuroscience Publications',
-        info: 'Research focused on Selective Attention',
+        info: 'focused on Selective Attention via whisker studies',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
