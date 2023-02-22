@@ -164,10 +164,11 @@ const itemData = [
         link: 'https://kaylacasale.github.io/portfolio/'
     },
     {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-        author: '@southside_customs',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QxMTNmOGM1NDc1ODg5ODUzNjA3NjRjMTczZDRiODdhMjAwMWJjYSZjdD1n/s3bTllyMaDBQI9KW0j/giphy.gif',
+        title: 'Horiseon Web App - Refactored',
+        author: '@kaylacasale',
         cols: 2,
+        link: 'https://kaylacasale.github.io/horiseon-refactor-accessibility/'
     },
 ];
 export default Portfolio
