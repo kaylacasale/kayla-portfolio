@@ -1,4 +1,4 @@
-.title h1 {
+/* .title h1 {
     font-size: 36px;
     font-family: 'Lato', sans-serif;
     margin-top: 1em;
@@ -22,17 +22,7 @@
 
 @keyframes move-twink-back {
     from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: 10000px 0;
-    }
-}
-
-@keyframes move-twink-back {
-    from {
-        background-position: 0 0;
+        background-position: 1920 1920;
     }
 
     to {
@@ -42,11 +32,11 @@
 
 @keyframes move-clouds-back {
     from {
-        background-position: 0 0;
+        background-position: 1920 1920;
     }
 
     to {
-        background-position: -10000px 5000px;
+        background-position: -10000px 10000px;
     }
 }
 
@@ -54,7 +44,7 @@
 .twinkling,
 .cloud {
     position: absolute;
-    top: 0;
+    top: 1920;
     left: 0;
     right: 0;
     bottom: 0;
@@ -63,23 +53,21 @@
     display: block;
 }
 
-
-
 .stars {
-    background: #000 url(../assets/stars.png) repeat top center;
+    background: #000 url(../assets/stars.png) repeat bottom center;
     z-index: -2;
 }
 
 .twinkling {
-    background: transparent url(../assets/twinkling.png) repeat top center;
+    background: transparent url(../assets/twinkling.png) repeat bottom center;
     z-index: -1;
     animation: move-twink-back 200s linear infinite;
 }
 
 .clouds {
-    background: transparent url(../assets/clouds.png) repeat top center;
+    background: transparent url(../assets/clouds.png) repeat bottom center;
     z-index: 0;
     opacity: .4;
     animation: move-clouds-back 200s linear infinite;
 
-}
+} */

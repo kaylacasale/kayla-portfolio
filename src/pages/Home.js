@@ -4,6 +4,9 @@ import MovingComponent from 'react-moving-text'
 import Header from '../components/Header'
 import ReactCarousel from '../components/ReactCarousel'
 import Background from '../components/Background'
+import ReactCarouselTwo from '../components/ReactCarouselTwo'
+import '../styles/Background.css'
+// import BackgroundTwo from '../components/BackgroundTwo'
 // import HomeCarousel from '../components/HomeCarousel'
 // import HomeCarousel from '../components/HomeCarousel'
 
@@ -11,18 +14,39 @@ import Background from '../components/Background'
 
 const Home = () => {
     return (
-        <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '4em', fontSize: '48px', fontFamily: 'Anonymous Pro', color: 'white', textShadow: '2px 2px #ff007f' }}>
+
+        <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '4em', fontSize: '48px', fontFamily: 'Anonymous Pro', color: 'white', textShadow: '2px 2px #ff007f' }} >
 
             <div style={{ marginBottom: '10px' }}>
                 <TypeAnimate />
             </div>
             <div>
+                <MovingComponent
+                    type="fadeInFromBottom"
+                    duration="1700ms"
+                    delay=".5s"
+                    direction="alternate"
+                    timing="ease-in"
+                    iteration="infinite"
+                    fillMode="none"
+                    className='rounded' style={{ fontSize: '28px' }}>
+                    Research 🧠
+                </MovingComponent>
+            </div>
+            <div>
                 <ReactCarousel />
             </div>
+
+            <div>
+                <ReactCarouselTwo />
+            </div>
+
             {/* <div>
                 <HomeCarousel />;
             </div> */}
-
+            {/* <style>
+                <Background />
+            </style> */}
 
         </div>
 

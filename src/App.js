@@ -19,15 +19,30 @@ import { Helmet } from "react-helmet"
 // import { animations } from 'react-animations'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
+import './index.css'
+import './styles/Background.css'
+import moon from './assets/moon-simple.png'
+import DNA from './assets/DNA-for-portfolio.png'
+import myLogo from './assets/kaylacasale-logo.png'
+import myLogoPartOne from './assets/mylogo-part-one.png'
+import myLogoPartTwo from './assets/mylogo-part-two.png'
 
+// import BackgroundTwo from "./components/BackgroundTwo";
 
+// const styles = {
+//   Background: {
+//     backgroundRepeat: 'repeat-y'
+//   }
+// }
 function App() {
   return (
     <>
+
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
       </style>
-      <div className="App">
+
+      <div className="App" background={<Background />}>
         <Header />
         {/* <nav>
           <ul>
@@ -41,9 +56,17 @@ function App() {
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
           <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300&family=Lobster&family=Roboto:wght@100&family=Rubik+Microbe&display=swap" rel="stylesheet"></link>
+          {/* <link rel="stylesheet" type="text/css" href="index.css" /> */}
         </Helmet>
-
+        <div className="moon">
+          <img src={myLogoPartOne}></img>
+        </div>
+        <div className="logo">
+          <img src={myLogoPartTwo}></img>
+        </div>
         <Background />
+
+        {/* <BackgroundTwo /> */}
         <AnimatedCursor
           color="255, 105, 180"
         />
@@ -60,6 +83,7 @@ function App() {
 
         <Section />
       </div>
+
     </>
   );
 }

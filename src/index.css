@@ -1,4 +1,110 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* @keyframes move-moon-back {
+    from {
+        position: 0 0;
+    }
+
+    to {
+        position: 1000px 0;
+    }
+} */
+
+.logo img {
+    width: 150px;
+
+
+    /* background-color: red; */
+    position: absolute;
+    left: 200px;
+    top: 55px;
+    animation-name: logo;
+    animation-duration: 4s;
+    animation-direction: normal;
+
+}
+
+.moon img {
+    width: 150px;
+
+    /* background-color: red; */
+    position: relative;
+    animation-name: moon;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+@keyframes moon {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes logo {
+    0% {
+        background-color: red;
+        left: 200px;
+        top: 55px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 255px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 0px;
+        top: 255px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0;
+        top: 55px;
+    }
+
+    100% {
+        background-color: red;
+        left: 200px;
+        top: 55px;
+    }
+}
+
+/* .moon {
+    src: url(./assets/moon-simple.png);
+    z-index: 1; */
+/* animation: move-moon-back 500s linear infinite; */
+/* } */
+
+
+
 /* Document
    ========================================================================== */
 /**
@@ -12,12 +118,18 @@ html {
     /* 2 */
 }
 
+
+
+.regularBackground {
+    background-color: #000000;
+}
+
 /* Sections
      ========================================================================== */
 /**
    * Remove the margin in all browsers.
    */
-body {
+/* body {
     margin: 0;
     font-family: 'Noto Serif Khojki', serif;
 
@@ -28,7 +140,7 @@ body {
             rgba(254, 252, 228, 1) 0%,
             rgba(255, 254, 236, 1) 52%,
             rgba(255, 255, 255, 1) 100%);
-}
+} */
 
 /**
    * Render the `main` element consistently in IE.
@@ -74,9 +186,9 @@ pre {
 /**
    * Remove the gray background on active links in IE 10.
    */
-a {
+/* a {
     background-color: transparent;
-}
+} */
 
 /**
    * 1. Remove the bottom border in Chrome 57-

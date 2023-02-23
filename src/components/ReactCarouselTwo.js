@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
+import Background from '../components/Background'
+import '../styles/Background.css'
 import MovingComponent from 'react-moving-text'
 // import myImage from '../assets/clouds.png'
 import selectiveAttention from '../assets/mouse-studies.webp'
@@ -10,10 +12,9 @@ import sfnPosterPresentation from '../assets/sfn-poster-presentation.png'
 import publicationSources from '../assets/journals-publications.png'
 
 import bioengineering from '../assets/echolocation.png'
-import institutions from '../assets/research-institutions-6.png'
+import institutions from '../assets/berkeley-psychology.png'
 import technologies from '../assets/technologies-yartsev-3.png'
 import epilepticus from '../assets/embryonic-stem-cells.jpeg'
-// import ReactCarouselTwo from './ReactCarouselTwo';
 
 
 // import pic from '../assets/clouds.png'
@@ -24,7 +25,7 @@ import epilepticus from '../assets/embryonic-stem-cells.jpeg'
 //         alignSelf: 'center'
 //     }
 // }
-function ReactCarousel() {
+function ReactCarouselTwo() {
     return (
         <div>
             <Carousel>
@@ -68,7 +69,6 @@ function ReactCarousel() {
 
                 ))}
             </Carousel>
-            {/* <ReactCarouselTwo /> */}
         </div>
     );
 }
@@ -189,4 +189,4 @@ const itemData = [
         link: 'https://etiquette.herokuapp.com/'
     },
 ]
-export default ReactCarousel;
+export default ReactCarouselTwo;
