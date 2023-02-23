@@ -9,6 +9,7 @@ import Card from '../components/Card'
 import '../styles/Background.css'
 import Background from '../components/Background';
 import MovingComponent from 'react-moving-text'
+
 // import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
 // import IconButton from '@mui/material/IconButton';
@@ -58,7 +59,7 @@ function Portfolio() {
                     <ListSubheader component="div" className='shadow-lg shadow-intensity-lg rounded' >Work</ListSubheader>
                 </ImageListItem >
                 {itemData.map((item) => (
-                    <a href={item.link}><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
+                    <a href={item.link} target="_blank"><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
                         <img
                             className='rounded'
                             src={`${item.img}?w=248&fit=crop&auto=format`}

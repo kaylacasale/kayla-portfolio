@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Carousel from 'react-bootstrap/Carousel';
+import MovingComponent from 'react-moving-text'
 // import myImage from '../assets/clouds.png'
 import DNA from '../assets/DNA-for-portfolio.png'
 import selectiveAttention from '../assets/mouse-studies.webp'
@@ -8,7 +9,11 @@ import SfnPoster from '../assets/SfN-poster.png'
 import bioRxivPublication from '../assets/bioRxiv-publication.png'
 import sfnPosterPresentation from '../assets/sfn-poster-presentation.png'
 import publicationSources from '../assets/journals-publications.png'
-import MovingComponent from 'react-moving-text'
+
+import bioengineering from '../assets/echolocation.png'
+import institutions from '../assets/research-institutions-6.png'
+import technologies from '../assets/technologies-yartsev-3.png'
+import epilepticus from '../assets/TLE-golshani.jpg'
 
 
 // import pic from '../assets/clouds.png'
@@ -26,14 +31,16 @@ function ReactCarousel() {
                 {itemData.map((item) => (
                     <Carousel.Item>
                         <div style={{ width: '100%', height: '430px' }}>
-                            < img
-                                className="center w-50"
-                                // src={"./assets/clouds.png/800x400?text=Secondslide&bg=282c34"}
-                                src={`${item.img}?w=248&fit=crop&auto=format`}
-                                alt={item.title}
-                                link={item.link}
-                                style={{ height: 'fit-content' }}
-                            />
+                            <a href={item.link}>
+                                < img
+                                    className="center w-50"
+                                    // src={"./assets/clouds.png/800x400?text=Secondslide&bg=282c34"}
+                                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    link={item.link}
+                                    style={{ height: 'fit-content' }}
+                                />
+                            </a>
                         </div>
                         <div className='carousel-caption'>
                             <Carousel.Caption >
@@ -68,8 +75,8 @@ function ReactCarousel() {
 // https://www.december.com/html/spec/colorrgbadec.html
 const itemData = [
     {
-        img: `${selectiveAttention}`,
-        title: 'Neuroscience Research',
+        img: `${institutions}`,
+        title: 'Research',
         info: '6+ years of Cognitive and Molecular Neuroscience research at UCLA and UC Berkeley',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
@@ -78,9 +85,19 @@ const itemData = [
         link: 'https://etiquette.herokuapp.com/'
     },
     {
-        img: `${bioRxivPublication}`,
-        title: 'Author - Neuroscience Publications',
+        img: `${selectiveAttention}`,
+        title: 'Neuroscience Research',
         info: 'focused on Selective Attention via whisker studies',
+        // author: '@kaylacasale @bharatrai @salmaloum',
+        // rows: 2,
+        // cols: 2,
+        featured: true,
+        link: 'https://www.feldmanlab.org/'
+    },
+    {
+        img: `${bioRxivPublication}`,
+        title: 'Neuroscience Publications',
+        info: 'Author - bioRxiv',
         moreInfo: `Ramamurthy D.L., Chen A., Huang
         P.C., Bharghavan P., Krishna G.,
         Casale K., Feldman D.E. (Oct 2021).
@@ -93,11 +110,11 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: 'https://www.biorxiv.org/content/10.1101/2021.10.08.463283v1'
     },
     {
         img: `${sfnPosterPresentation}`,
-        title: 'Poster Presentation',
+        title: 'Participant - Poster Presentation',
         info: 'Society for Neuroscience 2021',
         moreInfo: `Casale, K., D.L. Ramamurthy. Sensory
         and action-related responses of
@@ -109,12 +126,13 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: `https://www.abstractsonline.com/
+        pp8/#!/10485/presentation/9948.`
     },
     {
         img: `${SfnPoster}`,
-        title: 'Senior Thesis - Feldman Lab',
-        info: 'Hellen Wills Neuroscience Institute',
+        title: 'Senior Thesis (Feldman Lab)',
+        info: 'Researcher - Hellen Wills Neuroscience Institute',
         moreInfo: `Casale K, Gayathri, K. Effects of attentional
         cueing on reaction times for
         whisker stimulus detection in mice. Poster
@@ -126,7 +144,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: `https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:7e93e4e8-56cc-3c63-b0ee-743d00d29537`
     },
     {
         img: `${publicationSources}`,
@@ -136,11 +154,33 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        // link: 'https://etiquette.herokuapp.com/'
     },
     {
-        img: 'https://lh3.googleusercontent.com/pw/AMWts8C-vw8_6sB2jmSTv_huxSH12klRWA5XupRt6ETs9LsLlblQ5TvDobgc3vZU1yztim-Wd6Dfq4ZplnX1CpxxJF-ifrSfmxOQbsZB_mbibC53KB6hYaYgK2C7YK1STRfaWQkuzbjHeWEbgVtN-qb-gbMO=w1306-h938-no?authuser=0',
-        title: 'Etiquette - Nail Salon Booking',
+        img: `${bioengineering}`,
+        title: 'Neuroscience & Bioengineering Research',
+        info: `focused on bat sonar communication ('Echolocation')`,
+        // author: '@kaylacasale @bharatrai @salmaloum',
+        // rows: 2,
+        // cols: 2,
+        featured: true,
+        link: 'https://www.michaelyartsev.com/'
+    },
+    {
+        img: `${technologies}`,
+        title: 'Neurophysiological Methods & Technologies (Yartsev NeuroBat Lab)',
+        info: `Dpt. of Bioengineering`,
+        moreInfo: 'Used surgical tools to conduct brain extractions in combination with advanced scientific technologies to record and image free flying bats and analyze brain histologies post extraction',
+        // author: '@kaylacasale @bharatrai @salmaloum',
+        // rows: 2,
+        // cols: 2,
+        featured: true,
+        link: 'https://www.michaelyartsev.com/research'
+    },
+    {
+        img: `${epilepticus}`,
+        title: 'Neurology Research',
+        info: 'focused on embryonic stem cell therapy for Temporal Lobe Epilepsy in rodent models',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
