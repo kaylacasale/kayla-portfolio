@@ -21,7 +21,24 @@
     animation-duration: 4s;
     animation-direction: normal;
 
+    /* animation-iteration-count: infinite; */
+
 }
+
+.logo img:hover {
+    animation: close;
+}
+
+@keyframes close {
+    from {
+        animation-play-state: paused;
+    }
+
+    to {
+        animation-play-state: running;
+    }
+}
+
 
 .moon img {
     width: 150px;
@@ -31,6 +48,11 @@
     animation-name: moon;
     animation-duration: 4s;
     animation-direction: reverse;
+    /* animation-iteration-count: infinite; */
+}
+
+.moon img:hover {
+    animation: close;
 }
 
 @keyframes moon {
