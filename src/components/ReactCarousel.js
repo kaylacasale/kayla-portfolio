@@ -5,8 +5,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import DNA from '../assets/DNA-for-portfolio.png'
 import selectiveAttention from '../assets/mouse-studies.webp'
 import SfnPoster from '../assets/SfN-poster.png'
-import bioRxivPublication from '../assets/bioRxiv-pub.png'
-
+import bioRxivPublication from '../assets/bioRxiv-publication.png'
+import sfnPosterPresentation from '../assets/sfn-poster-presentation.png'
+import publicationSources from '../assets/journals-publications.png'
 import MovingComponent from 'react-moving-text'
 
 
@@ -24,14 +25,14 @@ function ReactCarousel() {
             <Carousel>
                 {itemData.map((item) => (
                     <Carousel.Item>
-                        <div style={{ width: '100%', height: '500px' }}>
+                        <div style={{ width: '100%', height: '430px' }}>
                             < img
                                 className="center w-50"
                                 // src={"./assets/clouds.png/800x400?text=Secondslide&bg=282c34"}
                                 src={`${item.img}?w=248&fit=crop&auto=format`}
                                 alt={item.title}
                                 link={item.link}
-                                style={style.div}
+                                style={{ height: 'fit-content' }}
                             />
                         </div>
                         <div className='carousel-caption'>
@@ -51,11 +52,13 @@ function ReactCarousel() {
                                 </MovingComponent>
 
                                 <p style={{ fontSize: '16px', background: 'rgba(0, 0, 0, 0.8)', color: 'white', textShadow: '2px 2px black' }} className='rounded'>{item.info}</p>
+                                {/* <p style={{ fontSize: '12px' }}>{item.moreInfo}</p> */}
 
                             </Carousel.Caption>
                         </div>
-
+                        <p style={{ fontSize: '12px', marginTop: '3px' }}>{item.moreInfo}</p>
                     </Carousel.Item>
+
                 ))}
             </Carousel>
         </div>
@@ -76,8 +79,32 @@ const itemData = [
     },
     {
         img: `${bioRxivPublication}`,
-        title: 'Neuroscience Publications',
+        title: 'Author - Neuroscience Publications',
         info: 'focused on Selective Attention via whisker studies',
+        moreInfo: `Ramamurthy D.L., Chen A., Huang
+        P.C., Bharghavan P., Krishna G.,
+        Casale K., Feldman D.E. (Oct 2021).
+        VIP interneurons in mouse whisker
+        S1 exhibit sensory and action-related
+        signals during goal-directed behavior.
+        bioRxiv. Preprint. DOI: https://doi.
+        org/10.1101/2021.10.08.463283`,
+        // author: '@kaylacasale @bharatrai @salmaloum',
+        // rows: 2,
+        // cols: 2,
+        featured: true,
+        link: 'https://etiquette.herokuapp.com/'
+    },
+    {
+        img: `${sfnPosterPresentation}`,
+        title: 'Poster Presentation',
+        info: 'Society for Neuroscience 2021',
+        moreInfo: `Casale, K., D.L. Ramamurthy. Sensory
+        and action-related responses of
+        VIP interneurons in mouse whisker S1
+        during goal-directed behavior. 2021
+        Neuroscience Meeting Planner. Chicago,
+        IL: Society for Neuroscience, 2022.`,
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
@@ -86,8 +113,18 @@ const itemData = [
     },
     {
         img: `${SfnPoster}`,
-        title: 'Neuroscience Publications',
-        info: 'focused on Selective Attention via whisker studies',
+        title: 'Senior Thesis - Feldman Lab',
+        info: 'Hellen Wills Neuroscience Institute',
+        // author: '@kaylacasale @bharatrai @salmaloum',
+        // rows: 2,
+        // cols: 2,
+        featured: true,
+        link: 'https://etiquette.herokuapp.com/'
+    },
+    {
+        img: `${publicationSources}`,
+        title: 'Academic Journals',
+        info: 'Hellen Wills Neuroscience Institute',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
