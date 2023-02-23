@@ -115,6 +115,13 @@ const itemData = [
         img: `${SfnPoster}`,
         title: 'Senior Thesis - Feldman Lab',
         info: 'Hellen Wills Neuroscience Institute',
+        moreInfo: `Casale K, Gayathri, K. Effects of attentional
+        cueing on reaction times for
+        whisker stimulus detection in mice. Poster
+        presented at: the Fall Senior Research
+        Poster Session (In Person); Nov 2020;
+        University of California, Berkeley, CA.
+        https://acrobat.adobe.com/link/review?`,
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
@@ -123,8 +130,8 @@ const itemData = [
     },
     {
         img: `${publicationSources}`,
-        title: 'Academic Journals',
-        info: 'Hellen Wills Neuroscience Institute',
+        title: 'Academic Journals & Publishers',
+        info: 'bioRxiv, SfN, ResearchGate, ScienceDirect, NIH, NCBI...',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
