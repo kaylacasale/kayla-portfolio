@@ -45,6 +45,7 @@
 
     /* background-color: red; */
     position: relative;
+    left: 20px;
     animation-name: moon;
     animation-duration: 4s;
     animation-direction: reverse;
@@ -80,16 +81,22 @@
         top: 200px;
     }
 
-    100% {
+    /* 85% {
         background-color: red;
         left: 0px;
+        top: 0px;
+    } */
+
+    100% {
+        background-color: #EA337F;
+        left: 50px;
         top: 0px;
     }
 }
 
 @keyframes logo {
     0% {
-        background-color: red;
+        background-color: #EA337F;
         left: 200px;
         top: 55px;
     }

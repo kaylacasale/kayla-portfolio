@@ -27,7 +27,7 @@ import epilepticus from '../assets/embryonic-stem-cells.jpeg'
 // }
 function ReactCarouselTwo() {
     return (
-        <div>
+        <div style={{ margin: '10px' }}>
             <Carousel>
                 {itemData.map((item) => (
                     <Carousel.Item>
@@ -77,13 +77,13 @@ function ReactCarouselTwo() {
 const itemData = [
     {
         img: `${institutions}`,
-        title: 'Research',
-        info: '6+ years of Cognitive and Molecular Neuroscience research at UCLA and UC Berkeley',
+        title: 'Cognitive Psychology and Social Science',
+        info: 'Psychology',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: 'https://www.linkedin.com/in/kaylacasale/details/experience/'
     },
     {
         img: `${selectiveAttention}`,

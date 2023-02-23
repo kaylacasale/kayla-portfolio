@@ -43,7 +43,9 @@ function App() {
       </style>
 
       <div className="App" background={<Background />}>
-        <Header />
+        <div>
+          <Header />
+        </div>
         {/* <nav>
           <ul>
             <li>
@@ -58,20 +60,24 @@ function App() {
           <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300&family=Lobster&family=Roboto:wght@100&family=Rubik+Microbe&display=swap" rel="stylesheet"></link>
           {/* <link rel="stylesheet" type="text/css" href="index.css" /> */}
         </Helmet>
-        <div className="moon">
-          <img src={myLogoPartOne}></img>
+        <div>
+          <div className="moon">
+            <img src={myLogoPartOne}></img>
+          </div>
+          <div className="logo">
+            <img src={myLogoPartTwo}></img>
+          </div>
         </div>
-        <div className="logo">
-          <img src={myLogoPartTwo}></img>
+        <div>
+          <Background />
         </div>
-        <Background />
 
         {/* <BackgroundTwo /> */}
         <AnimatedCursor
           color="255, 105, 180"
         />
 
-        <div className="container">
+        <div className="container" style={{ backgroundColor: 'black' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
@@ -81,7 +87,7 @@ function App() {
         </div>
 
 
-        <Section />
+        {/* <Section /> */}
       </div>
 
     </>

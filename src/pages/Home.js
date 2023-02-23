@@ -15,32 +15,48 @@ import '../styles/Background.css'
 const Home = () => {
     return (
 
-        <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '4em', fontSize: '48px', fontFamily: 'Anonymous Pro', color: 'white', textShadow: '2px 2px #ff007f' }} >
+        <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Anonymous Pro', color: 'white', textShadow: '2px 2px #ff007f' }} >
 
             <div style={{ marginBottom: '10px' }}>
                 <TypeAnimate />
             </div>
             <div>
-                <MovingComponent
-                    type="fadeInFromBottom"
-                    duration="1700ms"
-                    delay=".5s"
-                    direction="alternate"
-                    timing="ease-in"
-                    iteration="infinite"
-                    fillMode="none"
-                    className='rounded' style={{ fontSize: '28px' }}>
-                    Research 🧠
-                </MovingComponent>
-            </div>
-            <div>
-                <ReactCarousel />
-            </div>
-
-            <div>
-                <ReactCarouselTwo />
+                <div>
+                    <MovingComponent
+                        type="fadeInFromBottom"
+                        duration="1700ms"
+                        delay=".5s"
+                        direction="alternate"
+                        timing="ease-in"
+                        iteration="infinite"
+                        fillMode="none"
+                        className='rounded' style={{ fontSize: '28px' }}>
+                        Neuroscience & Bioengineering 🧠
+                    </MovingComponent>
+                </div>
+                <div>
+                    <ReactCarousel />
+                </div>
             </div>
 
+            <div>
+                <div>
+                    <MovingComponent
+                        type="fadeInFromBottom"
+                        duration="1700ms"
+                        delay=".5s"
+                        direction="alternate"
+                        timing="ease-in"
+                        iteration="infinite"
+                        fillMode="none"
+                        className='rounded' style={{ fontSize: '28px' }}>
+                        Psychology & Social Science 🤝
+                    </MovingComponent>
+                </div>
+                <div>
+                    <ReactCarouselTwo />
+                </div>
+            </div>
             {/* <div>
                 <HomeCarousel />;
             </div> */}

@@ -63,7 +63,7 @@ function ReactCarousel() {
 
                             </Carousel.Caption>
                         </div>
-                        <p style={{ fontSize: '12px', marginTop: '3px' }}>{item.moreInfo}</p>
+                        <p style={{ fontSize: '12.5px', marginTop: '4px', color: 'white', textShadow: '0px 0px pink' }}>{item.moreInfo}</p>
                     </Carousel.Item>
 
                 ))}
@@ -132,15 +132,14 @@ const itemData = [
     },
     {
         img: `${SfnPoster}`,
-        title: 'Senior Thesis (Feldman Lab)',
-        info: 'Researcher - Hellen Wills Neuroscience Institute',
+        title: 'Senior Research Thesis',
+        info: 'Feldman Lab, Hellen Wills Neuroscience Institute (2018-2020)',
         moreInfo: `Casale K, Gayathri, K. Effects of attentional
         cueing on reaction times for
         whisker stimulus detection in mice. Poster
         presented at: the Fall Senior Research
         Poster Session (In Person); Nov 2020;
-        University of California, Berkeley, CA.
-        https://acrobat.adobe.com/link/review?`,
+        University of California, Berkeley, CA.`,
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
@@ -169,8 +168,8 @@ const itemData = [
     },
     {
         img: `${technologies}`,
-        title: 'Neurophysiological Methods & Technologies (Yartsev NeuroBat Lab)',
-        info: `Dpt. of Bioengineering`,
+        title: 'Neurophysiological Methods & Technologies',
+        info: `Yartsev NeuroBat Lab, Dpt. of Bioengineering (2016-2017)`,
         moreInfo: 'Used surgical tools to conduct brain extractions in combination with advanced scientific technologies to record and image free flying bats and analyze brain histologies post extraction',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
