@@ -12,6 +12,7 @@ import BackgroundTwo from '../components/BackgroundTwo'
 
 import ReactCarouselVectors from '../components/ReactCarouselVectors'
 import "fontsource-cascadia-code"
+import ReactCarouselPrototyping from '../components/ReactCarouselPrototyping'
 
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
@@ -72,7 +73,7 @@ const Home = () => {
                         iteration="infinite"
                         fillMode="none"
                         className='rounded' style={{ fontSize: '28px' }}>
-                        3D Vector Graphics ⿻
+                        Design Ideation 💭
                     </MovingComponent>
                 </div>
                 <div>
@@ -80,7 +81,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <div style={{ width: '80%', float: 'left' }}>
+                <div style={{ width: '80%', float: 'right' }}>
                     <MovingComponent
                         type="fadeInFromBottom"
                         duration="1700ms"

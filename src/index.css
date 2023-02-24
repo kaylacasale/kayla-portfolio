@@ -8,7 +8,10 @@
         position: 1000px 0;
     }
 } */
-
+/** spacing between li elements next to carousels */
+.ulCarousel li {
+    margin-bottom: 20px;
+}
 
 /** animated logo on top left of Home page **/
 

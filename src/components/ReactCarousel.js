@@ -72,8 +72,13 @@ function ReactCarousel() {
 
                 ))}
             </Carousel>
-            <div style={{ width: '20%', float: 'right', marginTop: '100px' }}>
-                Neural Coding
+            <div style={{ width: '20%', float: 'left', marginTop: '100px', fontSize: '32px' }}>
+                <div style={{ marginBottom: '20px' }}>Research:</div>
+                <ul className='ulCarousel' style={{ listStyleType: 'number', padding: '10px', fontSize: '24px' }}>
+                    <li>Selective Attention</li>
+                    <li>Sonar Communication</li>
+                    <li>Epilepsy</li>
+                </ul>
             </div>
             {/* <ReactCarouselTwo /> */}
         </div>

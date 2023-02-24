@@ -29,6 +29,9 @@ import covid from '../assets/covid-virus.png'
 import tentTTC from '../assets/TTC-testing-tent.png'
 import swabTTC from '../assets/TTC-swab-training.png'
 import detectCam from '../assets/TTC-detectCam.png'
+import crystal from '../assets/franklin-crystal.png'
+import smise360 from '../assets/smise-360.png'
+import labAesthetic from '../assets/TTC-pcr-detection.png'
 // import courseLink from '../assets/course-link.png'
 // import ReactCarouselTwo from './ReactCarouselTwo';
 
@@ -44,7 +47,7 @@ import detectCam from '../assets/TTC-detectCam.png'
 function ReactCarouselVectors() {
     return (
         <div>
-            <Carousel style={{ width: '80%', float: 'left', height: '700px' }}>
+            <Carousel style={{ width: '80%', float: 'right', height: '700px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
                         <div style={{ width: '100%', height: '600px' }}>
@@ -87,8 +90,13 @@ function ReactCarouselVectors() {
 
                 ))}
             </Carousel>
-            <div style={{ width: '20%', float: 'left', marginTop: '100px' }}>
-                Adobe XD 3D Transform
+            <div style={{ width: '20%', float: 'left', marginTop: '100px', fontSize: '32px' }}>
+                <div style={{ marginBottom: '20px' }}>Adobe XD tools:</div>
+                <ul className='ulCarousel' style={{ listStyleType: 'number', padding: '10px', fontSize: '24px', marginLeft: '10px' }}>
+                    <li>3D Transform</li>
+                    <li>Asset Layering</li>
+                    <li>Color Gradients</li>
+                </ul>
             </div>
             {/* <ReactCarouselTwo /> */}
         </div>
@@ -98,7 +106,7 @@ function ReactCarouselVectors() {
 // https://www.december.com/html/spec/colorrgbadec.html
 const itemData = [
     {
-        img: `${smiseScreens}`,
+        img: `${smise360}`,
         title: 'Interact With Your Teeth',
         info: 'SMISE Dental App Screens',
         // info: 'I created these assets for a dental app I created called SMISE',
@@ -107,7 +115,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
     },
     {
         img: `${implant}`,
@@ -119,7 +127,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
     },
     {
         img: `${imaging}`,
@@ -131,7 +139,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
     },
     {
         img: `${topTeethOne}`,
@@ -143,7 +151,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://etiquette.herokuapp.com/'
+        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
     },
     {
         img: `${topTeethTwo}`,
@@ -153,7 +161,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://www.feldmanlab.org/'
+        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
     },
     // {
     //     img: `${topTeethThree}`,
@@ -182,7 +190,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://www.michaelyartsev.com/research'
+        link: 'https://www.behance.net/gallery/150980839/Thinking-Through-Web-Design-A-Case-Study'
     },
     {
         img: `${tentTTC}`,
@@ -193,19 +201,30 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://www.michaelyartsev.com/research'
+        link: 'https://www.behance.net/gallery/150980839/Thinking-Through-Web-Design-A-Case-Study'
     },
     {
-        img: `${swabTTC}`,
-        title: 'Swabs & Samples',
-        info: `Visual Guide to Specimen Collection`,
+        img: `${labAesthetic}`,
+        title: 'TTC Lab Aesthetic',
+        info: `Visual Guide to PCR Detection`,
         // moreInfo: 'Used surgical tools to conduct brain extractions in combination with advanced scientific technologies to record and image free flying bats and analyze brain histologies post extraction',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://www.michaelyartsev.com/research'
+        link: 'https://www.behance.net/gallery/150980839/Thinking-Through-Web-Design-A-Case-Study'
     },
+    // {
+    //     img: `${swabTTC}`,
+    //     title: 'Swabs & Samples',
+    //     info: `Visual Guide to Specimen Collection`,
+    //     // moreInfo: 'Used surgical tools to conduct brain extractions in combination with advanced scientific technologies to record and image free flying bats and analyze brain histologies post extraction',
+    //     // author: '@kaylacasale @bharatrai @salmaloum',
+    //     // rows: 2,
+    //     // cols: 2,
+    //     featured: true,
+    //     link: 'https://www.michaelyartsev.com/research'
+    // },
     {
         img: `${detectCam}`,
         title: 'PCR & Rapid Testing',
@@ -215,7 +234,7 @@ const itemData = [
         // rows: 2,
         // cols: 2,
         featured: true,
-        link: 'https://www.michaelyartsev.com/research'
+        link: 'https://thetestingco.org/'
     },
     {
         img: `${albumCover}`,
@@ -234,20 +253,36 @@ const itemData = [
         link: `https://www.abstractsonline.com/
         pp8/#!/10485/presentation/9948.`
     },
+    // {
+    //     img: `${balloon}`,
+    //     title: 'Hot Air Balloon',
+    //     info: `Focus: Layers for Balloon Allusion`,
+    //     // author: '@kaylacasale @bharatrai @salmaloum',
+    //     // rows: 2,
+    //     // cols: 2,
+    //     featured: true,
+    //     link: 'https://www.michaelyartsev.com/'
+    // },
+    // {
+    //     img: `${franklin}`,
+    //     title: 'Self-Portrait',
+    //     info: 'Focus: Visual Accuracy',
+    //     // moreInfo: `Casale K, Gayathri, K. Effects of attentional
+    //     // cueing on reaction times for
+    //     // whisker stimulus detection in mice. Poster
+    //     // presented at: the Fall Senior Research
+    //     // Poster Session (In Person); Nov 2020;
+    //     // University of California, Berkeley, CA.`,
+    //     // author: '@kaylacasale @bharatrai @salmaloum',
+    //     // rows: 2,
+    //     // cols: 2,
+    //     featured: true,
+    //     link: `https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:7e93e4e8-56cc-3c63-b0ee-743d00d29537`
+    // },
     {
-        img: `${balloon}`,
-        title: 'Hot Air Balloon',
-        info: `Focus: Layers for Balloon Allusion`,
-        // author: '@kaylacasale @bharatrai @salmaloum',
-        // rows: 2,
-        // cols: 2,
-        featured: true,
-        link: 'https://www.michaelyartsev.com/'
-    },
-    {
-        img: `${franklin}`,
-        title: 'Self-Portrait',
-        info: 'Focus: Visual Accuracy',
+        img: `${crystal}`,
+        title: 'Marketing Material',
+        info: 'Franklin Nwochie',
         // moreInfo: `Casale K, Gayathri, K. Effects of attentional
         // cueing on reaction times for
         // whisker stimulus detection in mice. Poster
@@ -260,16 +295,16 @@ const itemData = [
         featured: true,
         link: `https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:7e93e4e8-56cc-3c63-b0ee-743d00d29537`
     },
-    {
-        img: `${franklinSnakes}`,
-        title: 'Snakes',
-        info: 'Focus: Textured Scales',
-        // author: '@kaylacasale @bharatrai @salmaloum',
-        // rows: 2,
-        // cols: 2,
-        featured: true,
-        // link: 'https://etiquette.herokuapp.com/'
-    },
+    // {
+    //     img: `${franklinSnakes}`,
+    //     title: 'Snakes',
+    //     info: 'Focus: Textured Scales',
+    //     // author: '@kaylacasale @bharatrai @salmaloum',
+    //     // rows: 2,
+    //     // cols: 2,
+    //     featured: true,
+    //     // link: 'https://etiquette.herokuapp.com/'
+    // },
     // {
     //     img: `${epilepticus}`,
     //     title: 'Neurology Research',

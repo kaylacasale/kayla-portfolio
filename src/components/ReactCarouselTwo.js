@@ -74,8 +74,12 @@ function ReactCarouselTwo() {
 
                 ))}
             </Carousel>
-            <div style={{ width: '20%', float: 'left', marginTop: '100px' }}>
-                Human Behavior
+            <div style={{ width: '20%', float: 'left', marginTop: '100px', fontSize: '32px' }}>
+                <div style={{ marginBottom: '20px' }}>Research & Teaching:</div>
+                <ul className='ulCarousel' style={{ listStyleType: 'number', padding: '10px', fontSize: '24px', marginLeft: '10px' }}>
+                    <li>Human Behavior</li>
+                    <li>Bio-Psycho-Social Approach</li>
+                </ul>
             </div>
         </div>
     );
