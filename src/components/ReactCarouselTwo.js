@@ -30,14 +30,14 @@ import courseLink from '../assets/coure-link.png'
 // }
 function ReactCarouselTwo() {
     return (
-        <div style={{ margin: '10px' }}>
-            <Carousel>
+        <div >
+            <Carousel style={{ width: '80%', float: 'right', height: '700px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
-                        <div style={{ width: '100%', height: '430px' }}>
+                        <div style={{ width: '100%', height: '650px' }}>
                             <a href={item.link}>
                                 < img
-                                    className="center w-50"
+                                    className="center w-75"
                                     // src={"./assets/clouds.png/800x400?text=Secondslide&bg=282c34"}
                                     src={`${item.img}?w=248&fit=crop&auto=format`}
                                     alt={item.title}
@@ -58,20 +58,25 @@ function ReactCarouselTwo() {
                                     timing="ease-in"
                                     iteration="infinite"
                                     fillMode="none"
-                                    className='rounded' style={{ fontSize: '32px', textAlign: 'center', color: 'white', background: 'rgba(0, 0, 0, 0.4)', padding: '4px', borderBlock: 'solid' }}>
+                                    className='rounded' style={{ fontSize: '32px', textAlign: 'center', color: 'white', padding: '4px', textShadow: '3px 3px black' }}>
                                     {item.title}
                                 </MovingComponent>
 
-                                <p style={{ fontSize: '16px', background: 'rgba(0, 0, 0, 0.8)', color: 'white', textShadow: '2px 2px black' }} className='rounded'>{item.info}</p>
+                                <p style={{ fontSize: '16px', background: 'rgba(0, 0, 0, .1)', color: 'white', textShadow: '2px 2px black', padding: '2px', boxShadow: '.5px .5px #fd5e53, -1px 0 .4em #D0D3D5' }}>{item.info}</p>
                                 {/* <p style={{ fontSize: '12px' }}>{item.moreInfo}</p> */}
 
                             </Carousel.Caption>
                         </div>
-                        <p style={{ fontSize: '12px', marginTop: '3px' }}>{item.moreInfo}</p>
+                        <div>
+                            <p style={{ fontSize: '12.5px', marginTop: '4px', color: 'white', textShadow: '0px 0px pink', padding: '2px' }}>{item.moreInfo}</p>
+                        </div>
                     </Carousel.Item>
 
                 ))}
             </Carousel>
+            <div style={{ width: '20%', float: 'left', marginTop: '100px' }}>
+                Human Behavior
+            </div>
         </div>
     );
 }
@@ -92,7 +97,7 @@ const itemData = [
     {
         img: `${rascl}`,
         title: 'Research',
-        info: 'Developed and administered surveys to me peers regarding topics such as intergroup relations including positive and negative outcomes of intergroup conact, motivations underlying prejudice, and implications of stereotyping minotiries.',
+        info: 'Focus: Intergroup relations including positive and negative outcomes of intergroup conact, motivations underlying prejudice, and implications of stereotyping minotiries.',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,

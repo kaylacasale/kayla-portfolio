@@ -13,6 +13,7 @@ import bioengineering from '../assets/echolocation.png'
 import institutions from '../assets/research-institutions-6.png'
 import technologies from '../assets/technologies-yartsev-3.png'
 import epilepticus from '../assets/embryonic-stem-cells.jpeg'
+import imagingAxons from '../assets/imaging-axonal-activity.mov'
 // import courseLink from '../assets/course-link.png'
 // import ReactCarouselTwo from './ReactCarouselTwo';
 
@@ -28,13 +29,13 @@ import epilepticus from '../assets/embryonic-stem-cells.jpeg'
 function ReactCarousel() {
     return (
         <div>
-            <Carousel>
+            <Carousel style={{ width: '80%', float: 'left', height: '700px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
-                        <div style={{ width: '100%' }}>
+                        <div style={{ width: '100%', height: '600px' }}>
                             <a href={item.link}>
                                 < img
-                                    className="center w-50"
+                                    className="center h-75"
                                     // src={"./assets/clouds.png/800x400?text=Secondslide&bg=282c34"}
                                     src={`${item.img}?w=248&fit=crop&auto=format`}
                                     alt={item.title}
@@ -71,6 +72,9 @@ function ReactCarousel() {
 
                 ))}
             </Carousel>
+            <div style={{ width: '20%', float: 'right', marginTop: '100px' }}>
+                Neural Coding
+            </div>
             {/* <ReactCarouselTwo /> */}
         </div>
     );
@@ -91,7 +95,7 @@ const itemData = [
     {
         img: `${selectiveAttention}`,
         title: 'Neuroscience Research',
-        info: 'focused on Selective Attention via whisker studies',
+        info: 'Focus: Selective Attention via whisker studies',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
@@ -101,7 +105,7 @@ const itemData = [
     {
         img: `${bioRxivPublication}`,
         title: 'Neuroscience Publications',
-        info: 'Author - bioRxiv',
+        info: 'Co-Author of Published Manuscript',
         moreInfo: `Ramamurthy D.L., Chen A., Huang
         P.C., Bharghavan P., Krishna G.,
         Casale K., Feldman D.E. (Oct 2021).
@@ -152,7 +156,7 @@ const itemData = [
     {
         img: `${publicationSources}`,
         title: 'Academic Journals & Publishers',
-        info: 'bioRxiv, SfN, ResearchGate, ScienceDirect, NIH, NCBI...',
+        // info: 'Findings: VIP interneurons in S1 represent both sensory and motor (lick) events during goal-directed behavior.',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
@@ -162,7 +166,7 @@ const itemData = [
     {
         img: `${bioengineering}`,
         title: 'Neuroscience & Bioengineering Research',
-        info: `focused on bat sonar communication ('Echolocation')`,
+        info: `Focus: bat sonar communication ('Echolocation')`,
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,
@@ -181,9 +185,9 @@ const itemData = [
         link: 'https://www.michaelyartsev.com/research'
     },
     {
-        img: `${epilepticus}`,
-        title: 'Neurology Research',
-        info: 'focused on embryonic stem cell therapy for Temporal Lobe Epilepsy in rodent models',
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWFhYjM3Y2VhZmNhMDkzNTY5Njg1YWQyODQyZDY0NjMxODJlYjYwZCZjdD1n/YM104dsJPrYaGACLdc/giphy-downsized-large.gif',
+        title: 'In-vivo Two-photon Calcium Imaging',
+        info: 'Focus: embryonic stem cell therapy for Temporal Lobe Epilepsy in rodent models',
         // author: '@kaylacasale @bharatrai @salmaloum',
         // rows: 2,
         // cols: 2,

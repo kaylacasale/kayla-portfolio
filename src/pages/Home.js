@@ -20,30 +20,12 @@ const Home = () => {
 
         <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Cascadia Code', color: 'white', textShadow: '2px 2px #ff007f' }} >
             {/* vector art - carousel */}
-            <div style={{ marginBottom: '10px' }}>
+            <div style={{ marginBottom: '50px' }}>
                 <TypeAnimate />
-            </div>
-            <div>
-                <div>
-                    <MovingComponent
-                        type="fadeInFromBottom"
-                        duration="1700ms"
-                        delay=".5s"
-                        direction="alternate"
-                        timing="ease-in"
-                        iteration="infinite"
-                        fillMode="none"
-                        className='rounded' style={{ fontSize: '28px' }}>
-                        3D Vector Graphics ⿻
-                    </MovingComponent>
-                </div>
-                <div>
-                    <ReactCarouselVectors />
-                </div>
             </div>
             {/* neuroscience research - carousel */}
             <div>
-                <div>
+                <div style={{ width: '80%', float: 'left' }}>
                     <MovingComponent
                         type="fadeInFromBottom"
                         duration="1700ms"
@@ -61,9 +43,8 @@ const Home = () => {
                 </div>
             </div>
             {/* psychology research - carousel */}
-            <div >
-
-                <div>
+            <div>
+                <div style={{ width: '80%', float: 'right' }}>
                     <MovingComponent
                         type="fadeInFromBottom"
                         duration="1700ms"
@@ -78,6 +59,42 @@ const Home = () => {
                 </div>
                 <div>
                     <ReactCarouselTwo />
+                </div>
+            </div>
+            <div>
+                <div style={{ width: '80%', float: 'left' }}>
+                    <MovingComponent
+                        type="fadeInFromBottom"
+                        duration="1700ms"
+                        delay=".5s"
+                        direction="alternate"
+                        timing="ease-in"
+                        iteration="infinite"
+                        fillMode="none"
+                        className='rounded' style={{ fontSize: '28px' }}>
+                        3D Vector Graphics ⿻
+                    </MovingComponent>
+                </div>
+                <div>
+                    <ReactCarouselPrototyping />
+                </div>
+            </div>
+            <div>
+                <div style={{ width: '80%', float: 'left' }}>
+                    <MovingComponent
+                        type="fadeInFromBottom"
+                        duration="1700ms"
+                        delay=".5s"
+                        direction="alternate"
+                        timing="ease-in"
+                        iteration="infinite"
+                        fillMode="none"
+                        className='rounded' style={{ fontSize: '28px' }}>
+                        3D Vector Graphics ⿻
+                    </MovingComponent>
+                </div>
+                <div>
+                    <ReactCarouselVectors />
                 </div>
             </div>
             {/* <div>
