@@ -107,8 +107,8 @@ function ReactCarouselVectors() {
 const itemData = [
     {
         img: `${smise360}`,
-        title: 'Interact With Your Teeth',
-        info: 'SMISE Dental App Screens',
+        title: 'Engage from 2D to 3D',
+        info: '3D Digital Modeling',
         // info: 'I created these assets for a dental app I created called SMISE',
         // moreInfo: 'I created these assets for a dental app I created called SMISE',
         // author: '@kaylacasale @bharatrai @salmaloum',
@@ -117,30 +117,30 @@ const itemData = [
         featured: true,
         link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
     },
-    {
-        img: `${implant}`,
-        title: 'Digital Oral Exam',
-        info: 'Engage With Your Dental Health Records',
-        // info: 'I created these assets for a dental app I created called SMISE',
-        // moreInfo: 'I created these assets for a dental app I created called SMISE',
-        // author: '@kaylacasale @bharatrai @salmaloum',
-        // rows: 2,
-        // cols: 2,
-        featured: true,
-        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
-    },
-    {
-        img: `${imaging}`,
-        title: 'Imaging & Smart Technology',
-        info: 'Recreate Your Unique Oral Cavity',
-        // info: 'I created these assets for a dental app I created called SMISE',
-        // moreInfo: 'I created these assets for a dental app I created called SMISE',
-        // author: '@kaylacasale @bharatrai @salmaloum',
-        // rows: 2,
-        // cols: 2,
-        featured: true,
-        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
-    },
+    // {
+    //     img: `${implant}`,
+    //     title: 'Digital Oral Exam',
+    //     info: 'Engage With Your Dental Health Records',
+    //     // info: 'I created these assets for a dental app I created called SMISE',
+    //     // moreInfo: 'I created these assets for a dental app I created called SMISE',
+    //     // author: '@kaylacasale @bharatrai @salmaloum',
+    //     // rows: 2,
+    //     // cols: 2,
+    //     featured: true,
+    //     link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
+    // },
+    // {
+    //     img: `${imaging}`,
+    //     title: 'Imaging & Smart Technology',
+    //     info: 'Recreate Your Unique Oral Cavity',
+    //     // info: 'I created these assets for a dental app I created called SMISE',
+    //     // moreInfo: 'I created these assets for a dental app I created called SMISE',
+    //     // author: '@kaylacasale @bharatrai @salmaloum',
+    //     // rows: 2,
+    //     // cols: 2,
+    //     featured: true,
+    //     link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'
+    // },
     {
         img: `${topTeethOne}`,
         title: 'SMISE Dental App',

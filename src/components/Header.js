@@ -29,7 +29,7 @@ function Header() {
   return (
     <header style={{ fontFamily: 'Cascadia Code' }}>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg px-3">
-        <a class="navbar-brand" href="/">Kayla Casale</a>
+        <a class="navbar-brand" id="wiggle" href="/">Kayla Casale</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

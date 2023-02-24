@@ -91,7 +91,7 @@ const Home = () => {
                         iteration="infinite"
                         fillMode="none"
                         className='rounded' style={{ fontSize: '28px' }}>
-                        3D Vector Graphics ⿻
+                        Vector Graphics ⿻
                     </MovingComponent>
                 </div>
                 <div>

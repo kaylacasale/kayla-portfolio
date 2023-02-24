@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -9,6 +9,9 @@ import Card from '../components/Card'
 import '../styles/Background.css'
 import Background from '../components/Background';
 import MovingComponent from 'react-moving-text'
+import ReactImageListMasonry from '../components/ReactImageListMasonry';
+import shangoo from '../assets/shangoo-main.PNG'
+import BlockButton from '../components/BlockButton';
 
 // import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
@@ -37,10 +40,10 @@ import MovingComponent from 'react-moving-text'
 
 function Portfolio() {
     return (
-        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code' }}>
+        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code', backgroundColor: 'black', height: '2000px' }}>
 
-            <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em" }}>
-                <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em', textAlign: 'center', fontSize: '32px', color: 'white' }}>
+            <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em", width: '20%' }}>
+                <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', textAlign: 'center', fontSize: '32px', color: 'white' }}>
                     <MovingComponent
                         type="blur"
                         duration="1700ms"
@@ -52,7 +55,20 @@ function Portfolio() {
                         Kayla's Portfolio
                     </MovingComponent>
                 </div>
-                <Card />
+                <div className='column' style={{ float: 'right' }}>
+                    <div>
+                        <Card />
+                    </div>
+                    <div style={{ marginTop: '1em' }}>
+                        <BlockButton />
+                    </div>
+
+                    {/* <div className='card' style={{ margin: '1em', height: 'fit-content' }}>
+                        {cardData.map((item) =>
+                            <img className='cardUnderCard' src={`${item.img}`} style={{ height: '600px' }}></img>
+                        )}
+                    </div> */}
+                </div>
             </div>
             <ImageList sx={{ width: 900, height: 850 }} className='shadow-lg'>
                 <ImageListItem key="Subheader" cols={2} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
@@ -93,9 +109,14 @@ function Portfolio() {
                 <Card />
             </div> */}
 
-        </section>
+        </section >
     );
 }
+// const cardData = [
+//     {
+//         img: `${shangoo}`
+//     }
+// ]
 
 const itemData = [
     {
