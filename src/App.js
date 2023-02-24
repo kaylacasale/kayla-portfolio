@@ -77,7 +77,7 @@ function App() {
           color="255, 105, 180"
         />
 
-        <div className="container" style={{ backgroundColor: 'black' }}>
+        <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
@@ -132,3 +132,4 @@ export default App;
 //* 'npm i react-slider'
 
 //* 'npm i rc-slider'
+//* npm i fontsource-cascadia-code

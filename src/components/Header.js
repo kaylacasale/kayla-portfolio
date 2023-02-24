@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // Here we import the Header.css file to grant access to some additional classNames
 import '../styles/Header.css';
+import "fontsource-cascadia-code"
 
 // TODO: Create a styles object called "styles"
 
@@ -26,7 +27,7 @@ function Header() {
   // TODO: Add a style attribute to header and the h1 element
 
   return (
-    <header style={{ fontFamily: 'Anonymous Pro' }}>
+    <header style={{ fontFamily: 'Cascadia Code' }}>
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg px-3">
         <a class="navbar-brand" href="/">Kayla Casale</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

@@ -37,7 +37,7 @@ import MovingComponent from 'react-moving-text'
 
 function Portfolio() {
     return (
-        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Anonymous Pro' }}>
+        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code' }}>
 
             <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em" }}>
                 <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em', textAlign: 'center', fontSize: '32px', color: 'white' }}>

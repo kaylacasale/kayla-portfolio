@@ -13,6 +13,11 @@ import bioengineering from '../assets/echolocation.png'
 import institutions from '../assets/research-institutions-6.png'
 import technologies from '../assets/technologies-yartsev-3.png'
 import epilepticus from '../assets/embryonic-stem-cells.jpeg'
+import topTeethOne from '../assets/top-teeth-1.png'
+import topTeethTwo from '../assets/top-teeth-2.png'
+import topTeethThree from '../assets/top-teeth-3.png'
+import topTeethFour from '../assets/top-teeth-4.png'
+import { width } from '@mui/system';
 // import courseLink from '../assets/course-link.png'
 // import ReactCarouselTwo from './ReactCarouselTwo';
 
@@ -25,13 +30,13 @@ import epilepticus from '../assets/embryonic-stem-cells.jpeg'
 //         alignSelf: 'center'
 //     }
 // }
-function ReactCarousel() {
+function ReactCarouselVectors() {
     return (
         <div>
             <Carousel>
                 {itemData.map((item) => (
                     <Carousel.Item>
-                        <div style={{ width: '100%' }}>
+                        <div style={{ width: '100%', height: '430px' }}>
                             <a href={item.link}>
                                 < img
                                     className="center w-50"
@@ -59,13 +64,13 @@ function ReactCarousel() {
                                     {item.title}
                                 </MovingComponent>
 
-                                <p style={{ fontSize: '16px', background: 'rgba(0, 0, 0, 1)', color: 'white', textShadow: '2px 2px black', padding: '2px', boxShadow: '.5px .5px #fd5e53, -1px 0 .4em #D0D3D5' }}>{item.info}</p>
+                                <p style={{ fontSize: '16px', background: 'rgba(0, 0, 0, 1)', color: 'white', textShadow: '2px 2px black', width: '100%', padding: '2px', boxShadow: '.5px .5px #ff007f, -1px 0 .4em #D0D3D5' }} >{item.info}</p>
                                 {/* <p style={{ fontSize: '12px' }}>{item.moreInfo}</p> */}
 
                             </Carousel.Caption>
                         </div>
-                        <div>
-                            <p style={{ fontSize: '12.5px', marginTop: '4px', color: 'white', textShadow: '0px 0px pink', padding: '2px' }}>{item.moreInfo}</p>
+                        <div >
+                            <p style={{ fontSize: '12.5px', marginTop: '4px', color: 'white', textShadow: '0px 0px pink', textAlign: 'center', padding: '2px' }}>{item.moreInfo}</p>
                         </div>
                     </Carousel.Item>
 
@@ -79,7 +84,7 @@ function ReactCarousel() {
 // https://www.december.com/html/spec/colorrgbadec.html
 const itemData = [
     {
-        img: `${institutions}`,
+        img: `${topTeethOne}`,
         title: 'Research',
         info: '6+ years of Cognitive and Molecular Neuroscience research at UCLA and UC Berkeley',
         // author: '@kaylacasale @bharatrai @salmaloum',
@@ -89,7 +94,7 @@ const itemData = [
         link: 'https://etiquette.herokuapp.com/'
     },
     {
-        img: `${selectiveAttention}`,
+        img: `${topTeethTwo}`,
         title: 'Neuroscience Research',
         info: 'focused on Selective Attention via whisker studies',
         // author: '@kaylacasale @bharatrai @salmaloum',
@@ -99,7 +104,7 @@ const itemData = [
         link: 'https://www.feldmanlab.org/'
     },
     {
-        img: `${bioRxivPublication}`,
+        img: `${topTeethThree}`,
         title: 'Neuroscience Publications',
         info: 'Author - bioRxiv',
         moreInfo: `Ramamurthy D.L., Chen A., Huang
@@ -192,4 +197,4 @@ const itemData = [
     },
 ]
 
-export default ReactCarousel;
+export default ReactCarouselVectors;

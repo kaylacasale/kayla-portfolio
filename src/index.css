@@ -9,6 +9,9 @@
     }
 } */
 
+
+/** animated logo on top left of Home page **/
+
 .logo img {
     width: 150px;
 
@@ -58,25 +61,25 @@
 
 @keyframes moon {
     0% {
-        background-color: red;
+        /* background-color: red; */
         left: 0px;
         top: 0px;
     }
 
     25% {
-        background-color: yellow;
+        /* background-color: yellow; */
         left: 200px;
         top: 0px;
     }
 
     50% {
-        background-color: blue;
+        /* background-color: blue; */
         left: 200px;
         top: 200px;
     }
 
     75% {
-        background-color: green;
+        /* background-color: green; */
         left: 0px;
         top: 200px;
     }
@@ -88,7 +91,7 @@
     } */
 
     100% {
-        background-color: #EA337F;
+        /* background-color: #EA337F; */
         left: 50px;
         top: 0px;
     }
@@ -96,31 +99,31 @@
 
 @keyframes logo {
     0% {
-        background-color: #EA337F;
+        /* background-color: #EA337F; */
         left: 200px;
         top: 55px;
     }
 
     25% {
-        background-color: yellow;
+        /* background-color: yellow; */
         left: 200px;
         top: 255px;
     }
 
     50% {
-        background-color: blue;
+        /* background-color: blue; */
         left: 0px;
         top: 255px;
     }
 
     75% {
-        background-color: green;
+        /* background-color: green; */
         left: 0;
         top: 55px;
     }
 
     100% {
-        background-color: red;
+        /* background-color: red; */
         left: 200px;
         top: 55px;
     }
@@ -158,18 +161,18 @@ html {
 /**
    * Remove the margin in all browsers.
    */
-/* body {
+body {
     margin: 0;
-    font-family: 'Noto Serif Khojki', serif;
+    font-family: 'Cascadia Code', serif;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: rgb(254, 252, 228);
     background: linear-gradient(180deg,
-            rgba(254, 252, 228, 1) 0%,
-            rgba(255, 254, 236, 1) 52%,
-            rgba(255, 255, 255, 1) 100%);
-} */
+            rgb(0, 0, 0) 0%,
+            rgb(0, 0, 0) 52%,
+            rgb(255, 100, 76) 100%);
+}
 
 /**
    * Render the `main` element consistently in IE.

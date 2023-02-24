@@ -22,21 +22,21 @@
 
 @keyframes move-twink-back {
     from {
-        background-position: 1920 1920;
+        background-position: 0 1375;
     }
 
     to {
-        background-position: 10000px 0;
+        background-position: 10000px 1375;
     }
 }
 
 @keyframes move-clouds-back {
     from {
-        background-position: 1920 1920;
+        background-position: 0 1375;
     }
 
     to {
-        background-position: -10000px 10000px;
+        background-position: -10000px 6375px;
     }
 }
 
@@ -44,7 +44,7 @@
 .twinkling,
 .cloud {
     position: absolute;
-    top: 1920;
+    top: 1375;
     left: 0;
     right: 0;
     bottom: 0;

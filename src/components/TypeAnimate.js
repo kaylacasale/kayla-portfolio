@@ -1,4 +1,6 @@
 import React from 'react';
+import "fontsource-cascadia-code"
+
 
 import { TypeAnimation } from 'react-type-animation';
 
@@ -19,7 +21,7 @@ const TypeAnimate = () => {
             wrapper="div"
             cursor={true}
             repeat={Infinity}
-            style={{ fontSize: '2em', fontFamily: 'Anonymous Pro' }}
+            style={{ fontSize: '2em', fontFamily: 'Cascadia Code' }}
         />
     );
 };

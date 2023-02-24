@@ -6,20 +6,42 @@ import ReactCarousel from '../components/ReactCarousel'
 import Background from '../components/Background'
 import ReactCarouselTwo from '../components/ReactCarouselTwo'
 import '../styles/Background.css'
-// import BackgroundTwo from '../components/BackgroundTwo'
+import BackgroundTwo from '../components/BackgroundTwo'
 // import HomeCarousel from '../components/HomeCarousel'
 // import HomeCarousel from '../components/HomeCarousel'
+
+import ReactCarouselVectors from '../components/ReactCarouselVectors'
+import "fontsource-cascadia-code"
 
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 const Home = () => {
     return (
 
-        <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Anonymous Pro', color: 'white', textShadow: '2px 2px #ff007f' }} >
-
+        <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Cascadia Code', color: 'white', textShadow: '2px 2px #ff007f' }} >
+            {/* vector art - carousel */}
             <div style={{ marginBottom: '10px' }}>
                 <TypeAnimate />
             </div>
+            <div>
+                <div>
+                    <MovingComponent
+                        type="fadeInFromBottom"
+                        duration="1700ms"
+                        delay=".5s"
+                        direction="alternate"
+                        timing="ease-in"
+                        iteration="infinite"
+                        fillMode="none"
+                        className='rounded' style={{ fontSize: '28px' }}>
+                        3D Vector Graphics ⿻
+                    </MovingComponent>
+                </div>
+                <div>
+                    <ReactCarouselVectors />
+                </div>
+            </div>
+            {/* neuroscience research - carousel */}
             <div>
                 <div>
                     <MovingComponent
@@ -38,8 +60,9 @@ const Home = () => {
                     <ReactCarousel />
                 </div>
             </div>
+            {/* psychology research - carousel */}
+            <div >
 
-            <div>
                 <div>
                     <MovingComponent
                         type="fadeInFromBottom"
