@@ -60,7 +60,7 @@ function BlockButton() {
                 Block level button
             </Button> */}
             <Button onClick={handleClick} variant="secondary" size="lg" text={Text} >{Text}
-                {Text ? 'See Less' : 'See More...'}
+                {Text ? 'See Less' : 'My Part...'}
             </Button>
             {/* if (Button.onClick === 'true') {
                 Text = 'See Less'

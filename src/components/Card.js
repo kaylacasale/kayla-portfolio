@@ -21,7 +21,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import shangooMain from '../assets/shangoo-main.PNG'
 import { BsApple } from 'react-icons/bs'
-
+import { BsLaptopFill } from 'react-icons/bs'
+//* react icons:
+// https://react-icons.github.io/react-icons/icons?name=bs
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -91,7 +93,10 @@ export default function RecipeReviewCard() {
                     )}
                 </IconButton>
                 <IconButton aria-label="share">
-                    <a href="https://apps.apple.com/us/developer/shangoo-inc/id1489129176"> <BsApple /></a>
+                    <a href="https://apps.apple.com/us/developer/shangoo-inc/id1489129176" target="_blank"> <BsApple /></a>
+                </IconButton>
+                <IconButton aria-label="share">
+                    <a href="https://business.google.com/v/shangoo-pharmacy/01345895416273109405/3a0e/_?caid=17310589579&agid=135624543063&gclid=CjwKCAiAxvGfBhB-EiwAMPakqsLSMwr1FYFX07Na3tSUrjk2yuknATyqfGweKwal1tSvHyXys8ToahoCHFEQAvD_BwE" target="_blank"> <BsLaptopFill /></a>
                 </IconButton>
                 <ExpandMore
                     expand={expanded}
