@@ -37,7 +37,10 @@ function BlockButton() {
     const handleClick = () => {
         setClicked(true)
         toggleElement()
+        setText(!Text)
     };
+
+    const [Text, setText] = useState(false)
     // const btn = document.querySelector(<Button />)
 
     // btn.addEventListener("click", function () {
@@ -56,8 +59,8 @@ function BlockButton() {
             {/* <Button variant="primary" size="lg">
                 Block level button
             </Button> */}
-            <Button onClick={handleClick} variant="secondary" size="lg" >{Text}
-                {clicked ? 'See Less' : 'See More...'}
+            <Button onClick={handleClick} variant="secondary" size="lg" text={Text} >{Text}
+                {Text ? 'See Less' : 'See More...'}
             </Button>
             {/* if (Button.onClick === 'true') {
                 Text = 'See Less'
