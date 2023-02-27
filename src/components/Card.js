@@ -20,6 +20,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import shangooMain from '../assets/shangoo-main.PNG'
+import { BsApple } from 'react-icons/bs'
 
 
 
@@ -90,7 +91,7 @@ export default function RecipeReviewCard() {
                     )}
                 </IconButton>
                 <IconButton aria-label="share">
-                    <ShareIcon />
+                    <a href="https://apps.apple.com/us/developer/shangoo-inc/id1489129176"> <BsApple /></a>
                 </IconButton>
                 <ExpandMore
                     expand={expanded}
