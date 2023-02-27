@@ -77,7 +77,8 @@ function Portfolio() {
                 {itemData.map((item) => (
                     <a href={item.link} target="_blank"><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
                         <img
-                            className='rounded'
+                            // className='rounded'
+                            style={{ height: '290px' }}
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                             href={item.link}
@@ -85,7 +86,7 @@ function Portfolio() {
                             loading="lazy"
                         />
                         <ImageListItemBar
-                            className='rounded'
+                            // className='rounded'
                             title={item.title}
                             subtitle={item.author}
                             actionIcon={

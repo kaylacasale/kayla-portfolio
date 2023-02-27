@@ -31,7 +31,7 @@ import courseLink from '../assets/coure-link.png'
 function ReactCarouselTwo() {
     return (
         <div >
-            <Carousel style={{ width: '80%', float: 'right', height: '700px' }}>
+            <Carousel style={{ width: '80%', float: 'right', height: '700px', marginBottom: '100px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
                         <div style={{ width: '100%', height: '650px' }}>

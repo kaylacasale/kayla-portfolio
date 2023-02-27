@@ -47,7 +47,7 @@ import labAesthetic from '../assets/TTC-pcr-detection.png'
 function ReactCarouselVectors() {
     return (
         <div>
-            <Carousel style={{ width: '80%', float: 'right', height: '700px' }}>
+            <Carousel style={{ width: '80%', float: 'right', height: '700px', marginBottom: '100px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
                         <div style={{ width: '100%', height: '600px' }}>

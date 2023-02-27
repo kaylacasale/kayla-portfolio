@@ -50,7 +50,7 @@ import airInBreeze from '../assets/airIn-breeze.png'
 function ReactCarouselPrototyping() {
     return (
         <div>
-            <Carousel style={{ width: '80%', float: 'left', height: '700px' }}>
+            <Carousel style={{ width: '80%', float: 'left', height: '700px', marginBottom: '100px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
                         <div style={{ width: '100%', height: '600px' }}>

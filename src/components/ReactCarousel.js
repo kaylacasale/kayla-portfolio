@@ -14,6 +14,7 @@ import institutions from '../assets/research-institutions-6.png'
 import technologies from '../assets/technologies-yartsev-3.png'
 import epilepticus from '../assets/embryonic-stem-cells.jpeg'
 import imagingAxons from '../assets/imaging-axonal-activity.mov'
+import posterPresentation from '../assets/poster-presentation.png'
 // import courseLink from '../assets/course-link.png'
 // import ReactCarouselTwo from './ReactCarouselTwo';
 
@@ -28,8 +29,8 @@ import imagingAxons from '../assets/imaging-axonal-activity.mov'
 // }
 function ReactCarousel() {
     return (
-        <div>
-            <Carousel style={{ width: '80%', float: 'left', height: '700px' }}>
+        <div style={{ marginBottom: '100px' }}>
+            <Carousel style={{ width: '80%', float: 'left', height: '700px', marginBottom: '100px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
                         <div style={{ width: '100%', height: '600px' }}>
@@ -141,6 +142,22 @@ const itemData = [
         featured: true,
         link: `https://www.abstractsonline.com/
         pp8/#!/10485/presentation/9948.`
+    },
+    {
+        img: `${posterPresentation}`,
+        title: 'Honors Research Poster Presentation',
+        info: 'Dpt. of Molecular and Cellular Biology, UC Berkeley',
+        moreInfo: `Casale K, Gayathri, K. Effects of attentional
+        cueing on reaction times for
+        whisker stimulus detection in mice. Poster
+        presented at: the Fall Senior Research
+        Poster Session (In Person); Nov 2020;
+        University of California, Berkeley, CA.`,
+        // author: '@kaylacasale @bharatrai @salmaloum',
+        // rows: 2,
+        // cols: 2,
+        featured: true,
+        link: `https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:7e93e4e8-56cc-3c63-b0ee-743d00d29537`
     },
     {
         img: `${SfnPoster}`,
