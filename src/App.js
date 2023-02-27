@@ -80,7 +80,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />}/>
+            <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
 
           {/* <Link to="/" element={<Home />} /> */}
@@ -133,3 +133,5 @@ export default App;
 
 //* 'npm i rc-slider'
 //* npm i fontsource-cascadia-code
+
+//* npm install react-icons --save
