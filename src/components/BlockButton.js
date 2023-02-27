@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import shangoo from '../assets/shangoo-main.PNG'
 import shangooTwo from '../assets/smise-360.png'
-
+import shangooRegister from '../assets/shangoo-register-screen.png'
+import shangooMain from '../assets/shangoo-mainpage-screen.png'
+import shangooOpenAsset from '../assets/shangoo-open-onasset.png'
+// import Button from 'react-bootstrap/Button'
 
 function BlockButton() {
     const images = [
         {
             id: 1,
-            img: `${shangoo}`
+            img: `${shangooOpenAsset}`
         },
         {
             id: 2,
-            img: `${shangooTwo}`
+            img: `${shangooRegister}`
+        },
+        {
+            id: 2,
+            img: `${shangooMain}`
         }
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,9 +69,9 @@ function BlockButton() {
             <div className={showElement ? 'show-element' : 'hide-element'} style={{ margin: '1em', height: 'fit-content' }}>
 
                 {images.map((image, index) =>
-                    <img key={image.id} src={image.img} style={{ height: '600px', display: index === currentIndex ? 'block' : 'none' }} loading='lazy'></img>
+                    <img key={image.id} src={image.img} style={{ height: '450px', display: index === currentIndex ? 'block' : 'none', width: '220px' }} ></img>
                 )}
-                <button onNextImage={handleNextImage}></button>
+                <button onClick={handleNextImage} className="rounded" style={{ width: '98%', height: '40px', marginTop: '10px', backgroundColor: '#286094', color: 'white', borderColor: 'white' }}>Next</button>
             </div>
         </div >
     );
