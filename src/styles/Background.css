@@ -59,19 +59,19 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 5000px;
     display: block;
 }
 
 
-
+/* changed from #000 (black) */
 .stars {
-    background: #000 url(../assets/stars.png) repeat top center;
+    background: #EFEEF5 url(../assets/stars.png) repeat top center;
     z-index: -2;
 }
 
 .twinkling {
-    background: transparent url(../assets/twinkling.png) repeat top center;
+    background: transparent url(../assets/twinkling-2.png) repeat top center;
     z-index: -1;
     animation: move-twink-back 200s linear infinite;
 }

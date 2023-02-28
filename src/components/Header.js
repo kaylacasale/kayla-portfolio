@@ -20,16 +20,20 @@ import "fontsource-cascadia-code"
 //     fontSize: '100px'
 //   }
 // }
-
+// const styles = {
+//   header: {
+//     fontFamily: 'Climate Crisis'
+//   }
+// }
 
 
 function Header() {
   // TODO: Add a style attribute to header and the h1 element
 
   return (
-    <header style={{ fontFamily: 'Cascadia Code' }}>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg px-3">
-        <a class="navbar-brand" id="wiggle" href="/">Kayla Casale</a>
+    <header style={{ fontFamily: 'Climate Crisis' }}>
+      <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: '#EFEEF5' }}>
+        <a class="navbar-brand" id="wiggle" href="/" style={{ color: 'white' }}>Kayla Casale</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

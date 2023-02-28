@@ -13,16 +13,21 @@ import BackgroundTwo from '../components/BackgroundTwo'
 import ReactCarouselVectors from '../components/ReactCarouselVectors'
 import "fontsource-cascadia-code"
 import ReactCarouselPrototyping from '../components/ReactCarouselPrototyping'
+import MainIcons from '../components/MainIcons'
 
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 const Home = () => {
     return (
 
-        <div style={{ background: `${<Background />}`, textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Cascadia Code', color: 'white', textShadow: '2px 2px #ff007f' }} >
+        <div style={{ textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Climate Crisis', color: 'white', textShadow: '2px 2px #DFDFE3' }} >
             {/* vector art - carousel */}
+
             <div style={{ marginBottom: '50px' }}>
                 <TypeAnimate />
+            </div>
+            <div>
+                <MainIcons />
             </div>
             {/* neuroscience research - carousel */}
             <div>

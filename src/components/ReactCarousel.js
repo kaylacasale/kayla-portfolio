@@ -33,7 +33,7 @@ function ReactCarousel() {
             <Carousel style={{ width: '80%', float: 'left', height: '700px', marginBottom: '100px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
-                        <div style={{ width: '100%', height: '600px' }}>
+                        <div style={{ width: '100%', height: '600px', backgroundColor: '#DFDFE3', borderRadius: '400px' }}>
                             <a href={item.link}>
                                 < img
                                     className="center h-75"
@@ -41,7 +41,7 @@ function ReactCarousel() {
                                     src={`${item.img}?w=248&fit=crop&auto=format`}
                                     alt={item.title}
                                     link={item.link}
-                                    style={{ height: 'fit-content' }}
+                                    style={{ height: 'fit-content', borderRadius: '300px' }}
                                 />
                             </a>
                         </div>

@@ -40,9 +40,11 @@ function App() {
 
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
       </style>
 
-      <div className="App" background={<Background />}>
+      <div className="App" style={{ backgroundImage: `url(${Background})`, fontFamily: 'Gravitas One' }}>
         <div>
           <Header />
         </div>
@@ -58,6 +60,7 @@ function App() {
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
           <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300&family=Lobster&family=Roboto:wght@100&family=Rubik+Microbe&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet"></link>
           {/* <link rel="stylesheet" type="text/css" href="index.css" /> */}
         </Helmet>
         <div>
@@ -68,9 +71,9 @@ function App() {
             <img src={myLogoPartTwo}></img>
           </div>
         </div>
-        <div>
+        {/* <div>
           <Background />
-        </div>
+        </div> */}
 
         {/* <BackgroundTwo /> */}
         <AnimatedCursor
@@ -78,6 +81,7 @@ function App() {
         />
 
         <div className="container">
+          <Background />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />

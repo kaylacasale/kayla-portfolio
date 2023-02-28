@@ -8,7 +8,7 @@ import '../styles/Background.css'
 function Background() {
     return (
 
-        <section>
+        <section >
             <div className="stars"></div>
             <div className="twinkling"></div>
             <div className="clouds"></div>
