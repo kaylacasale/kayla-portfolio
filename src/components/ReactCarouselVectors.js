@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Carousel from 'react-bootstrap/Carousel';
+import { Carousel } from 'react-bootstrap';
 import MovingComponent from 'react-moving-text'
 // import myImage from '../assets/clouds.png'
 import selectiveAttention from '../assets/mouse-studies.webp'
