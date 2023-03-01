@@ -5,7 +5,7 @@
     width: 150px;
     height: 150px; */
 
-    background: transparent conic-gradient(from 90deg at 50% 50%, #5DB7EB 0.00%, #B3B8EB 7.77%, #7FAEDC 19.25%, #B3AFFA 26.87%, #FECAFD 37.45%, #509ACC 44.42%, #4DB2E1 50.83%, #B0E7F2 59.83%, #3593C0 67.41%, #6B90BA 74.06%, #B494C1 81.83%, #3BC8EA 90.78%, #4BD3F3 100.00%) 0% 0% no-repeat padding-box;
+    /* background: transparent conic-gradient(from 90deg at 50% 50%, #5DB7EB 0.00%, #B3B8EB 7.77%, #7FAEDC 19.25%, #B3AFFA 26.87%, #FECAFD 37.45%, #509ACC 44.42%, #4DB2E1 50.83%, #B0E7F2 59.83%, #3593C0 67.41%, #6B90BA 74.06%, #B494C1 81.83%, #3BC8EA 90.78%, #4BD3F3 100.00%) 0% 0% no-repeat padding-box; */
     /* box-shadow: 0px 3px 6px #00000029; */
     /* opacity: 1; */
     /* border-radius: 100px; */
@@ -17,6 +17,7 @@
     /* line-height: 20px; */
     /* opacity: .61; */
 }
+
 
 /* .bubble img { */
 /* width: 150px; */
@@ -44,7 +45,9 @@
 } */
 
 .bubbleTop:hover,
-.bubbleTopYellow:hover {
+.bubbleTopYellow:hover,
+.bubbleTopOrange:hover,
+.bubbleTopOrangeBlue:hover {
     animation-name: blink;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -82,6 +85,9 @@
     height: 150px; */
     /* border-radius: 100px; */
     background: transparent linear-gradient(180deg, #D5E9F6 0%, #DDE8F4 8%, #F9EBF2 16%, #E0E9F6 19%, #F6ECF6 27%, #EFE7F2 37%, #DAE6F0 44%, #EAEAF9 51%, #DDE4EF 57%, #D6E4ED 65%, #D9FEFE 74%, #FBE9F4 82%, #DAE4ED 91%, #D7E3EC 100%) 0% 0% no-repeat padding-box;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
     /* opacity: 0.71; */
     /* text-align: center; */
     /* animation-name: blink;
@@ -97,12 +103,24 @@
     width: 150px;
     height: 150px; */
     /* border-radius: 100px; */
-    background: transparent linear-gradient(180deg, #D5E9F6 0%, #b0e041 8%, #e9f4be 16%, #E0E9F6 19%, #F6ECF6 27%, #EFE7F2 37%, #DAE6F0 44%, #EAEAF9 51%, #DDE4EF 57%, #D6E4ED 65%, #D9FEFE 74%, #FBE9F4 82%, #DAE4ED 91%, #D7E3EC 100%) 0% 0% no-repeat padding-box;
+    background: transparent conic-gradient(from 90deg at 33% 28%, #FFFFFF 0.00%, #FEFDE9 7.77%, #F5F4E2 13.30%, #FEFDE9 19.25%, #FEFDE9 26.87%, #FDFDFD 37.45%, #FFFDEA 44.42%, #FAFAF4 50.83%, #F5F4DF 57.41%, #F5F3DF 65.19%, #F7F6EA 74.06%, #FEFDE7 81.83%, #FDF4D0 90.78%, #FFF5DD 100.00%) 0% 0% no-repeat padding-box;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     /* opacity: 0.71; */
     /* text-align: center; */
     /* animation-name: blink;
     animation-duration: 2s; */
 
+}
+
+.bubbleTopOrange {
+    background: transparent linear-gradient(180deg, #E4632A 0%, #EBA73B 23%, #EFBF41 34%, #F89468 46%, #EBA63A 58%, #FDE37B 73%, #F3D76A 86%, #F5DA5F 100%) 0% 0% no-repeat padding-box;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.bubbleTopOrangeBlue {
+    background: transparent conic-gradient(from 134deg at 35% 30%, #DB7450 0.00%, #ECEEED 25.70%, #9196BF 47.37%, #546F9F 71.92%, #DB7350 100.00%) 0% 0% no-repeat padding-box;
 }
 
 /* #threeD:hover {

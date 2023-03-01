@@ -37,11 +37,11 @@ function Header() {
         <div id='canvas'>
           <div id='circle'>
             <img className='my-logo' id='wiggle' src={myLogoTwo}></img>
-            <Link to='/' ><div id='ball-1' class='ball'>Kayla Casale</div></Link>
-            <Link to='/' ><div id='ball-2' class='ball'>Home</div></Link>
-            <Link to='/' ><div id='ball-3' class='ball'>About</div></Link>
-            <Link to='/portfolio'><div id='ball-4' class='ball'>Work</div></Link>
-            <Link to='/skills'><div id='ball-5' class='ball'>Skills</div></Link>
+            <Link to='/' ><div id='ball-1' class='ball' style={{ zIndex: '3' }}>Kayla Casale</div></Link>
+            <Link to='/' ><div id='ball-2' class='ball' style={{ zIndex: '2' }}>Home</div></Link>
+            <Link to='/' ><div id='ball-3' class='ball' style={{ zIndex: '2' }}>About</div></Link>
+            <Link to='/portfolio'><div id='ball-4' class='ball' style={{ zIndex: '2' }}>Work</div></Link>
+            <Link to='/skills'><div id='ball-5' class='ball' style={{ zIndex: '2' }}>Skills</div></Link>
             {/* include Contact section */}
             {/* <div id='ball-6' class='ball'>6</div> */}
           </div>
