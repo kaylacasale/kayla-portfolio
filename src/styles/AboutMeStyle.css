@@ -37,18 +37,37 @@
     }
 
     to {
-        left: 300px;
+        left: 330px;
     }
 }
 
 .wheel-copied {
     animation-play-state: running;
     animation-duration: 5s;
-    animation-delay: 5s;
+    /* animation-delay: 5s; */
     animation-name: display;
     position: absolute;
     left: 350px;
     animation-direction: normal;
+
+}
+
+.wheel-copied:hover {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-name: rotateSome;
+
+}
+
+@keyframes rotateSome {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 
 }
 

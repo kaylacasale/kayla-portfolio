@@ -23,7 +23,7 @@ const Home = () => {
         <div style={{ textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Climate Crisis', color: 'white', textShadow: '2px 2px #DFDFE3' }} >
             {/* vector art - carousel */}
 
-            <div style={{ marginBottom: '50px' }}>
+            <div style={{ marginBottom: '50px', marginTop: '200px' }}>
                 <TypeAnimate />
             </div>
             <div>
