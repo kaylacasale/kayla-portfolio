@@ -1,0 +1,105 @@
+.bubble {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    width: 150px;
+    height: 150px;
+
+    background: transparent conic-gradient(from 90deg at 50% 50%, #5DB7EB 0.00%, #B3B8EB 7.77%, #7FAEDC 19.25%, #B3AFFA 26.87%, #FECAFD 37.45%, #509ACC 44.42%, #4DB2E1 50.83%, #B0E7F2 59.83%, #3593C0 67.41%, #6B90BA 74.06%, #B494C1 81.83%, #3BC8EA 90.78%, #4BD3F3 100.00%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border-radius: 100px;
+    transition-property: left, top;
+    transition-duration: 1s;
+    text-align: center;
+    font-size: 12px;
+    color: whitesmoke;
+    line-height: 20px;
+    opacity: .61;
+}
+
+.bubble img {
+    width: 150px;
+    border-radius: 100px;
+    margin-top: 30px;
+    backdrop-filter: blue(5px);
+}
+
+/* .bubble img:hover {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+} */
+
+.bubbleTop:hover {
+    animation-name: blink;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    content: 'Etiquette';
+}
+
+@keyframes blink {
+    0% {
+        opacity: .71;
+    }
+
+    25% {
+        opacity: .31;
+    }
+
+    50% {
+        opacity: .1;
+    }
+
+    75% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: .1;
+    }
+
+}
+
+.bubbleTop {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background: transparent linear-gradient(180deg, #D5E9F6 0%, #DDE8F4 8%, #F9EBF2 16%, #E0E9F6 19%, #F6ECF6 27%, #EFE7F2 37%, #DAE6F0 44%, #EAEAF9 51%, #DDE4EF 57%, #D6E4ED 65%, #D9FEFE 74%, #FBE9F4 82%, #DAE4ED 91%, #D7E3EC 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.81;
+    text-align: center;
+    /* animation-name: blink;
+    animation-duration: 2s; */
+
+}
+
+/* #threeD:hover {
+    animation-duration: 20s;
+    animation-iteration-count: 2;
+    animation-play-state: running;
+    animation-name: threeDrotate;
+}
+
+@keyframes threeDrotate {
+    from {
+        transform: rotate3d(0deg);
+    }
+
+    to {
+        transform: rotate3d(360deg);
+    }
+} */

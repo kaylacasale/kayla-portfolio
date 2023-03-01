@@ -40,7 +40,7 @@ import BlockButton from '../components/BlockButton';
 
 function Portfolio() {
     return (
-        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code', backgroundColor: 'black', height: '2500px' }}>
+        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code', height: '2500px' }}>
 
             <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em", width: '20%' }}>
                 <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', textAlign: 'center', fontSize: '32px', color: 'white' }}>

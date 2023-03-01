@@ -19,6 +19,7 @@ import { Helmet } from "react-helmet"
 // import { animations } from 'react-animations'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
+import Skills from './pages/Skills'
 import './index.css'
 import './styles/Background.css'
 import moon from './assets/moon-simple.png'
@@ -85,6 +86,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/skills" element={<Skills />} />
           </Routes>
 
           {/* <Link to="/" element={<Home />} /> */}
