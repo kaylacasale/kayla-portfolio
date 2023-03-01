@@ -7,7 +7,7 @@ function MainIcons() {
             <div className='row'>
 
                 <div className='col-sm' style={{ width: '200x', height: '100px' }}>
-                    <img className='ball' src={myLogo} style={{ width: '100px' }} id='zoom'></img>
+                    <img className='ball-later' src={myLogo} style={{ width: '100px' }} id='zoom'></img>
                 </div>
 
                 <div className='col-sm'>

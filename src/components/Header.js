@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 // Here we import the Header.css file to grant access to some additional classNames
 import '../styles/Header.css';
 import "fontsource-cascadia-code"
+import myLogoTwo from '../assets/my-logo-2.png'
 
 // TODO: Create a styles object called "styles"
 
@@ -33,6 +34,17 @@ function Header() {
   return (
     <header style={{ fontFamily: 'Climate Crisis' }}>
       <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: '#EFEEF5' }}>
+        <div id='canvas'>
+          <div id='circle'>
+            <img className='my-logo' id='wiggle' src={myLogoTwo}></img>
+            <Link to='/' ><div id='ball-1' class='ball'>Kayla Casale</div></Link>
+            <Link to='/' ><div id='ball-2' class='ball'>Home</div></Link>
+            <Link to='/' ><div id='ball-3' class='ball'>About</div></Link>
+            <Link to='/portfolio'><div id='ball-4' class='ball'>Work</div></Link>
+            <Link to='/portfolio'><div id='ball-5' class='ball'>Art</div></Link>
+            {/* <div id='ball-6' class='ball'>6</div> */}
+          </div>
+        </div>
         <a class="navbar-brand" id="wiggle" href="/" style={{ color: 'white' }}>Kayla Casale</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
