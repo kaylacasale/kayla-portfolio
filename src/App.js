@@ -63,14 +63,14 @@ function App() {
           <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet"></link>
           {/* <link rel="stylesheet" type="text/css" href="index.css" /> */}
         </Helmet>
-        <div>
+        {/* <div>
           <div className="moon">
             <img src={myLogoPartOne}></img>
           </div>
           <div className="logo">
             <img src={myLogoPartTwo}></img>
           </div>
-        </div>
+        </div> */}
         {/* <div>
           <Background />
         </div> */}

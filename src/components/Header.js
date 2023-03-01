@@ -45,11 +45,11 @@ function Header() {
             {/* <div id='ball-6' class='ball'>6</div> */}
           </div>
         </div>
-        <a class="navbar-brand" id="wiggle" href="/" style={{ color: 'white' }}>Kayla Casale</a>
+        {/* <a class="navbar-brand" id="wiggle" href="/" style={{ color: 'white' }}>Kayla Casale</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        </button> */}
+        {/* <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <Link to="/" className="nav-link">Home <span className="sr-only">(current)</span></Link>
@@ -60,7 +60,7 @@ function Header() {
             <li class="nav-item">
               <a class="nav-link" href="/portfolio">Portfolio</a>
               {/* <Link to="/portfolio" class="nav-link" href="/portfolio">Portfolio</Link> */}
-            </li>
+        {/* </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown link
@@ -69,10 +69,10 @@ function Header() {
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+              </div> */}
+        {/* </li>
           </ul>
-        </div>
+        </div>  */}
       </nav>
 
     </header>

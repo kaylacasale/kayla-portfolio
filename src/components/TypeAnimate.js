@@ -13,11 +13,11 @@ const TypeAnimate = () => {
             </style>
             <TypeAnimation
                 sequence={[
-                    'About', // Types 'One'
+                    'I am a...', // Types 'One'
                     1000, // Waits 1s
-                    'Me', // Deletes 'One' and types 'Two'
+                    'developer', // Deletes 'One' and types 'Two'
                     2000, // Waits 2s
-                    'About Me...', // Types 'Three' without deleting 'Two'
+                    'scientist...', // Types 'Three' without deleting 'Two'
                     2000,
                     () => {
                         console.log('Done typing!'); // Place optional callbacks anywhere in the array
