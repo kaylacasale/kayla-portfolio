@@ -14,7 +14,7 @@ import ReactCarouselVectors from '../components/ReactCarouselVectors'
 import "fontsource-cascadia-code"
 import ReactCarouselPrototyping from '../components/ReactCarouselPrototyping'
 import MainIcons from '../components/MainIcons'
-
+import AboutMe from '../components/AboutMe'
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 const Home = () => {
@@ -28,6 +28,9 @@ const Home = () => {
             </div>
             <div>
                 <MainIcons />
+            </div>
+            <div>
+                <AboutMe />
             </div>
             {/* neuroscience research - carousel */}
             <div>

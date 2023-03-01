@@ -1,0 +1,77 @@
+#wheel {
+    transform: rotate(360deg);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-name: rotate;
+    z-index: 0;
+
+}
+
+.rotator {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#wheel-topper {
+    z-index: 1;
+    position: absolute;
+    animation-name: moveOnTop;
+    animation-duration: 5s;
+    animation-direction: linear;
+
+}
+
+@keyframes moveOnTop {
+    from {
+        left: 1000px
+    }
+
+    to {
+        left: 300px;
+    }
+}
+
+.wheel-copied {
+    animation-play-state: running;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    animation-name: display;
+    position: absolute;
+    left: 350px;
+    animation-direction: normal;
+
+}
+
+/* .wheel-copied {
+    animation-play-state: running;
+}
+
+@keyframes display {
+    100% {
+        left: 300px
+    }
+} */
+
+
+/* @keyframes stayOnTop {
+    100% {
+        left: 300px;
+        animation-play-state: paused;
+        position: absolute;
+    }
+} */
+
+/* .stayLeft {
+    position: absolute;
+    left: 300px
+} */

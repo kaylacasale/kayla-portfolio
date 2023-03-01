@@ -66,7 +66,7 @@
 
 /* changed from #000 (black) */
 .stars {
-    background: #EFEEF5 url(../assets/stars.png) repeat top center;
+    background: #cccadc url(../assets/stars.png) repeat top center;
     z-index: -2;
 }
 

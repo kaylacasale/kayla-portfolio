@@ -41,7 +41,8 @@ function Header() {
             <Link to='/' ><div id='ball-2' class='ball'>Home</div></Link>
             <Link to='/' ><div id='ball-3' class='ball'>About</div></Link>
             <Link to='/portfolio'><div id='ball-4' class='ball'>Work</div></Link>
-            <Link to='/portfolio'><div id='ball-5' class='ball'>Art</div></Link>
+            <Link to='/portfolio'><div id='ball-5' class='ball'>Skills</div></Link>
+            {/* include Contact section */}
             {/* <div id='ball-6' class='ball'>6</div> */}
           </div>
         </div>
