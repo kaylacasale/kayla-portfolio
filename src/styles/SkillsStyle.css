@@ -45,13 +45,19 @@
 } */
 
 .bubbleTop:hover,
+.bubbleTopWhiteBlue:hover,
 .bubbleTopYellow:hover,
 .bubbleTopOrange:hover,
 .bubbleTopOrangeBlue:hover,
 .bubbleTopGoldPurple:hover,
 .bubbleTopLightBlue:hover,
 .bubbleTopDarkBlue:hover,
-.bubbleTopLightGreen:hover {
+.bubbleTopLightGreen:hover,
+.bubbleTopMediumGreen:hover,
+.bubbleTopBlueGreen:hover,
+.bubbleTopPinkPurple:hover,
+.bubbleTopPinkPurpleDull:hover,
+.bubbleTopPinkPurpleLight:hover {
     animation-name: blink;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -99,6 +105,10 @@
 
 }
 
+.bubbleTopWhiteBlue {
+    background: transparent linear-gradient(180deg, #7CB3D7 0%, #D7DBE6 14%, #B3CBDB 24%, #E5DEE7 34%, #F8F8F9 47%, #E9E0E8 65%, #C7C1C5 79%, #81B6D8 100%) 0% 0% no-repeat padding-box;
+}
+
 /* Etiquette bubble's top layer */
 .bubbleTopYellow {
     /* position: absolute; */
@@ -107,8 +117,8 @@
     width: 150px;
     height: 150px; */
     /* border-radius: 100px; */
-    background: transparent conic-gradient(from 90deg at 33% 28%, #FFFFFF 0.00%, #FEFDE9 7.77%, #F5F4E2 13.30%, #FEFDE9 19.25%, #FEFDE9 26.87%, #FDFDFD 37.45%, #FFFDEA 44.42%, #FAFAF4 50.83%, #F5F4DF 57.41%, #F5F3DF 65.19%, #F7F6EA 74.06%, #FEFDE7 81.83%, #FDF4D0 90.78%, #FFF5DD 100.00%) 0% 0% no-repeat padding-box;
-    backdrop-filter: blur(3px);
+    /* background: transparent conic-gradient(from 90deg at 33% 28%, #FFFFFF 0.00%, #FEFDE9 7.77%, #F5F4E2 13.30%, #FEFDE9 19.25%, #FEFDE9 26.87%, #FDFDFD 37.45%, #FFFDEA 44.42%, #FAFAF4 50.83%, #F5F4DF 57.41%, #F5F3DF 65.19%, #F7F6EA 74.06%, #FEFDE7 81.83%, #FDF4D0 90.78%, #FFF5DD 100.00%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(180deg, #FFF7DB 0%, #F3DE84 23%, #F4CC69 34%, #F4E9BE 46%, #F6CB62 62%, #F6E49A 78%, #F6DE94 88%, #FFFDF5 100%) 0% 0% no-repeat padding-box;
     -webkit-backdrop-filter: blur(3px);
     /* opacity: 0.71; */
     /* text-align: center; */
@@ -124,15 +134,18 @@
 }
 
 .bubbleTopOrangeBlue {
-    background: transparent conic-gradient(from 134deg at 35% 30%, #DB7450 0.00%, #ECEEED 25.70%, #9196BF 47.37%, #546F9F 71.92%, #DB7350 100.00%) 0% 0% no-repeat padding-box;
+    /* background: transparent conic-gradient(from 134deg at 35% 30%, #DB7450 0.00%, #ECEEED 25.70%, #9196BF 47.37%, #546F9F 71.92%, #DB7350 100.00%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(147deg, #D6765B 0%, #245786 100%) 0% 0% no-repeat padding-box;
 }
 
 .bubbleTopGoldPurple {
-    background: transparent conic-gradient(from 134deg at 42% 29%, #58284F 0.00%, #DBA04D 18.23%, #E89335 33.99%, #662250 47.37%, #6A455F 71.92%, #010128 100.00%) 0% 0% no-repeat padding-box;
+    /* background: transparent conic-gradient(from 134deg at 42% 29%, #58284F 0.00%, #DBA04D 18.23%, #E89335 33.99%, #662250 47.37%, #6A455F 71.92%, #010128 100.00%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(180deg, #010128 0%, #692659 46%, #E3B863 100%) 0% 0% no-repeat padding-box;
 }
 
 .bubbleTopLightBlue {
-    background: transparent conic-gradient(from 134deg at 42% 29%, #8CBBD1 0.00%, #D7DBE6 13.71%, #B3CBDB 23.92%, #E5DEE7 33.99%, #F8F8F9 47.37%, #E9E0E8 65.02%, #C7C1C5 79.31%, #A7C3DB 100.00%) 0% 0% no-repeat padding-box;
+    /* background: transparent conic-gradient(from 134deg at 42% 29%, #8CBBD1 0.00%, #D7DBE6 13.71%, #B3CBDB 23.92%, #E5DEE7 33.99%, #F8F8F9 47.37%, #E9E0E8 65.02%, #C7C1C5 79.31%, #A7C3DB 100.00%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(180deg, #F7F8FA 0%, #D7D5E4 46%, #8DBBD1 100%) 0% 0% no-repeat padding-box;
 }
 
 .bubbleTopDarkBlue {
@@ -140,7 +153,30 @@
 }
 
 .bubbleTopLightGreen {
-    background: transparent conic-gradient(from 90deg at 50% 50%, #EFEEF5 0.00%, #FFFFFF 50.25%, #A1DBCE 100.00%) 0% 0% no-repeat padding-box;
+    /* background: transparent conic-gradient(from 90deg at 50% 50%, #EFEEF5 0.00%, #FFFFFF 50.25%, #A1DBCE 100.00%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(180deg, #80FDD8 0%, #84D1BB 9%, #BFF0E2 21%, #E9EAEA 46%, #7FB2A3 73%, #69B6A0 88%, #90FFDE 100%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopMediumGreen {
+    background: transparent linear-gradient(180deg, #4CA558 0%, #4CA558 9%, #4CA558 21%, #E9EAEA 46%, #7FB2A3 73%, #4CA558 88%, #90FFDE 100%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopBlueGreen {
+    background: transparent linear-gradient(180deg, #90DB82 0%, #4EABD1 100%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopPinkPurple {
+    background: transparent linear-gradient(180deg, #D4A1CF 0%, #A67FDD 12%, #8E50CD 27%, #B34693 45%, #B94A9F 63%, #CD628C 76%, #D890B2 89%, #D291AD 100%) 0% 0% no-repeat padding-box;
+    /* background: transparent linear-gradient(180deg, #DC93AF 0%, #A34FC9 100%) 0% 0% no-repeat padding-box; */
+}
+
+.bubbleTopPinkPurpleDull {
+    /* background: transparent linear-gradient(180deg, #ED8584 0%, #C67683 13%, #B67F9D 28%, #B796C4 44%, #A18DC2 60%, #9498DE 73%, #9596DA 90%, #CCCCFF 100%) 0% 0% no-repeat padding-box; */
+    background: transparent linear-gradient(180deg, #FF9493 0%, #D36F6E 19%, #9695D8 76%, #AFB0FF 100%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopPinkPurpleLight {
+    background: transparent linear-gradient(180deg, #F8D5FC 0%, #CBDEFC 100%) 0% 0% no-repeat padding-box;
 }
 
 /* #threeD:hover {
