@@ -57,7 +57,8 @@
 .bubbleTopBlueGreen:hover,
 .bubbleTopPinkPurple:hover,
 .bubbleTopPinkPurpleDull:hover,
-.bubbleTopPinkPurpleLight:hover {
+.bubbleTopPinkPurpleLight:hover,
+.bubbleTopBrownBlue:hover {
     animation-name: blink;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -177,6 +178,11 @@
 
 .bubbleTopPinkPurpleLight {
     background: transparent linear-gradient(180deg, #F8D5FC 0%, #CBDEFC 100%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopBrownBlue {
+    background: transparent linear-gradient(180deg, #DCDDDF 0%, #5498EA 52%, #FFC495 100%) 0% 0% no-repeat padding-box;
+
 }
 
 /* #threeD:hover {
