@@ -9,8 +9,31 @@ import smiseScreenImplant from '../assets/screen-gif-implant.png'
 import smiseScreenImaging from '../assets/screen-smise-gif-imaging.png'
 
 import ymmWelcome from '../assets/YMM-screen-welcome.png'
+import Etiquette from '../components/Etiquette';
+import BlogForTechs from '../components/BlogForTechs';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
-function Skills() {
+const Skills = () => {
+    // const [itemData, setItemData] = useState(null);
+
+    // const handleClick = (id) => {
+    //     const updatedItemData = itemData.map((item) => {
+    //         if (item.id === id) {
+    //             return { ...item, title: 'This' };
+    //         }
+    //         return item;
+    //     });
+    //     setItemData(updatedItemData);
+    // }
+    const [selectedId, setSelectedId] = useState(0);
+
+    const renderComponent = () => {
+
+        if (selectedId === 1) {
+            return <Etiquette />;
+        } else if (selectedId === 2) {
+            return <BlogForTechs />
+        }
+    }
     // const [currentIndex, setCurrentIndex] = useState(0);
 
     // useEffect(() => {
@@ -19,13 +42,29 @@ function Skills() {
     //     }, 1000)
     //     return () => clearInterval(intervalId);
     // }, [])
-    return (
-        <div id='canvas'>
-            {itemData.map((item) => (
-                <a href={item.link} target="_blank">
 
-                    <div id='ball-1' class='bubble' style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.widthBubbleOne}`, height: `${item.heightBubbleOne}`, borderRadius: `${item.borderRadius}`, opacity: `${item.opacityBubbleOne}`, position: 'absolute', boxShadow: '0px 3px 6px #00000029', background: `${item.backgroundBubbleOne}` }}></div>
+    // const [selected, setSelected] = React.useState(false);
+
+    // const toggle = () => {
+    //     setSelected(!selected)
+    // }
+
+    return (
+
+        <div id='canvas'>
+
+
+            {itemData.map((item) => (
+
+                // <a href={item.link} target="_blank" >
+                <div key={item.id} onClick={() => setSelectedId(item.id)} >
+
+
+
+
+                    <div id='ball-1' class='bubble' style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.widthBubbleOne}`, height: `${item.heightBubbleOne}`, borderRadius: `${item.borderRadius}`, opacity: `${item.opacityBubbleOne}`, position: 'absolute', boxShadow: '0px 3px 6px #00000029', background: `${item.backgroundBubbleOne}` }} ></div>
                     <div id='ball-1' class='bubble' style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.width}`, height: `${item.height}`, borderRadius: `${item.borderRadius}`, position: 'absolute', opacity: 1 }}>
+
                         {/* <a href={item.link} target="_blank"><img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmQ5OGM1MGIzNjc0MzAwYzliZDk2OWNmZTU4OWU0NDMyY2UyZjJjNSZjdD1n/emFmKxgQdkMOumVPhf/giphy.gif'></img></a> */}
                         <img src={item.img} style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.width}`, height: `${item.height}`, borderRadius: `${item.borderRadius}`, opacity: .85 }}></img>
                     </div>
@@ -33,18 +72,25 @@ function Skills() {
                         <p style={{ marginTop: `${item.marginTop}`, color: `${item.color}`, fontSize: `${item.fontSize}`, textShadow: '1px 1px whitesmoke', lineHeight: '20px' }}>{item.title}</p>
                     </div>
 
-                </a>
+                </div>
             ))}
+            <div>
+                {selectedId ? renderComponent() : 'No'}
+            </div>
+
             {/* <img id='threeD' src={threeDBubble}></img> */}
             {/* <svg viewBox="-40 0 150 100" xmlns={threeDBubble} id='threeD'></svg> */}
+
+
         </div>
     )
 }
 
 const itemData = [
     {
+        id: 1,
         img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmQ5OGM1MGIzNjc0MzAwYzliZDk2OWNmZTU4OWU0NDMyY2UyZjJjNSZjdD1n/emFmKxgQdkMOumVPhf/giphy.gif'],
-        link: 'https://etiquette.herokuapp.com/',
+        // link: 'https://etiquette.herokuapp.com/',
         top: '60px',
         left: '90%',
         widthBubbleOne: '153px',
@@ -59,9 +105,11 @@ const itemData = [
         fontSize: '16px',
         borderRadius: '100px',
         backgroundBubbleOne: 'transparent linear-gradient(180deg, #F8E7AB 0%, #F3DE84 23%, #F4CC69 34%, #F0B24C 46%, #F6CB62 62%, #F1B850 78%, #F8FFF6 88%, #F5DE8C 100%) 0% 0% no-repeat padding-box',
-        marginTop: '40%'
+        marginTop: '40%',
+        zIndex: 4
     },
     {
+        id: 2,
         img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNmNTQ4YzI1NjgxZGQ0OTdlMWNhNTdiMWQyMGM4MmQ1ZDc3ODlhMiZjdD1n/5DK2cpXXE8ILNqX9pc/giphy.gif'],
         link: 'https://guarded-headland-91004.herokuapp.com/',
         top: '50px',
@@ -81,6 +129,7 @@ const itemData = [
         marginTop: '40%'
     },
     {
+        id: 3,
         img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODMzM2ZlYmMzZTU3MjVhOGE0OThlMTdhOTg0NjE2YzdiYTgyYjY4NSZjdD1n/cqMuhqltXsS7QlGU50/giphy.gif'],
         link: 'https://kaylacasale.github.io/whats-the-weather/',
         top: '40.5px',
@@ -100,6 +149,7 @@ const itemData = [
         marginTop: '30%'
     },
     {
+        id: 4,
         img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2VmMTBmYWFkMjhhYWIwZDUxZGJjZDE5Y2RiNjQ1NWMzMzQzZWFiZCZjdD1n/GNMkGHRvKFRaV1hHdB/giphy.gif'],
         // img: [`${smiseScreens}`, `${smiseScreensFour}`, `${smiseScreenTools}`, `${smiseScreenImplant}`, `${smiseScreenImaging}`],
         link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022',
@@ -120,6 +170,7 @@ const itemData = [
         marginTop: '43%'
     },
     {
+        id: 5,
         img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjIxMThjNTBlYmJjZTBkYjk1MmI0NWU2Mjc5YTI1ZTI4MTMxMGQwNSZjdD1n/1WfTvC5dt6uNzvxTkG/giphy.gif'],
         link: 'https://apps.apple.com/ng/developer/shangoo-inc/id1489129176',
         top: '272px',
@@ -139,6 +190,7 @@ const itemData = [
         marginTop: '43%'
     },
     {
+        id: 6,
         img: [`${ymmWelcome}`],
         link: 'https://apps.apple.com/ng/developer/shangoo-inc/id1489129176',
         top: '300px',
@@ -158,6 +210,7 @@ const itemData = [
         marginTop: '43%'
     },
     {
+        id: 7,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzQ0OWViNGVhZGIyZjkzNzI4YTVjN2Q4MDgxNDFkZjBiZjM0NWM1YiZjdD1n/OaKJCdN4PbLMUjRFAt/giphy.gif`],
         link: 'https://wvoigt722.github.io/uclaTeamProject/',
         top: '250px',
@@ -177,6 +230,7 @@ const itemData = [
         marginTop: '40%'
     },
     {
+        id: 8,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWY4YTgyZGQzZDNmY2ViOGJjMTZlMGExZTgxZTUzNjVhMDBhZTg0YyZjdD1n/548usG7ovvdlAjwGQo/giphy.gif`],
         link: 'https://gsbdaypicks.herokuapp.com/',
         top: '335px',
@@ -196,6 +250,7 @@ const itemData = [
         marginTop: '35%'
     },
     {
+        id: 9,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif`],
         link: 'https://jotter-notetakerapp.herokuapp.com/',
         top: '49px',
@@ -215,6 +270,7 @@ const itemData = [
         marginTop: '40%'
     },
     {
+        id: 10,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif`],
         link: 'https://metro-buddy.herokuapp.com/',
         top: '497px',
@@ -234,6 +290,7 @@ const itemData = [
         marginTop: '40%'
     },
     {
+        id: 11,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif`],
         link: 'https://kaylacasale.github.io/work-your-schedule/',
         top: '550px',
@@ -253,6 +310,7 @@ const itemData = [
         marginTop: '35%'
     },
     {
+        id: 12,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWY1NzNlZmM0YTNmYTY3MGJmZWY4NmNkNDAzM2YxYjQ2NjhjMDk1MCZjdD1n/7LzJHaURMv7FzogBtW/giphy.gif`],
         link: 'https://kaylacasale.github.io/code-quiz/',
         top: '560px',
@@ -272,6 +330,7 @@ const itemData = [
         marginTop: '30%'
     },
     {
+        id: 13,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Q4ZWNkNDNkM2UzMDYzMTJmN2M5YWFmNTM0ZDI0MGEzNjA0YjNhYSZjdD1n/uEEXByvQixnkNSla4Y/giphy.gif`],
         link: 'https://kaylacasale.github.io/generate-password/',
         top: '530px',
@@ -291,6 +350,7 @@ const itemData = [
         marginTop: '30%'
     },
     {
+        id: 14,
         img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTBkYzI1Y2NkNTBlMDM2MTQ2YjQ1YjA3YjkyZDc2YzNjZGYwMTdlNiZjdD1n/6JDvCpOmLp1jkElkBb/giphy.gif',
         link: 'https://kaylacasale.github.io/portfolio/',
         top: '460px',
@@ -310,6 +370,7 @@ const itemData = [
         marginTop: '40%'
     },
     {
+        id: 15,
         img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QxMTNmOGM1NDc1ODg5ODUzNjA3NjRjMTczZDRiODdhMjAwMWJjYSZjdD1n/s3bTllyMaDBQI9KW0j/giphy.gif',
         link: 'https://kaylacasale.github.io/horiseon-refactor-accessibility/',
         top: '319.5px',
@@ -330,5 +391,6 @@ const itemData = [
     },
 
 ]
+
 
 export default Skills

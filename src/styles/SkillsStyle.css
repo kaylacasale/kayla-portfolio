@@ -185,6 +185,14 @@
 
 }
 
+.show-element {
+    display: block
+}
+
+.hide-element {
+    display: none;
+}
+
 /* #threeD:hover {
     animation-duration: 20s;
     animation-iteration-count: 2;
