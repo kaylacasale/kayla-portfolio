@@ -49,7 +49,9 @@
 .bubbleTopOrange:hover,
 .bubbleTopOrangeBlue:hover,
 .bubbleTopGoldPurple:hover,
-.bubbleTopLightBlue:hover {
+.bubbleTopLightBlue:hover,
+.bubbleTopDarkBlue:hover,
+.bubbleTopLightGreen:hover {
     animation-name: blink;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -131,6 +133,14 @@
 
 .bubbleTopLightBlue {
     background: transparent conic-gradient(from 134deg at 42% 29%, #8CBBD1 0.00%, #D7DBE6 13.71%, #B3CBDB 23.92%, #E5DEE7 33.99%, #F8F8F9 47.37%, #E9E0E8 65.02%, #C7C1C5 79.31%, #A7C3DB 100.00%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopDarkBlue {
+    background: transparent linear-gradient(0deg, #4188B8 0%, #FFFFFF 44%, #6E98B3 76%, #4D565D 93%, #7E7E7E 100%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopLightGreen {
+    background: transparent conic-gradient(from 90deg at 50% 50%, #EFEEF5 0.00%, #FFFFFF 50.25%, #A1DBCE 100.00%) 0% 0% no-repeat padding-box;
 }
 
 /* #threeD:hover {
