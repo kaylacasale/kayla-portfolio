@@ -1,9 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/SkillsStyle.css'
 import threeDBubble from '../assets/3d-bubble.svg'
+// SMISE images
+import smiseScreens from '../assets/SMISE-screen.png'
+import smiseScreensFour from '../assets/SMISE-screens-gif.png'
+import smiseScreenTools from '../assets/screen-smise-gif-tools.png'
+import smiseScreenImplant from '../assets/screen-gif-implant.png'
+import smiseScreenImaging from '../assets/screen-smise-gif-imaging.png'
 
+import ymmWelcome from '../assets/YMM-screen-welcome.png'
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 function Skills() {
+    // const [currentIndex, setCurrentIndex] = useState(0);
+
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         setCurrentIndex([Math.floor(Math.random() * this.length)])
+    //     }, 1000)
+    //     return () => clearInterval(intervalId);
+    // }, [])
     return (
         <div id='canvas'>
             {itemData.map((item) => (
@@ -28,7 +43,7 @@ function Skills() {
 
 const itemData = [
     {
-        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmQ5OGM1MGIzNjc0MzAwYzliZDk2OWNmZTU4OWU0NDMyY2UyZjJjNSZjdD1n/emFmKxgQdkMOumVPhf/giphy.gif',
+        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmQ5OGM1MGIzNjc0MzAwYzliZDk2OWNmZTU4OWU0NDMyY2UyZjJjNSZjdD1n/emFmKxgQdkMOumVPhf/giphy.gif'],
         link: 'https://etiquette.herokuapp.com/',
         top: '60px',
         left: '90%',
@@ -47,7 +62,7 @@ const itemData = [
         marginTop: '40%'
     },
     {
-        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNmNTQ4YzI1NjgxZGQ0OTdlMWNhNTdiMWQyMGM4MmQ1ZDc3ODlhMiZjdD1n/5DK2cpXXE8ILNqX9pc/giphy.gif',
+        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNmNTQ4YzI1NjgxZGQ0OTdlMWNhNTdiMWQyMGM4MmQ1ZDc3ODlhMiZjdD1n/5DK2cpXXE8ILNqX9pc/giphy.gif'],
         link: 'https://guarded-headland-91004.herokuapp.com/',
         top: '50px',
         left: '15%',
@@ -66,7 +81,7 @@ const itemData = [
         marginTop: '40%'
     },
     {
-        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODMzM2ZlYmMzZTU3MjVhOGE0OThlMTdhOTg0NjE2YzdiYTgyYjY4NSZjdD1n/cqMuhqltXsS7QlGU50/giphy.gif',
+        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODMzM2ZlYmMzZTU3MjVhOGE0OThlMTdhOTg0NjE2YzdiYTgyYjY4NSZjdD1n/cqMuhqltXsS7QlGU50/giphy.gif'],
         link: 'https://kaylacasale.github.io/whats-the-weather/',
         top: '36px',
         left: '72.5%',
@@ -85,7 +100,8 @@ const itemData = [
         marginTop: '30%'
     },
     {
-        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2VmMTBmYWFkMjhhYWIwZDUxZGJjZDE5Y2RiNjQ1NWMzMzQzZWFiZCZjdD1n/GNMkGHRvKFRaV1hHdB/giphy.gif',
+        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2VmMTBmYWFkMjhhYWIwZDUxZGJjZDE5Y2RiNjQ1NWMzMzQzZWFiZCZjdD1n/GNMkGHRvKFRaV1hHdB/giphy.gif'],
+        // img: [`${smiseScreens}`, `${smiseScreensFour}`, `${smiseScreenTools}`, `${smiseScreenImplant}`, `${smiseScreenImaging}`],
         link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022',
         top: '272px',
         left: '72%',
@@ -104,7 +120,7 @@ const itemData = [
         marginTop: '43%'
     },
     {
-        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjIxMThjNTBlYmJjZTBkYjk1MmI0NWU2Mjc5YTI1ZTI4MTMxMGQwNSZjdD1n/1WfTvC5dt6uNzvxTkG/giphy.gif',
+        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjIxMThjNTBlYmJjZTBkYjk1MmI0NWU2Mjc5YTI1ZTI4MTMxMGQwNSZjdD1n/1WfTvC5dt6uNzvxTkG/giphy.gif'],
         link: 'https://apps.apple.com/ng/developer/shangoo-inc/id1489129176',
         top: '272px',
         left: '-2.5%',
@@ -120,6 +136,44 @@ const itemData = [
         fontSize: '20px',
         borderRadius: '100px',
         backgroundBubbleOne: 'transparent linear-gradient(180deg, #365D90 0%, #DB7450 100%) 0% 0% no-repeat padding-box',
+        marginTop: '43%'
+    },
+    {
+        img: [`${ymmWelcome}`],
+        link: 'https://apps.apple.com/ng/developer/shangoo-inc/id1489129176',
+        top: '500px',
+        left: '15%',
+        widthBubbleOne: '142px',
+        heightBubbleOne: '142px',
+        width: '140px',
+        height: '140px',
+        title: 'YouMeMix',
+        class: 'bubbleTopGoldPurple',
+        color: '#CFAC64',
+        opacityBubbleOne: 1,
+        opacityBubbleTwo: 0.81,
+        fontSize: '18px',
+        borderRadius: '100px',
+        backgroundBubbleOne: 'transparent linear-gradient(180deg, #010128 0%, #692659 46%, #E3B863 100%) 0% 0% no-repeat padding-box',
+        marginTop: '43%'
+    },
+    {
+        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzQ0OWViNGVhZGIyZjkzNzI4YTVjN2Q4MDgxNDFkZjBiZjM0NWM1YiZjdD1n/OaKJCdN4PbLMUjRFAt/giphy.gif`],
+        link: 'https://wvoigt722.github.io/uclaTeamProject/',
+        top: '246px',
+        left: '31.5%',
+        widthBubbleOne: '92px',
+        heightBubbleOne: '92px',
+        width: '90px',
+        height: '90px',
+        title: 'WAKO',
+        class: 'bubbleTopLightBlue',
+        color: '#8CBAD2',
+        opacityBubbleOne: 1,
+        opacityBubbleTwo: 0.81,
+        fontSize: '18px',
+        borderRadius: '100px',
+        backgroundBubbleOne: 'transparent linear-gradient(180deg, #F7F8FA 0%, #D7D5E4 46%, #8DBBD1 100%) 0% 0% no-repeat padding-box',
         marginTop: '43%'
     },
 ]

@@ -47,7 +47,9 @@
 .bubbleTop:hover,
 .bubbleTopYellow:hover,
 .bubbleTopOrange:hover,
-.bubbleTopOrangeBlue:hover {
+.bubbleTopOrangeBlue:hover,
+.bubbleTopGoldPurple:hover,
+.bubbleTopLightBlue:hover {
     animation-name: blink;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -59,7 +61,7 @@
     }
 
     25% {
-        opacity: .31;
+        opacity: .21;
     }
 
     50% {
@@ -121,6 +123,14 @@
 
 .bubbleTopOrangeBlue {
     background: transparent conic-gradient(from 134deg at 35% 30%, #DB7450 0.00%, #ECEEED 25.70%, #9196BF 47.37%, #546F9F 71.92%, #DB7350 100.00%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopGoldPurple {
+    background: transparent conic-gradient(from 134deg at 42% 29%, #58284F 0.00%, #DBA04D 18.23%, #E89335 33.99%, #662250 47.37%, #6A455F 71.92%, #010128 100.00%) 0% 0% no-repeat padding-box;
+}
+
+.bubbleTopLightBlue {
+    background: transparent conic-gradient(from 134deg at 42% 29%, #8CBBD1 0.00%, #D7DBE6 13.71%, #B3CBDB 23.92%, #E5DEE7 33.99%, #F8F8F9 47.37%, #E9E0E8 65.02%, #C7C1C5 79.31%, #A7C3DB 100.00%) 0% 0% no-repeat padding-box;
 }
 
 /* #threeD:hover {
