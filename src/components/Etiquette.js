@@ -36,6 +36,7 @@ function Etiquette() {
                     </div>
                     <BlockButtonEtiquette />
                     <p style={{ top: '930px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.description}</p>
+                    <p style={{ top: '708px', left: '31.3%', fontSize: '12px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
                 </div>
             ))}
             {/* <div>
@@ -76,7 +77,8 @@ const itemData = [
         backgroundBubbleOne: 'transparent linear-gradient(180deg, #F8E7AB 0%, #F3DE84 23%, #F4CC69 34%, #F0B24C 46%, #F6CB62 62%, #F1B850 78%, #F8FFF6 88%, #F5DE8C 100%) 0% 0% no-repeat padding-box',
         marginTop: '40%',
         zIndex: 4,
-        description: 'Nail Salon Booking App'
+        description: 'Nail Salon Booking App',
+        descriptionTwo: `A full-stack application to eliminate wait time, increase efficiency of daily booking in nail salons and be inspired by artists' work.`
     },
 ]
 export default Etiquette
