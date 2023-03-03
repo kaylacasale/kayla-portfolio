@@ -112,18 +112,18 @@ function BlockButtonEtiquette() {
 
 
             } */}
-            <div className={showElement ? 'show-element' : 'hide-element'} style={{ margin: '.5em', height: 'fit-content', left: '60%', top: '700px', position: 'absolute', zIndex: 5 }}>
+            <div className={showElement ? 'show-element' : 'hide-element'} style={{ margin: '.5em', height: 'fit-content', left: '60.5%', top: '700px', position: 'absolute', zIndex: 5 }}>
 
                 {images.map((image, index) =>
                     <div>
                         {/* <p style={{ textAlign: 'center', width: '300px', margin: '8px' }}>{image.description}</p> */}
-                        <img id='zoom' key={image.id} src={image.img} style={{ display: index === currentIndex ? 'block' : 'none', width: '360px' }} ></img>
-                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', margin: '20px', fontSize: '20px' }}>{image.description}</p>
+                        <img id='zoom' key={image.id} src={image.img} style={{ display: index === currentIndex ? 'block' : 'none', width: '300px' }} ></img>
+                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', margin: '20px', fontSize: '20px', marginLeft: '8px' }}>{image.description}</p>
 
                     </div>
                 )}
-                <button id='wiggle' onClick={handleNextImage} style={{ width: '20%', height: '70px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '170px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
-                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '12%', height: '40px', marginTop: '15px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-120px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
+                <button id='wiggle' onClick={handleNextImage} style={{ width: '22%', height: '70px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '150px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
+                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '12%', height: '38px', marginTop: '15px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-120px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
             </div>
         </div >
     );
