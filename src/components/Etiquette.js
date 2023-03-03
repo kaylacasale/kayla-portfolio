@@ -8,6 +8,8 @@ import wheelCopy2 from '../assets/wheel-topper-copy-2.png'
 import topper from '../assets/etiquette-topper.png'
 import homepage from '../assets/etiquette-homepage-fullscreen.png'
 import BlockButtonEtiquette from './BlockButtonEtiquette';
+import etiquettLogo from '../assets/logo500.png'
+
 
 function Etiquette() {
     return (
@@ -37,6 +39,7 @@ function Etiquette() {
                     <BlockButtonEtiquette />
                     <p style={{ top: '930px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.description}</p>
                     <p style={{ top: '708px', left: '31.3%', fontSize: '12px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
+                    <a href={item.link} target='_blank'><img src={etiquettLogo} style={{ top: '718px', left: '49.4%', width: '75px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px' }} id='wiggle'></img></a>
                 </div>
             ))}
             {/* <div>
@@ -54,7 +57,7 @@ const itemData = [
     {
         id: 1,
         img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmQ5OGM1MGIzNjc0MzAwYzliZDk2OWNmZTU4OWU0NDMyY2UyZjJjNSZjdD1n/emFmKxgQdkMOumVPhf/giphy.gif'],
-        // link: 'https://etiquette.herokuapp.com/',
+        link: 'https://etiquette.herokuapp.com/',
         top1: '750px',
         left1: '30%',
         topImg: '163.5px',
