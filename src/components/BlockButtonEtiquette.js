@@ -7,6 +7,16 @@ import shangooMain from '../assets/shangoo-mainpage-screen.png'
 import shangooOpenAsset from '../assets/shangoo-open-onasset.png'
 import etiquette1 from '../assets/etiquette-computer-home.png'
 import etiquetteSalons from '../assets/etiquette-computer-see-salons.png'
+import etiquetteLogin from '../assets/etiquette-computer-login.png'
+import etiquetteSignup from '../assets/etiquette-computer-signup.png'
+import NextIcon from '@mui/icons-material/ArrowRight';
+import BackIcon from '@mui/icons-material/ArrowLeft'
+import etiquetteAddSalon from '../assets/etiquette-computer-add-salon.png';
+import etiquetteAddGallery from '../assets/etiquette-computer-add-to-gallery.png';
+import etiquetteAddAppointment from '../assets/etiquette-computer-add-appointment.png';
+import etiquetteAppointments from '../assets/etiquette-computer-see-appointments.png'
+import etiquetteProfile from '../assets/etiquette-computer-see-profile.png'
+
 // import Button from 'react-bootstrap/Button'
 
 function BlockButtonEtiquette() {
@@ -18,17 +28,47 @@ function BlockButtonEtiquette() {
         },
         {
             id: 2,
-            img: `${shangooRegister}`
+            img: `${etiquetteSignup}`,
+            description: 'Signup'
         },
         {
-            id: 2,
-            img: `${shangooMain}`
+            id: 3,
+            img: `${etiquetteLogin}`,
+            description: 'Login'
+        },
+        {
+            id: 4,
+            img: `${etiquetteAddSalon}`,
+            description: 'Add Your Salon'
+        },
+        {
+            id: 5,
+            img: `${etiquetteAddGallery}`,
+            description: 'Add to Your Gallery'
+        },
+        {
+            id: 6,
+            img: `${etiquetteAddAppointment}`,
+            description: 'Add an Appointment'
+        },
+        {
+            id: 7,
+            img: `${etiquetteAppointments}`,
+            description: 'See Your Appointments'
+        },
+        {
+            id: 8,
+            img: `${etiquetteProfile}`,
+            description: 'View Your Profile'
         }
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
 
     function handleNextImage() {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }
+    function handlePreviousImage() {
+        setCurrentIndex((prevIndex) => (prevIndex - 1) % images.length);
     }
     const [showElement, setShowElement] = useState(false);
 
@@ -78,11 +118,12 @@ function BlockButtonEtiquette() {
                     <div>
                         {/* <p style={{ textAlign: 'center', width: '300px', margin: '8px' }}>{image.description}</p> */}
                         <img id='zoom' key={image.id} src={image.img} style={{ display: index === currentIndex ? 'block' : 'none', width: '360px' }} ></img>
-                        <p style={{ textAlign: 'center', width: '300px', margin: '30px', fontSize: '20px' }}>{image.description}</p>
+                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', margin: '20px', fontSize: '20px' }}>{image.description}</p>
 
                     </div>
                 )}
-                <button id='wiggle' onClick={handleNextImage} className="rounded" style={{ width: '30%', height: '40px', marginTop: '15px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '130px' }}>Next</button>
+                <button id='wiggle' onClick={handleNextImage} style={{ width: '20%', height: '70px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '170px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
+                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '12%', height: '40px', marginTop: '15px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-120px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
             </div>
         </div >
     );
