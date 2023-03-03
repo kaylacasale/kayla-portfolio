@@ -11,6 +11,7 @@ import BlockButtonEtiquette from './BlockButtonEtiquette';
 import etiquettLogo from '../assets/logo500.png'
 
 
+
 function Etiquette() {
     return (
         <div id='canvas'>
@@ -39,7 +40,7 @@ function Etiquette() {
                     <BlockButtonEtiquette />
                     <p style={{ top: '930px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.description}</p>
                     <p style={{ top: '708px', left: '31.3%', fontSize: '12px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
-                    <a href={item.link} target='_blank'><img src={etiquettLogo} style={{ top: '718px', left: '49.4%', width: '75px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px' }} id='wiggle'></img></a>
+                    <a href={item.link} target='_blank'><img src={etiquettLogo} style={{ top: '718px', left: '49.4%', width: '75px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
                 </div>
             ))}
             {/* <div>
@@ -60,16 +61,16 @@ const itemData = [
         link: 'https://etiquette.herokuapp.com/',
         top1: '750px',
         left1: '30%',
-        topImg: '163.5px',
-        leftImg: '-28%',
-        top: '750px',
+        topImg: '166.7px',
+        leftImg: '-26.5%',
+        top: '748px',
         left: '60%',
         widthImg: '102px',
         heightImg: '102px',
         widthBubbleOne: '302px',
         heightBubbleOne: '302px',
-        width: '300px',
-        height: '300px',
+        width: '310px',
+        height: '310px',
         title: 'Etiquette',
         class: 'bubbleTopYellow',
         color: '#1A1A1A',
