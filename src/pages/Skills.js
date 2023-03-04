@@ -11,6 +11,7 @@ import smiseScreenImaging from '../assets/screen-smise-gif-imaging.png'
 import ymmWelcome from '../assets/YMM-screen-welcome.png'
 import Etiquette from '../components/Etiquette';
 import BlogForTechs from '../components/BlogForTechs';
+import Smise from '../components/Smise';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -32,6 +33,8 @@ const Skills = () => {
             return <Etiquette />;
         } else if (selectedId === 2) {
             return <BlogForTechs />
+        } else if (selectedId == 4) {
+            return <Smise />
         }
     }
     // const [currentIndex, setCurrentIndex] = useState(0);
