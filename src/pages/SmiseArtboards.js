@@ -12,6 +12,7 @@ import holeWheel from '../assets/wheel-topper-copy-2.png'
 import LinkIcon from '@mui/icons-material/Link'
 import behanceIcon from '../assets/behance-icon.jpg'
 import { Rotate90DegreesCcw } from '@mui/icons-material';
+import wheelTopperOrange from '../assets/wheel-topper-orange.png'
 
 
 
@@ -26,7 +27,7 @@ function SmiseArtboards() {
                 <div style={{ marginLeft: '350px', borderRadius: '600px', background: 'white', width: '600px', height: '600px', boxShadow: '0px 3px 6px #00000029' }}>
                     {/* <div style={{ width: '600px', height: '600px', borderRadius: '600px', background: 'white', marginTop: '100px', zIndex: -1 }}></div> */}
                     <img width="600" height="600" src={holeWheel}></img>
-                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '640px' }} className='rotate'></img>
+                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '640px', backgroundColor: '#FE542B' }} className='rotate'></img>
                     <a style={{ position: 'absolute', top: '735px', left: '48.2%', zIndex: 3, color: 'black', textAlign: 'center' }} href='https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'>
                         <p id='wiggle' style={{ fontSize: '14px' }}>Artboard 1</p>
                         {/* <LinkIcon id='wiggle' style={{ boxShadow: '0px 3px 6px #00000029' }} /> */}
@@ -43,7 +44,7 @@ function SmiseArtboards() {
                 <div style={{ marginLeft: '-300px', borderRadius: '600px', background: 'white', width: '600px', height: '600px', boxShadow: '0px 3px 6px #00000029' }}>
                     {/* <div style={{ width: '600px', height: '600px', borderRadius: '600px', background: 'white', marginTop: '100px', zIndex: -1 }}></div> */}
                     <img width="600" height="600" src={holeWheel}></img>
-                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '1000px' }} className='rotate'></img>
+                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '1000px', backgroundColor: '#FE542B' }} className='rotate'></img>
                     <a style={{ position: 'absolute', top: '1075px', left: '47%', zIndex: 3, color: 'black', textAlign: 'center' }} href='https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'>
                         <p id='wiggle' style={{ fontSize: '14px' }}>Artboard 2</p>
                         {/* <LinkIcon id='wiggle' style={{ boxShadow: '0px 3px 6px #00000029' }} /> */}
@@ -61,7 +62,7 @@ function SmiseArtboards() {
                 <div style={{ marginLeft: '350px', borderRadius: '600px', background: 'white', width: '600px', height: '600px', boxShadow: '0px 3px 6px #00000029' }}>
                     {/* <div style={{ width: '600px', height: '600px', borderRadius: '600px', background: 'white', marginTop: '100px', zIndex: -1 }}></div> */}
                     <img width="600" height="600" src={holeWheel}></img>
-                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '1840px' }} className='rotate'></img>
+                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '1840px', backgroundColor: '#FE542B' }} className='rotate'></img>
                     <a style={{ position: 'absolute', top: '1920px', left: '48.2%', zIndex: 3, color: 'black', textAlign: 'center' }} href='https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'>
                         <p id='wiggle' style={{ fontSize: '14px' }}>Artboard 3</p>
                         {/* <LinkIcon id='wiggle' style={{ boxShadow: '0px 3px 6px #00000029' }} /> */}
@@ -78,7 +79,7 @@ function SmiseArtboards() {
                 <div style={{ marginLeft: '-300px', borderRadius: '600px', background: 'white', width: '600px', height: '600px', boxShadow: '0px 3px 6px #00000029' }}>
                     {/* <div style={{ width: '600px', height: '600px', borderRadius: '600px', background: 'white', marginTop: '100px', zIndex: -1 }}></div> */}
                     <img width="600" height="600" src={holeWheel}></img>
-                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '2200px' }} className='rotate'></img>
+                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '2200px', backgroundColor: '#FE542B' }} className='rotate'></img>
                     <a style={{ position: 'absolute', top: '2260px', left: '47%', zIndex: 3, color: 'black', textAlign: 'center' }} href='https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'>
                         <p id='wiggle' style={{ fontSize: '14px' }}>Artboard 4</p>
                         {/* <LinkIcon id='wiggle' style={{ boxShadow: '0px 3px 6px #00000029' }} /> */}
@@ -97,7 +98,7 @@ function SmiseArtboards() {
                 <div style={{ marginLeft: '350px', borderRadius: '600px', background: 'white', width: '600px', height: '600px', boxShadow: '0px 3px 6px #00000029' }}>
                     {/* <div style={{ width: '600px', height: '600px', borderRadius: '600px', background: 'white', marginTop: '100px', zIndex: -1 }}></div> */}
                     <img width="600" height="600" src={holeWheel}></img>
-                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '3050px' }} className='rotate'></img>
+                    <img width="800" height="800" src={holeWheel} style={{ zIndex: 0, position: 'absolute', top: '3050px', backgroundColor: '#FE542B' }} className='rotate'></img>
                     <a style={{ position: 'absolute', top: '3120px', left: '48.2%', zIndex: 3, color: 'black', textAlign: 'center' }} href='https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022'>
                         <p id='wiggle' style={{ fontSize: '14px' }}>Artboard 3</p>
                         {/* <LinkIcon id='wiggle' style={{ boxShadow: '0px 3px 6px #00000029' }} /> */}
