@@ -10,12 +10,12 @@ import homepage from '../assets/etiquette-homepage-fullscreen.png'
 import BlockButtonEtiquette from './BlockButtonEtiquette';
 // import etiquettLogo from '../assets/logo500.png'
 import smiseLogo from '../assets/smise-logo.png';
-import BlockButtonSmise from './BlockButtonSmise';
+import BlockButtonShangoo from './BlockButtonShangoo';
 // import smiseOpening from '../assets/smise-opening.png'
 
 
 
-function Smise() {
+function Shangoo() {
     return (
         <div id='canvas'>
 
@@ -42,11 +42,11 @@ function Smise() {
                         <img src={item.img} style={{ top: `${item.topImg}`, left: `${item.leftImg}`, width: `${item.widthImg}`, height: `${item.heightImg}`, borderRadius: `${item.borderRadius}`, opacity: 1, position: 'absolute' }}></img>
 
                     </div>
-                    <BlockButtonSmise />
-                    <p style={{ top: '912px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.description}</p>
-                    <p style={{ top: '725px', left: '31.3%', fontSize: '10.8px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
-                    {/* <a href={item.link} target='_blank'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a> */}
-                    <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link>
+                    <BlockButtonShangoo />
+                    <p style={{ top: '908px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.description}</p>
+                    <p style={{ top: '716px', left: '31.3%', fontSize: '10px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
+                    <a href={item.link} target='_blank'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
+                    {/* <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link> */}
                 </div>
                 // fix etiquette logo
             ))}
@@ -63,10 +63,10 @@ function Smise() {
 }
 const itemData = [
     {
-        id: 4,
-        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2VmMTBmYWFkMjhhYWIwZDUxZGJjZDE5Y2RiNjQ1NWMzMzQzZWFiZCZjdD1n/GNMkGHRvKFRaV1hHdB/giphy.gif'],
+        id: 5,
+        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjIxMThjNTBlYmJjZTBkYjk1MmI0NWU2Mjc5YTI1ZTI4MTMxMGQwNSZjdD1n/1WfTvC5dt6uNzvxTkG/giphy.gif'],
         // img: [`${smiseScreens}`, `${smiseScreensFour}`, `${smiseScreenTools}`, `${smiseScreenImplant}`, `${smiseScreenImaging}`],
-        link: 'https://www.behance.net/gallery/150627573/SMISE-Dental-Application-Final-Version-2022',
+        link: 'https://shangoopharmacy.com/',
         top1: '750px',
         left1: '30%',
         topImg: '166.7px',
@@ -79,21 +79,21 @@ const itemData = [
         heightBubbleOne: '302px',
         width: '310px',
         height: '310px',
-        title: 'SMISE',
-        class: 'bubbleTopOrange',
-        color: '#E6692B',
+        title: 'Shangoo',
+        class: 'bubbleTopOrangeBlue',
+        color: '#DF7359',
         opacityBubbleOne: 1,
         opacityBubbleTwo: 0.91,
         fontSize: '20px',
         fontSizeSlogan: '12px',
         borderRadius: '300px',
-        backgroundBubbleOne: 'transparent linear-gradient(180deg, #E4632A 0%, #EBA73B 23%, #EFBF41 34%, #F89468 46%, #EBA63A 58%, #FDE37B 73%, #F3D76A 86%, #F5DA5F 100%) 0% 0% no-repeat padding-box',
+        backgroundBubbleOne: 'transparent linear-gradient(180deg, #365D90 0%, #DB7450 100%) 0% 0% no-repeat padding-box',
         marginTop: '40%',
         marginTopSlogan: '30px',
         zIndex: 4,
-        description: 'Keep Track of Your Teeth',
-        descriptionTwo: `An visual prototype of a dental app aimed to personalize oral care and engage users through statistically relevant and animated feedback`,
-        slogan: 'Keep Track of Your Teeth'
+        description: 'On-Demand Pharmacy Delivery',
+        descriptionTwo: `Working with a team of pharmacists, engineers, and designers on the front-end development, testing, and integration of a desktop and mobile application that delivers prescriptions on-demand`,
+        slogan: 'On-Demand Pharmacy Delivery'
     },
 ]
-export default Smise
+export default Shangoo

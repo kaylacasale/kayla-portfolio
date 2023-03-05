@@ -12,6 +12,7 @@ import ymmWelcome from '../assets/YMM-screen-welcome.png'
 import Etiquette from '../components/Etiquette';
 import BlogForTechs from '../components/BlogForTechs';
 import Smise from '../components/Smise';
+import Shangoo from '../components/Shangoo';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -33,8 +34,10 @@ const Skills = () => {
             return <Etiquette />;
         } else if (selectedId === 2) {
             return <BlogForTechs />
-        } else if (selectedId == 4) {
+        } else if (selectedId === 4) {
             return <Smise />
+        } else if (selectedId === 5) {
+            return <Shangoo />
         }
     }
     // const [currentIndex, setCurrentIndex] = useState(0);
