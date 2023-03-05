@@ -32,7 +32,7 @@ function BlockButtonSmise() {
         {
             id: 1,
             img: `${smiseOpening}`,
-            description: 'Keep Track of Your Teeth'
+            description: ''
         },
         {
             id: 2,
@@ -52,7 +52,7 @@ function BlockButtonSmise() {
         {
             id: 5,
             img: `${smiseHidden}`,
-            description: 'Visualize the Areas of Your Mouth You Cannot See'
+            description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental health over time'
         },
         {
             id: 6,

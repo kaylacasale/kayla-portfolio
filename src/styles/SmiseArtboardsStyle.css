@@ -1,0 +1,15 @@
+.computer {
+    background: url(../assets/computer-screen.png) no-repeat;
+    background-size: 1440px 100%;
+    /* background-size: 50% 100%;
+    overflow: auto;
+    height: 600px;
+    width: 800px; */
+
+}
+
+.artboard {
+    /* height: 400px;
+    width: 600px; */
+    margin: 20px;
+}
