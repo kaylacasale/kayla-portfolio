@@ -209,3 +209,8 @@
         transform: rotate3d(360deg);
     }
 } */
+
+.exitBtn {
+    margin-top: 100px;
+    border-radius: 50px;
+}

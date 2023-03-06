@@ -31,14 +31,25 @@ const Skills = () => {
     const renderComponent = () => {
 
         if (selectedId === 1) {
-            return <Etiquette />;
+            return <div><Etiquette /> <button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#F4E4A4', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 2) {
-            return <BlogForTechs />
+            return <div><BlogForTechs /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#BDF4FB', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 4) {
-            return <Smise />
+            return <div><Smise /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#E8873F', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 5) {
-            return <Shangoo />
+            return <div><Shangoo /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#525A70', boxShadow: '0px 3px 6px #00000029', color: 'white' }} id='wiggle'>Exit</button></div>;
         }
+    }
+
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleButtonClick = () => {
+        setIsClicked(true);
+
+    };
+
+    const handleComponentVisibility = () => {
+        setSelectedId(null);
     }
     // const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -79,16 +90,18 @@ const Skills = () => {
                     </div>
 
                 </div>
-            ))}
-            <div>
-                {selectedId ? renderComponent() : 'No'}
+            ))
+            }
+            <div className='component-div'>
+                {selectedId ? renderComponent() : !renderComponent()}
+                {/* {isClicked ? <button>Exit</button> : 'No Btn'} */}
             </div>
 
             {/* <img id='threeD' src={threeDBubble}></img> */}
             {/* <svg viewBox="-40 0 150 100" xmlns={threeDBubble} id='threeD'></svg> */}
 
 
-        </div>
+        </div >
     )
 }
 
