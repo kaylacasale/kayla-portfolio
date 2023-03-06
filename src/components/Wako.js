@@ -17,14 +17,15 @@ import appleStoreLogo from '../assets/apple-store-logo.png'
 import shangooDriverLogo from '../assets/shangoo-driver-logo.png'
 import shangooPharmacyLogo from '../assets/shangoo-pharmacy-logo.png'
 import shangooPatientLogo from '../assets/shangoo-patient-logo.png'
-import BlockButtonBlogForTechs from './BlockButtonBlogForTechs';
+import BlockButtonWako from './BlockButtonWako';
 
 import blogForTechsLogo from '../assets/blog-for-techs-logo.png'
+import wakoLogo from '../assets/wako-logo.png'
 // import smiseOpening from '../assets/smise-opening.png'
 
 
 
-function BlogForTechs() {
+function Wako() {
     return (
         <div id='canvas'>
 
@@ -51,10 +52,10 @@ function BlogForTechs() {
                         <img src={item.img} style={{ top: `${item.topImg}`, left: `${item.leftImg}`, width: `${item.widthImg}`, height: `${item.heightImg}`, borderRadius: `${item.borderRadius}`, opacity: 1, position: 'absolute' }}></img>
 
                     </div>
-                    <BlockButtonBlogForTechs />
-                    <p style={{ top: '925px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.description}</p>
+                    <BlockButtonWako />
+                    <p style={{ top: '935px', left: '23.5%', fontSize: '18px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.description}</p>
                     <p style={{ top: '705px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.descriptionTwo}</p>
-                    <a href={item.link} target='_blank'><img src={blogForTechsLogo} style={{ top: '720px', left: '49.35%', width: '75px', position: 'absolute', zIndex: 6, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
+                    <a href={item.link} target='_blank'><img src={wakoLogo} style={{ top: '722px', left: '49.45%', width: '75px', position: 'absolute', zIndex: 6, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
 
                     {/* <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link> */}
                 </div>
@@ -82,10 +83,10 @@ function BlogForTechs() {
 }
 const itemData = [
     {
-        id: 2,
-        img: ['https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNmNTQ4YzI1NjgxZGQ0OTdlMWNhNTdiMWQyMGM4MmQ1ZDc3ODlhMiZjdD1n/5DK2cpXXE8ILNqX9pc/giphy.gif'],
+        id: 7,
+        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzQ0OWViNGVhZGIyZjkzNzI4YTVjN2Q4MDgxNDFkZjBiZjM0NWM1YiZjdD1n/OaKJCdN4PbLMUjRFAt/giphy.gif`],
         // img: [`${smiseScreens}`, `${smiseScreensFour}`, `${smiseScreenTools}`, `${smiseScreenImplant}`, `${smiseScreenImaging}`],
-        link: 'https://guarded-headland-91004.herokuapp.com/',
+        link: 'https://wvoigt722.github.io/uclaTeamProject/',
         top1: '750px',
         left1: '30%',
         topImg: '166.7px',
@@ -98,21 +99,21 @@ const itemData = [
         heightBubbleOne: '302px',
         width: '310px',
         height: '310px',
-        title: 'Blog for Techs',
-        class: 'bubbleTop',
-        color: '#65C1FF',
+        title: 'WAKO',
+        class: 'bubbleTopLightBlue',
+        color: '#8CBAD2',
         opacityBubbleOne: 1,
         opacityBubbleTwo: 0.91,
         fontSize: '20px',
         fontSizeSlogan: '12px',
         borderRadius: '300px',
-        backgroundBubbleOne: 'transparent conic-gradient(from 90deg at 50% 50%, #5DB7EB 0.00%, #B3B8EB 7.77%, #7FAEDC 19.25%, #B3AFFA 26.87%, #FECAFD 37.45%, #509ACC 44.42%, #4DB2E1 50.83%, #B0E7F2 59.83%, #3593C0 67.41%, #6B90BA 74.06%, #B494C1 81.83%, #3BC8EA 90.78%, #4BD3F3 100.00%) 0% 0% no-repeat padding-box',
+        backgroundBubbleOne: 'transparent linear-gradient(180deg, #DEEEFF 0%, #C9D0E1 20%, #D7D5E4 46%, #A1C2D6 80%, #A8E0FA 100%) 0% 0% no-repeat padding-box',
         marginTop: '40%',
         marginTopSlogan: '30px',
         zIndex: 4,
-        description: 'Model-View-Controller: Tech Blog',
-        descriptionTwo: `A full-stack, CMS-style blog site where developers can publish, update, or delete their blog posts, comment on other developers' posts, and store user information after creating an account`,
-        slogan: 'Meds to You'
+        description: 'Real-time Real Estate Data',
+        descriptionTwo: `An interactive front-end application`,
+        slogan: 'Quick Real Estate'
     },
 ]
-export default BlogForTechs
+export default Wako

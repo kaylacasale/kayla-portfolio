@@ -13,6 +13,7 @@ import Etiquette from '../components/Etiquette';
 import BlogForTechs from '../components/BlogForTechs';
 import Smise from '../components/Smise';
 import Shangoo from '../components/Shangoo';
+import Wako from '../components/Wako';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -38,6 +39,8 @@ const Skills = () => {
             return <div><Smise /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#E8873F', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 5) {
             return <div><Shangoo /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#525A70', boxShadow: '0px 3px 6px #00000029', color: 'white' }} id='wiggle'>Exit</button></div>;
+        } else if (selectedId === 7) {
+            return <div><Wako /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#C5C7D5', borderColor: '#A2C4D7', boxShadow: '0px 3px 6px #00000029', color: 'black' }} id='wiggle'>Exit</button></div>;
         }
     }
 
@@ -346,7 +349,7 @@ const itemData = [
         fontSize: '12px',
         borderRadius: '100px',
         backgroundBubbleOne: 'transparent conic-gradient(from 90deg at 50% 50%, #D4A1CF 0.00%, #A67FDD 12.32%, #8E50CD 26.60%, #B34693 45.32%, #B94A9F 62.56%, #CD628C 75.86%, #D890B2 88.67%, #D291AD 100.00%) 0% 0% no-repeat padding-box',
-        marginTop: '30%'
+        marginTop: '40%'
     },
     {
         id: 13,
