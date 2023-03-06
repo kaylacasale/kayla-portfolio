@@ -118,7 +118,7 @@ function BlockButtonEtiquette() {
                     <div>
                         {/* <p style={{ textAlign: 'center', width: '300px', margin: '8px' }}>{image.description}</p> */}
                         <img id='zoom' key={image.id} src={image.img} style={{ display: index === currentIndex ? 'block' : 'none', width: '300px' }} ></img>
-                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', margin: '20px', fontSize: '20px', marginLeft: '8px' }}>{image.description}</p>
+                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', margin: '20px', fontSize: '20px', marginLeft: '2px' }}>{image.description}</p>
 
                     </div>
                 )}

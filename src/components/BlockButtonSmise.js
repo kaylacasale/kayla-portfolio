@@ -52,7 +52,7 @@ function BlockButtonSmise() {
         {
             id: 5,
             img: `${smiseHidden}`,
-            description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental over time'
+            description: 'Gather Yearly Comparisons of Dental Records to Track Progress Over Time'
         },
         {
             id: 6,
@@ -62,7 +62,7 @@ function BlockButtonSmise() {
         {
             id: 7,
             img: `${smiseImaging}`,
-            description: 'Customized animated depiction of your true oral cavity in greater detail with more precise dental records'
+            description: 'Customized Animated Depiction of Your True Oral Cavity'
         },
         {
             id: 8,
