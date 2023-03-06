@@ -52,7 +52,7 @@ function BlockButtonSmise() {
         {
             id: 5,
             img: `${smiseHidden}`,
-            description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental health over time'
+            description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental over time'
         },
         {
             id: 6,

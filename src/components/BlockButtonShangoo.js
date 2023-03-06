@@ -27,6 +27,9 @@ import smiseScreens from '../assets/smise-screens-many.png'
 import smiseImagingTwo from '../assets/smise-imaging-2.png'
 
 import shangooDesktopHomeOne from '../assets/shangoo-desktop-home-2.png'
+import shangooOrderMeds from '../assets/shangoo-order-meds.png'
+import shangooRegisterAndContact from '../assets/shangoo-register-and-contact.png'
+import shangooThreeApps from '../assets/shangoo-3-apps.png'
 // import Button from 'react-bootstrap/Button'
 
 function BlockButtonShangoo() {
@@ -34,43 +37,43 @@ function BlockButtonShangoo() {
         {
             id: 1,
             img: `${shangooDesktopHomeOne}`,
-            description: 'Rx at Your Door'
+            description: 'Shangoo Desktop and Mobile App'
         },
         {
             id: 2,
-            img: `${shangooDesktopHomeOne}`,
-            description: 'Select A Tooth and Enter Real-time Patient Input'
+            img: `${shangooOrderMeds}`,
+            description: 'Get Your Prescribed or OTC Meds Delivered to You'
         },
         {
             id: 3,
-            img: `${smiseAddSymptomsFourScreens}`,
-            description: 'Add Symptoms to Your Dental Chart'
+            img: `${shangooRegisterAndContact}`,
+            description: 'Register for an Account and Get Customer Support'
         },
         {
             id: 4,
-            img: `${smiseVisualizeTooth}`,
-            description: 'Visualize Tooth Morphology'
+            img: `${shangooThreeApps}`,
+            description: '3 Native iOS and Andriod applications (for drivers, pharmacies, and patients)'
         },
-        {
-            id: 5,
-            img: `${smiseHidden}`,
-            description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental health over time'
-        },
-        {
-            id: 6,
-            img: `${smiseNotes}`,
-            description: 'Refer to Simplified Clinical Notes Associated With a Tooth, Appointment Date, Provider, or Location'
-        },
-        {
-            id: 7,
-            img: `${smiseImaging}`,
-            description: 'Customized animated depiction of your true oral cavity in greater detail with more precise dental records'
-        },
-        {
-            id: 8,
-            img: `${smiseImagingTwo}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        }
+        // {
+        //     id: 5,
+        //     img: `${smiseHidden}`,
+        //     description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental health over time'
+        // },
+        // {
+        //     id: 6,
+        //     img: `${smiseNotes}`,
+        //     description: 'Refer to Simplified Clinical Notes Associated With a Tooth, Appointment Date, Provider, or Location'
+        // },
+        // {
+        //     id: 7,
+        //     img: `${smiseImaging}`,
+        //     description: 'Customized animated depiction of your true oral cavity in greater detail with more precise dental records'
+        // },
+        // {
+        //     id: 8,
+        //     img: `${smiseImagingTwo}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // }
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -128,7 +131,7 @@ function BlockButtonShangoo() {
                     <div>
                         {/* <p style={{ textAlign: 'center', width: '300px', margin: '8px' }}>{image.description}</p> */}
                         <img id='zoom' key={image.id} src={image.img} style={{ display: index === currentIndex ? 'block' : 'none', width: '400px' }} ></img>
-                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', fontSize: '14px', marginLeft: '12%', marginTop: '35px', color: '#F76503' }}>{image.description}</p>
+                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', fontSize: '14px', marginLeft: '12%', marginTop: '35px', color: 'white' }}>{image.description}</p>
 
                     </div>
                 )}

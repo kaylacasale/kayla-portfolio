@@ -10,7 +10,13 @@ import homepage from '../assets/etiquette-homepage-fullscreen.png'
 import BlockButtonEtiquette from './BlockButtonEtiquette';
 // import etiquettLogo from '../assets/logo500.png'
 import smiseLogo from '../assets/smise-logo.png';
+
+import shangooLogo from '../assets/shangoo-logo.png'
 import BlockButtonShangoo from './BlockButtonShangoo';
+import appleStoreLogo from '../assets/apple-store-logo.png'
+import shangooDriverLogo from '../assets/shangoo-driver-logo.png'
+import shangooPharmacyLogo from '../assets/shangoo-pharmacy-logo.png'
+import shangooPatientLogo from '../assets/shangoo-patient-logo.png'
 // import smiseOpening from '../assets/smise-opening.png'
 
 
@@ -43,13 +49,23 @@ function Shangoo() {
 
                     </div>
                     <BlockButtonShangoo />
-                    <p style={{ top: '908px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.description}</p>
-                    <p style={{ top: '716px', left: '31.3%', fontSize: '10px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
-                    <a href={item.link} target='_blank'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
+                    <p style={{ top: '908px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.description}</p>
+                    <p style={{ top: '716px', left: '31.3%', fontSize: '10px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.descriptionTwo}</p>
+                    <a href={item.link} target='_blank'><img src={shangooLogo} style={{ top: '730px', left: '49.4%', width: '75px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
+
                     {/* <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link> */}
                 </div>
+
                 // fix etiquette logo
             ))}
+            <div style={{ position: 'absolute', top: '900px' }}>
+                <a href='https://apps.apple.com/us/developer/shangoo-inc/id1489129176'><img src={appleStoreLogo} style={{ width: '20%' }} id='wiggle'></img></a>
+            </div>
+            <div style={{ position: 'absolute', top: '980px', width: '60%' }}>
+                <a href='https://apps.apple.com/us/app/shangoo-driver/id1574731742'><img src={shangooDriverLogo} style={{ width: '10%' }} id='wiggle'></img></a>
+                <a href='https://apps.apple.com/us/app/shangoo-pharmacy/id1489143836'><img src={shangooPharmacyLogo} style={{ width: '10%' }} id='wiggle'></img></a>
+                <a href='https://apps.apple.com/ca/app/shangoorx/id1534816834'><img src={shangooPatientLogo} style={{ width: '10%' }} id='wiggle'></img></a>
+            </div>
             {/* <div>
             {selectedId ? renderComponent() : 'No'}
         </div> */}
@@ -81,7 +97,7 @@ const itemData = [
         height: '310px',
         title: 'Shangoo',
         class: 'bubbleTopOrangeBlue',
-        color: '#DF7359',
+        color: '#EC6A4C',
         opacityBubbleOne: 1,
         opacityBubbleTwo: 0.91,
         fontSize: '20px',
@@ -92,8 +108,8 @@ const itemData = [
         marginTopSlogan: '30px',
         zIndex: 4,
         description: 'On-Demand Pharmacy Delivery',
-        descriptionTwo: `Working with a team of pharmacists, engineers, and designers on the front-end development, testing, and integration of a desktop and mobile application that delivers prescriptions on-demand`,
-        slogan: 'On-Demand Pharmacy Delivery'
+        descriptionTwo: `Working with a team of pharmacists, engineers, and designers on the front-end development, testing, and integration of a desktop and mobile application that delivers prescriptions and OTC items on-demand`,
+        slogan: 'Meds to You'
     },
 ]
 export default Shangoo
