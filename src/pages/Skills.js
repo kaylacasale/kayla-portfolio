@@ -17,6 +17,8 @@ import Wako from '../components/Wako';
 import Jotter from '../components/Jotter';
 import MyMetro from '../components/MyMetro';
 import { elementAcceptingRef } from '@mui/utils';
+import WorkYourSchedule from '../components/WorkYourSchedule';
+import CodingQuiz from '../components/CodingQuiz';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -55,6 +57,12 @@ const Skills = () => {
         } else if (selectedId === 10) {
             handleClick()
             return <div><MyMetro /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#71A1FF', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
+        } else if (selectedId === 11) {
+            handleClick()
+            return <div><WorkYourSchedule /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#71A1FF', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
+        } else if (selectedId === 12) {
+            handleClick()
+            return <div><CodingQuiz /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#71A1FF', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
         }
     }
 

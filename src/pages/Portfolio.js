@@ -12,6 +12,7 @@ import MovingComponent from 'react-moving-text'
 import ReactImageListMasonry from '../components/ReactImageListMasonry';
 import shangoo from '../assets/shangoo-main.PNG'
 import BlockButton from '../components/BlockButton';
+import '../styles/PortfolioStyle.css'
 
 // import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
@@ -40,78 +41,89 @@ import BlockButton from '../components/BlockButton';
 
 function Portfolio() {
     return (
-        <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code', height: '2500px' }}>
+        // <div id='canvas-portfolio'>
+        //     <div id='circle-portfolio'>
+        //         <div id='ball-1' class='ball' style={{ zIndex: '3' }}>Kayla Casale</div>
+        //         <div id='ball-2' class='ball' style={{ zIndex: '2' }}>Home</div>
+        //         <div id='ball-3' class='ball' style={{ zIndex: '2' }}>About</div>
+        //         <div id='ball-4' class='ball' style={{ zIndex: '2' }}>Work</div>
+        //     </div>
+        // </div>
+        <div></div>
+    )
+    // return (
+    //     <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code', height: '2500px' }}>
 
-            <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em", width: '20%' }}>
-                <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', textAlign: 'center', fontSize: '32px', color: 'white' }}>
-                    <MovingComponent
-                        type="blur"
-                        duration="1700ms"
-                        delay=".5s"
-                        direction="alternate"
-                        timing="ease-in"
-                        iteration="infinite"
-                        fillMode="none">
-                        Kayla's Portfolio
-                    </MovingComponent>
-                </div>
-                <div className='column' style={{ float: 'right' }}>
-                    <div>
-                        <Card />
-                    </div>
-                    <div style={{ marginTop: '1em' }}>
-                        <BlockButton />
-                    </div>
+    //         <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em", width: '20%' }}>
+    //             <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', textAlign: 'center', fontSize: '32px', color: 'white' }}>
+    //                 <MovingComponent
+    //                     type="blur"
+    //                     duration="1700ms"
+    //                     delay=".5s"
+    //                     direction="alternate"
+    //                     timing="ease-in"
+    //                     iteration="infinite"
+    //                     fillMode="none">
+    //                     Kayla's Portfolio
+    //                 </MovingComponent>
+    //             </div>
+    //             <div className='column' style={{ float: 'right' }}>
+    //                 <div>
+    //                     <Card />
+    //                 </div>
+    //                 <div style={{ marginTop: '1em' }}>
+    //                     <BlockButton />
+    //                 </div>
 
-                    {/* <div className='card' style={{ margin: '1em', height: 'fit-content' }}>
-                        {cardData.map((item) =>
-                            <img className='cardUnderCard' src={`${item.img}`} style={{ height: '600px' }}></img>
-                        )}
-                    </div> */}
-                </div>
-            </div>
-            <ImageList sx={{ width: 900, height: 850 }} className='shadow-lg'>
-                <ImageListItem key="Subheader" cols={2} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
-                    <ListSubheader component="div" className='shadow-lg shadow-intensity-lg rounded' >Work</ListSubheader>
-                </ImageListItem >
-                {itemData.map((item) => (
-                    <a href={item.link} target="_blank"><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
-                        <img
-                            // className='rounded'
-                            style={{ height: '290px' }}
-                            src={`${item.img}?w=248&fit=crop&auto=format`}
-                            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                            href={item.link}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                        <ImageListItemBar
-                            // className='rounded'
-                            title={item.title}
-                            subtitle={item.author}
-                            actionIcon={
-                                <IconButton
-                                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                                    aria-label={`info about ${item.title}`}
-                                >
-                                    {/* <Icon /> */}
-                                </IconButton>
-                            }
-                        />
-                    </ImageListItem></a>
-                ))}
-            </ImageList>
+    //                 {/* <div className='card' style={{ margin: '1em', height: 'fit-content' }}>
+    //                     {cardData.map((item) =>
+    //                         <img className='cardUnderCard' src={`${item.img}`} style={{ height: '600px' }}></img>
+    //                     )}
+    //                 </div> */}
+    //             </div>
+    //         </div>
+    //         <ImageList sx={{ width: 900, height: 850 }} className='shadow-lg'>
+    //             <ImageListItem key="Subheader" cols={2} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
+    //                 <ListSubheader component="div" className='shadow-lg shadow-intensity-lg rounded' >Work</ListSubheader>
+    //             </ImageListItem >
+    //             {itemData.map((item) => (
+    //                 <a href={item.link} target="_blank"><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
+    //                     <img
+    //                         // className='rounded'
+    //                         style={{ height: '290px' }}
+    //                         src={`${item.img}?w=248&fit=crop&auto=format`}
+    //                         srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+    //                         href={item.link}
+    //                         alt={item.title}
+    //                         loading="lazy"
+    //                     />
+    //                     <ImageListItemBar
+    //                         // className='rounded'
+    //                         title={item.title}
+    //                         subtitle={item.author}
+    //                         actionIcon={
+    //                             <IconButton
+    //                                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+    //                                 aria-label={`info about ${item.title}`}
+    //                             >
+    //                                 {/* <Icon /> */}
+    //                             </IconButton>
+    //                         }
+    //                     />
+    //                 </ImageListItem></a>
+    //             ))}
+    //         </ImageList>
 
-            {/* <Background style={styles.Background}>
+    //         {/* <Background style={styles.Background}>
 
 
-            </Background> */}
-            {/* <div>
-                <Card />
-            </div> */}
+    //         </Background> */}
+    //         {/* <div>
+    //             <Card />
+    //         </div> */}
 
-        </section >
-    );
+    //     </section >
+    // );
 }
 // const cardData = [
 //     {
