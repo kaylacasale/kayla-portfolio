@@ -15,6 +15,7 @@ import Smise from '../components/Smise';
 import Shangoo from '../components/Shangoo';
 import Wako from '../components/Wako';
 import Jotter from '../components/Jotter';
+import MyMetro from '../components/MyMetro';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -43,7 +44,9 @@ const Skills = () => {
         } else if (selectedId === 7) {
             return <div><Wako /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#C5C7D5', borderColor: '#A2C4D7', boxShadow: '0px 3px 6px #00000029', color: 'black' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 9) {
-            return <div><Jotter /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#C5C7D5', borderColor: '#A2C4D7', boxShadow: '0px 3px 6px #00000029', color: 'black' }} id='wiggle'>Exit</button></div>;
+            return <div><Jotter /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#5DBAA4', borderColor: '#5DBAA4', boxShadow: '0px 3px 6px #00000029', color: 'white' }} id='wiggle'>Exit</button></div>;
+        } else if (selectedId === 10) {
+            return <div><MyMetro /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#71A1FF', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
         }
     }
 
@@ -296,7 +299,7 @@ const itemData = [
     },
     {
         id: 10,
-        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif`],
+        img: [`https://media.giphy.com/media/DeaZM3tmUZnUdRZZ27/giphy.gif`],
         link: 'https://metro-buddy.herokuapp.com/',
         top: '497px',
         left: '13.5%',
@@ -305,13 +308,13 @@ const itemData = [
         width: '120px',
         height: '120px',
         title: 'My Metro',
-        class: 'bubbleTopMediumGreen',
-        color: '#4CA558',
+        class: 'bubbleTopBluePurple',
+        color: '#71A1FF',
         opacityBubbleOne: 1,
         opacityBubbleTwo: 0.81,
         fontSize: '16px',
         borderRadius: '100px',
-        backgroundBubbleOne: 'transparent linear-gradient(180deg, #4CA558 0%, #4CA558 9%, #4CA558 21%, #E9EAEA 46%, #7FB2A3 73%, #4CA558 88%, #90FFDE 100%) 0% 0% no-repeat padding-box',
+        backgroundBubbleOne: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box',
         marginTop: '40%'
     },
     {
