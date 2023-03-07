@@ -14,6 +14,7 @@ import BlogForTechs from '../components/BlogForTechs';
 import Smise from '../components/Smise';
 import Shangoo from '../components/Shangoo';
 import Wako from '../components/Wako';
+import Jotter from '../components/Jotter';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -41,6 +42,8 @@ const Skills = () => {
             return <div><Shangoo /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#525A70', boxShadow: '0px 3px 6px #00000029', color: 'white' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 7) {
             return <div><Wako /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#C5C7D5', borderColor: '#A2C4D7', boxShadow: '0px 3px 6px #00000029', color: 'black' }} id='wiggle'>Exit</button></div>;
+        } else if (selectedId === 9) {
+            return <div><Jotter /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#C5C7D5', borderColor: '#A2C4D7', boxShadow: '0px 3px 6px #00000029', color: 'black' }} id='wiggle'>Exit</button></div>;
         }
     }
 

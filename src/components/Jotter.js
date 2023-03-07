@@ -18,14 +18,16 @@ import shangooDriverLogo from '../assets/shangoo-driver-logo.png'
 import shangooPharmacyLogo from '../assets/shangoo-pharmacy-logo.png'
 import shangooPatientLogo from '../assets/shangoo-patient-logo.png'
 import BlockButtonWako from './BlockButtonWako';
-
+import BlockButtonJotter from './BlockButtonJotter'
 import blogForTechsLogo from '../assets/blog-for-techs-logo.png'
 import wakoLogo from '../assets/wako-logo.png'
+
+import jotterLogo from '../assets/jotter-logo.png'
 // import smiseOpening from '../assets/smise-opening.png'
 
 
 
-function Wako() {
+function Jotter() {
     return (
         <div id='canvas'>
 
@@ -52,10 +54,10 @@ function Wako() {
                         <img src={item.img} style={{ top: `${item.topImg}`, left: `${item.leftImg}`, width: `${item.widthImg}`, height: `${item.heightImg}`, borderRadius: `${item.borderRadius}`, opacity: 1, position: 'absolute' }}></img>
 
                     </div>
-                    <BlockButtonWako />
+                    <BlockButtonJotter />
                     <p style={{ top: '935px', left: '23.5%', fontSize: '18px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.description}</p>
-                    <p style={{ top: '720px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.descriptionTwo}</p>
-                    <a href={item.link} target='_blank'><img src={wakoLogo} style={{ top: '722px', left: '49.45%', width: '75px', position: 'absolute', zIndex: 6, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
+                    <p style={{ top: '740px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.descriptionTwo}</p>
+                    <a href={item.link} target='_blank'><img src={jotterLogo} style={{ top: '722px', left: '49.45%', width: '75px', position: 'absolute', zIndex: 6, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
 
                     {/* <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link> */}
                 </div>
@@ -83,10 +85,10 @@ function Wako() {
 }
 const itemData = [
     {
-        id: 7,
-        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzQ0OWViNGVhZGIyZjkzNzI4YTVjN2Q4MDgxNDFkZjBiZjM0NWM1YiZjdD1n/OaKJCdN4PbLMUjRFAt/giphy.gif`],
+        id: 9,
+        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif`],
         // img: [`${smiseScreens}`, `${smiseScreensFour}`, `${smiseScreenTools}`, `${smiseScreenImplant}`, `${smiseScreenImaging}`],
-        link: 'https://wvoigt722.github.io/uclaTeamProject/',
+        link: 'https://jotter-notetakerapp.herokuapp.com/',
         top1: '750px',
         left1: '30%',
         topImg: '166.7px',
@@ -99,9 +101,9 @@ const itemData = [
         heightBubbleOne: '302px',
         width: '310px',
         height: '310px',
-        title: 'WAKO',
-        class: 'bubbleTopLightBlue',
-        color: '#8CBAD2',
+        title: 'Jotter',
+        class: 'bubbleTopLightGreen',
+        color: '#58BA9D',
         opacityBubbleOne: 1,
         opacityBubbleTwo: 0.91,
         fontSize: '20px',
@@ -111,9 +113,9 @@ const itemData = [
         marginTop: '40%',
         marginTopSlogan: '30px',
         zIndex: 4,
-        description: 'Property Data in Your Hands',
-        descriptionTwo: `An interactive front-end application that integrates a property API to make quick real estate data more scalable, convenient, and personalized`,
-        slogan: 'Quick Real Estate Data'
+        description: 'Note-taking Application',
+        descriptionTwo: `A full-stack, browser-based application to make writing and saving notes convenient and personal`,
+        slogan: 'Create, Discard and Share Notes'
     },
 ]
-export default Wako
+export default Jotter

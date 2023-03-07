@@ -60,83 +60,94 @@ import paragraphTablet from '../assets/paragraph-tablet.png';
 import paragraphPcThree from '../assets/Paragraph-pc-3.png';
 import thankYou from '../assets/thank-you.png';
 
-function BlockButtonWako() {
+import jotterCover from '../assets/Cover.png';
+import jotterSection from '../assets/Section.png';
+import jotterPTablet from '../assets/jotter-Paragraph-tablet.png';
+import jotterPPc from '../assets/jotter-Paragraph-pc.png';
+import jotterPPcTwo from '../assets/jotter-Paragraph-pc-2.png';
+import jotterPPcThree from '../assets/jotter-Paragraph-pc-3.png';
+import jotterPTabletTwo from '../assets/jotter-Paragraph-tablet-2.png';
+import jotterWireframe from '../assets/jotter-Wireframe.png';
+import jotterThankYou from '../assets/jotter-Thank-you.png';
+
+
+function BlockButtonJotter() {
     const images = [
         {
             id: 1,
-            img: `${wakoCover}`,
+            img: `${jotterCover}`,
             description: 'Shangoo Desktop and Mobile App'
         },
         {
             id: 2,
-            img: `${wakoAgenda}`,
+            img: `${jotterSection}`,
             description: 'Get Your Prescribed or OTC Meds Delivered to You'
         },
         {
             id: 3,
-            img: `${wakoSection}`,
+            img: `${jotterPTablet}`,
             description: 'Register for an Account and Get Customer Support'
         },
         {
             id: 4,
-            img: `${wakoImageCards}`,
+            img: `${jotterPPc}`,
             description: '3 Native iOS and Andriod applications (for drivers, pharmacies, and patients)'
         },
         {
             id: 5,
-            img: `${wakoParagraphDesktop}`,
+            img: `${jotterPPcTwo}`,
             description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental health over time'
         },
         {
             id: 6,
-            img: `${wakoRoadmap}`,
+            img: `${jotterPPcThree}`,
             description: 'Refer to Simplified Clinical Notes Associated With a Tooth, Appointment Date, Provider, or Location'
         },
         {
             id: 7,
-            img: `${paragraphMobile}`,
+            img: `${jotterPTabletTwo}`,
             description: 'Customized animated depiction of your true oral cavity in greater detail with more precise dental records'
         },
         {
             id: 8,
-            img: `${barChart}`,
+            img: `${jotterWireframe}`,
             description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
         },
         {
             id: 9,
-            img: `${bullets}`,
+            img: `${jotterThankYou}`,
             description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
         },
-        {
-            id: 10,
-            img: `${team}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 11,
-            img: `${coverTwo}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 12,
-            img: `${paragraphPc}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 13,
-            img: `${paragraphPcTwo}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 14,
-            img: `${paragraphTablet}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 15,
-            img: `${thankYou}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        }
+        // {
+        //     id: 10,
+        //     img: `${team}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 11,
+        //     img: `${coverTwo}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 12,
+        //     img: `${paragraphPc}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 13,
+        //     img: `${paragraphPcTwo}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 14,
+        //     img: `${paragraphTablet}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 15,
+        //     img: `${thankYou}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // }
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -178,7 +189,7 @@ function BlockButtonWako() {
             {/* <Button variant="primary" size="lg">
                 Block level button
             </Button> */}
-            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '105px', height: '105px', borderRadius: '50px', borderColor: '#EFEEF5', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '845px', left: '42.2%', background: '#EFEEF5 0% 0% no-repeat padding-box', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
+            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '105px', height: '105px', borderRadius: '50px', borderColor: '#EFEEF5', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '840px', left: '42.2%', background: 'none', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
                 {Text ? 'See Less' : 'See More...'}
             </Button>
             {/* if (Button.onClick === 'true') {
@@ -213,4 +224,4 @@ function BlockButtonWako() {
 //         img: `${shangoo}`
 //     }
 // ]
-export default BlockButtonWako;
+export default BlockButtonJotter;
