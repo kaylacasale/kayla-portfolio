@@ -25,6 +25,8 @@ import wakoLogo from '../assets/wako-logo.png'
 
 import jotterLogo from '../assets/jotter-logo.png';
 import myMetroLogo from '../assets/mymetro-icon.png';
+
+import wheelTopperExtraHole from '../assets/wheel-topper-extra-whole.png';
 // import smiseOpening from '../assets/smise-opening.png'
 
 
@@ -42,7 +44,7 @@ function MyMetro() {
 
 
                     {/* <BlockButton /> */}
-                    <img src={wheelCopy2} id='ball-1' class='bubble' style={{ top: `${item.top1}`, left: `${item.left1}`, width: `${item.widthBubbleOne}`, height: `${item.heightBubbleOne}`, borderRadius: `${item.borderRadius}`, opacity: `${item.opacityBubbleOne}`, position: 'absolute', boxShadow: '0px 3px 6px #00000029', background: `${item.backgroundBubbleOne}` }} ></img>
+                    <img src={wheelTopperExtraHole} id='ball-1' class='bubble' style={{ top: `${item.top1}`, left: `${item.left1}`, width: `${item.widthBubbleOne}`, height: `${item.heightBubbleOne}`, borderRadius: `${item.borderRadius}`, opacity: `${item.opacityBubbleOne}`, position: 'absolute', boxShadow: '0px 3px 6px #00000029', background: `${item.backgroundBubbleOne}` }} ></img>
                     <div id='ball-1' class='bubble' style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.width}`, height: `${item.height}`, borderRadius: `${item.borderRadius}`, position: 'absolute', opacity: 1 }}>
 
 
@@ -58,7 +60,7 @@ function MyMetro() {
                     </div>
                     <BlockButtonMyMetro />
                     <p style={{ top: '920px', left: '23.5%', fontSize: '18px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.description}</p>
-                    <p style={{ top: '698px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5, color: 'white' }}>{item.descriptionTwo}</p>
+                    <p style={{ top: '698px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 4, color: 'white' }}>{item.descriptionTwo}</p>
                     <a href={item.link} target='_blank'><img src={myMetroLogo} style={{ top: '722px', left: '49.45%', width: '75px', position: 'absolute', zIndex: 6, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
 
                     {/* <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link> */}

@@ -44,7 +44,7 @@ function Smise() {
                     </div>
                     <BlockButtonSmise />
                     <p style={{ top: '935px', left: '23.5%', fontSize: '18px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.description}</p>
-                    <p style={{ top: '725px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
+                    <p style={{ top: '718px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 5 }}>{item.descriptionTwo}</p>
                     {/* <a href={item.link} target='_blank'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a> */}
                     <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link>
                 </div>
@@ -92,7 +92,7 @@ const itemData = [
         marginTopSlogan: '30px',
         zIndex: 4,
         description: 'Keep Track of Your Teeth',
-        descriptionTwo: `An visual prototype of a dental app aimed to personalize oral care and engage users through statistically relevant and animated feedback`,
+        descriptionTwo: `An visual prototype I created with Adobe XD of a dental app aimed to personalize oral care and engage users through statistically relevant and animated feedback`,
         slogan: 'Keep Track of Your Teeth'
     },
 ]

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import '../styles/SkillsStyle.css'
 import threeDBubble from '../assets/3d-bubble.svg'
 // SMISE images
@@ -16,6 +16,7 @@ import Shangoo from '../components/Shangoo';
 import Wako from '../components/Wako';
 import Jotter from '../components/Jotter';
 import MyMetro from '../components/MyMetro';
+import { elementAcceptingRef } from '@mui/utils';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -34,18 +35,25 @@ const Skills = () => {
     const renderComponent = () => {
 
         if (selectedId === 1) {
+            handleClick()
             return <div><Etiquette /> <button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#F4E4A4', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 2) {
+            handleClick()
             return <div><BlogForTechs /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#BDF4FB', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 4) {
+            handleClick()
             return <div><Smise /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#E8873F', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 5) {
+            handleClick()
             return <div><Shangoo /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#525A70', boxShadow: '0px 3px 6px #00000029', color: 'white' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 7) {
+            handleClick()
             return <div><Wako /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#C5C7D5', borderColor: '#A2C4D7', boxShadow: '0px 3px 6px #00000029', color: 'black' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 9) {
+            handleClick()
             return <div><Jotter /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#5DBAA4', borderColor: '#5DBAA4', boxShadow: '0px 3px 6px #00000029', color: 'white' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 10) {
+            handleClick()
             return <div><MyMetro /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#71A1FF', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
         }
     }
@@ -60,6 +68,21 @@ const Skills = () => {
     const handleComponentVisibility = () => {
         setSelectedId(null);
     }
+    //  after pressing an item (bubble/individual project) in the map function, handleClick() is called in the renderComponent function before returning the div with the component
+    function handleClick() {
+        // scrollToRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        const element = document.getElementById('my-element');
+        const elementPosition = element.getBoundingClientRect().bottom;
+        // const viewportHeight = window.innerHeight;
+        // const scrollHeight = document.documentElement.scrollHeight;
+        const offset = window.innerHeight - elementPosition - 350;
+        window.scrollBy({
+            top: offset,
+            behavior: 'smooth'
+        });
+    }
+
+    const scrollToRef = useRef(null);
     // const [currentIndex, setCurrentIndex] = useState(0);
 
     // useEffect(() => {
@@ -101,7 +124,7 @@ const Skills = () => {
                 </div>
             ))
             }
-            <div className='component-div'>
+            <div className='component-div' ref={scrollToRef} id='my-element'>
                 {selectedId ? renderComponent() : !renderComponent()}
                 {/* {isClicked ? <button>Exit</button> : 'No Btn'} */}
             </div>

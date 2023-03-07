@@ -230,7 +230,7 @@ function BlockButtonMyMetro() {
             {/* <Button variant="primary" size="lg">
                 Block level button
             </Button> */}
-            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '60px', height: '60px', borderRadius: '50px', borderColor: '#EFEEF5', boxShadow: '6px 9px 12px #00000029', fontSize: '10px', position: 'absolute', top: '870px', left: '54%', background: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box', opacity: '.5', zIndex: 6, fontSize: '14px', color: 'white' }} >{Text}
+            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '65px', height: '65px', borderRadius: '50px', borderColor: '#71A1FF', boxShadow: '6px 9px 12px #00000029', fontSize: '10px', position: 'absolute', top: '803px', left: '22.45%', background: 'transparent linear-gradient(239deg, #4FAFF5 0%, #8D17F3 100%) 0% 0% no-repeat padding-box', zIndex: 6, fontSize: '14px', color: 'white' }} >{Text}
                 {Text ? 'See Less' : 'See More...'}
             </Button>
             {/* if (Button.onClick === 'true') {
@@ -250,8 +250,8 @@ function BlockButtonMyMetro() {
 
                     </div>
                 )}
-                <button id='wiggle' onClick={handleNextImage} style={{ width: '14%', height: '75px', marginTop: '10px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '250px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
-                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '7%', height: '38px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-115px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
+                <button id='wiggle' onClick={handleNextImage} style={{ width: '13%', height: '75px', marginTop: '10px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '275px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
+                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '7%', height: '38px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-120px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
             </div>
         </div >
     );
