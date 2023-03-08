@@ -12,7 +12,11 @@ import MovingComponent from 'react-moving-text'
 import ReactImageListMasonry from '../components/ReactImageListMasonry';
 import shangoo from '../assets/shangoo-main.PNG'
 import BlockButton from '../components/BlockButton';
-import '../styles/PortfolioStyle.css'
+
+import Sphere from '../components/Sphere'
+
+import reactIcon from '../assets/react-icon.png'
+import jQueryIcon from '../assets/jQuery-icon.png'
 
 // import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
@@ -40,90 +44,91 @@ import '../styles/PortfolioStyle.css'
 // }
 
 function Portfolio() {
+
+    const handleSphereClick = () => {
+        console.log("Sphere clicked!");
+    }
     return (
-        // <div id='canvas-portfolio'>
-        //     <div id='circle-portfolio'>
-        //         <div id='ball-1' class='ball' style={{ zIndex: '3' }}>Kayla Casale</div>
-        //         <div id='ball-2' class='ball' style={{ zIndex: '2' }}>Home</div>
-        //         <div id='ball-3' class='ball' style={{ zIndex: '2' }}>About</div>
-        //         <div id='ball-4' class='ball' style={{ zIndex: '2' }}>Work</div>
-        //     </div>
-        // </div>
-        <div></div>
-    )
-    // return (
-    //     <section style={{ marginTop: '3em', background: `${<Background />}`, fontFamily: 'Cascadia Code', height: '2500px' }}>
+        <section style={{ marginTop: '3em', fontFamily: 'Climate Crisis', height: '1000px' }}>
+            <div id='wiggle' style={{ position: "relative", height: "300px", width: '300px', background: 'transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #D49F41 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px' }}>
+                <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p>
+                <Sphere x={15} y={75} z={0} color='#61DAFB' text='React' onClick={handleSphereClick} hoverColor='#61DAFB' srcIcon={reactIcon} textColor='#61DAFB' />
+                <Sphere x={45} y={75} z={0} color='#2E64A4' text='jQuery' onClick={handleSphereClick} hoverColor='#2E64A4' srcIcon={jQueryIcon} textColor='#2E64A4' />
+                {/* <Sphere x={35} y={75} z={0} onClick={handleSphereClick} /> */}
+                <Sphere x={75} y={75} z={0} onClick={handleSphereClick} />
+                <Sphere x={105} y={75} z={0} onClick={handleSphereClick} />
+            </div>
 
-    //         <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em", width: '20%' }}>
-    //             <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', textAlign: 'center', fontSize: '32px', color: 'white' }}>
-    //                 <MovingComponent
-    //                     type="blur"
-    //                     duration="1700ms"
-    //                     delay=".5s"
-    //                     direction="alternate"
-    //                     timing="ease-in"
-    //                     iteration="infinite"
-    //                     fillMode="none">
-    //                     Kayla's Portfolio
-    //                 </MovingComponent>
-    //             </div>
-    //             <div className='column' style={{ float: 'right' }}>
-    //                 <div>
-    //                     <Card />
-    //                 </div>
-    //                 <div style={{ marginTop: '1em' }}>
-    //                     <BlockButton />
-    //                 </div>
+            <div className='cardEl shadow shadow-info shadow-intensity-lg' style={{ float: "right", marginTop: "3em", width: '20%' }}>
+                <div className='title' style={{ boxShadow: '1px 2px 9px #CBDCCB', textAlign: 'center', fontSize: '32px', color: 'white' }}>
+                    <MovingComponent
+                        type="blur"
+                        duration="1700ms"
+                        delay=".5s"
+                        direction="alternate"
+                        timing="ease-in"
+                        iteration="infinite"
+                        fillMode="none">
+                        Kayla's Portfolio
+                    </MovingComponent>
+                </div>
+                <div className='column' style={{ float: 'right' }}>
+                    <div>
+                        <Card />
+                    </div>
+                    <div style={{ marginTop: '1em' }}>
+                        <BlockButton />
+                    </div>
 
-    //                 {/* <div className='card' style={{ margin: '1em', height: 'fit-content' }}>
-    //                     {cardData.map((item) =>
-    //                         <img className='cardUnderCard' src={`${item.img}`} style={{ height: '600px' }}></img>
-    //                     )}
-    //                 </div> */}
-    //             </div>
-    //         </div>
-    //         <ImageList sx={{ width: 900, height: 850 }} className='shadow-lg'>
-    //             <ImageListItem key="Subheader" cols={2} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
-    //                 <ListSubheader component="div" className='shadow-lg shadow-intensity-lg rounded' >Work</ListSubheader>
-    //             </ImageListItem >
-    //             {itemData.map((item) => (
-    //                 <a href={item.link} target="_blank"><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
-    //                     <img
-    //                         // className='rounded'
-    //                         style={{ height: '290px' }}
-    //                         src={`${item.img}?w=248&fit=crop&auto=format`}
-    //                         srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-    //                         href={item.link}
-    //                         alt={item.title}
-    //                         loading="lazy"
-    //                     />
-    //                     <ImageListItemBar
-    //                         // className='rounded'
-    //                         title={item.title}
-    //                         subtitle={item.author}
-    //                         actionIcon={
-    //                             <IconButton
-    //                                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-    //                                 aria-label={`info about ${item.title}`}
-    //                             >
-    //                                 {/* <Icon /> */}
-    //                             </IconButton>
-    //                         }
-    //                     />
-    //                 </ImageListItem></a>
-    //             ))}
-    //         </ImageList>
+                    {/* <div className='card' style={{ margin: '1em', height: 'fit-content' }}>
+                        {cardData.map((item) =>
+                            <img className='cardUnderCard' src={`${item.img}`} style={{ height: '600px' }}></img>
+                        )}
+                    </div> */}
+                </div>
+            </div>
+            <ImageList sx={{ width: 900, height: 850 }} className='shadow-lg'>
+                <ImageListItem key="Subheader" cols={2} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
+                    <ListSubheader component="div" className='shadow-lg shadow-intensity-lg rounded' >Work</ListSubheader>
+                </ImageListItem >
+                {itemData.map((item) => (
+                    <a href={item.link} target="_blank"><ImageListItem key={item.img} style={{ boxShadow: '1px 2px 9px #CBDCCB', margin: '1em' }}>
+                        <img
+                            // className='rounded'
+                            style={{ height: '290px' }}
+                            src={`${item.img}?w=248&fit=crop&auto=format`}
+                            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                            href={item.link}
+                            alt={item.title}
+                            loading="lazy"
+                        />
+                        <ImageListItemBar
+                            // className='rounded'
+                            title={item.title}
+                            subtitle={item.author}
+                            actionIcon={
+                                <IconButton
+                                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                                    aria-label={`info about ${item.title}`}
+                                >
+                                    {/* <Icon /> */}
+                                </IconButton>
+                            }
+                        />
+                    </ImageListItem></a>
+                ))}
+            </ImageList>
 
-    //         {/* <Background style={styles.Background}>
+            {/* <Background style={styles.Background}>
 
 
-    //         </Background> */}
-    //         {/* <div>
-    //             <Card />
-    //         </div> */}
+            </Background> */}
+            {/* <div>
+                <Card />
+            </div> */}
 
-    //     </section >
-    // );
+        </section >
+    );
 }
 // const cardData = [
 //     {

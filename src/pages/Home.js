@@ -33,7 +33,7 @@ const Home = () => {
                 <AboutMe />
             </div>
             {/* neuroscience research - carousel */}
-            <div>
+            {/* <div>
                 <div style={{ width: '80%', float: 'left' }}>
                     <MovingComponent
                         type="fadeInFromBottom"
@@ -50,9 +50,9 @@ const Home = () => {
                 <div>
                     <ReactCarousel />
                 </div>
-            </div>
+            </div> */}
             {/* psychology research - carousel */}
-            <div>
+            {/* <div>
                 <div style={{ width: '80%', float: 'right' }}>
                     <MovingComponent
                         type="fadeInFromBottom"
@@ -69,8 +69,8 @@ const Home = () => {
                 <div>
                     <ReactCarouselTwo />
                 </div>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <div style={{ width: '80%', float: 'left' }}>
                     <MovingComponent
                         type="fadeInFromBottom"
@@ -87,8 +87,8 @@ const Home = () => {
                 <div>
                     <ReactCarouselPrototyping />
                 </div>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
                 <div style={{ width: '80%', float: 'right' }}>
                     <MovingComponent
                         type="fadeInFromBottom"
@@ -105,7 +105,7 @@ const Home = () => {
                 <div>
                     <ReactCarouselVectors />
                 </div>
-            </div>
+            </div> */}
             {/* <div>
                 <HomeCarousel />;
             </div> */}
