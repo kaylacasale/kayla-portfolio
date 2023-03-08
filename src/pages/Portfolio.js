@@ -49,7 +49,27 @@ import gitHubIcon from '../assets/github-icon.png';
 import gitIcon from '../assets/git-icon.png';
 import gitHubPagesIcon from '../assets/github-pages-icon.png';
 
+import projectManagementIcon from '../assets/project-management-icon.png';
 import joomlaIcon from '../assets/joomla-icon.png';
+import nulabBacklogIcon from '../assets/nulab-backlog-icon.png';
+import agileIcon from '../assets/agile-icon.png';
+import mondayIcon from '../assets/monday-icon.png';
+import airtablesIcon from '../assets/airtables-icon.png';
+import slackIcon from '../assets/slack-icon.png';
+import advancedMdIcon from '../assets/advancedMd-icon.png';
+
+import developmentAndTestingIcon from '../assets/development-and-testing-icon.png';
+import workbenchIcon from '../assets/workbench-icon.png';
+import postmanIcon from '../assets/postman-icon.png';
+import insomniaIcon from '../assets/insomnia-icon.png';
+import compassIcon from '../assets/compass-icon.png';
+import herokuIcon from '../assets/heroku-icon.png';
+import dockerIcon from '../assets/docker-icon.png';
+import googleAnalyticsIcon from '../assets/google-analytics-icon.png';
+import atlasIcon from '../assets/atlas-icon.png';
+
+
+
 // import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
 // import IconButton from '@mui/material/IconButton';
@@ -105,7 +125,7 @@ function Portfolio() {
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '75px', color: 'white' }}>Frameworks</p>
+                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '25%', color: 'white' }}>Frameworks</p>
                         <img src={frameworksIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '30px', marginTop: '60px' }}></img>
                     </span>
                     <Sphere x={25} y={105} z={-1} color='#353535' text='Bootstrap...' onClick={handleSphereClick} hoverColor='#4F06BC' srcIcon={bootstrapIcon} textColor='#4F06BC' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
@@ -170,19 +190,39 @@ function Portfolio() {
                     {/* <Sphere x={75} y={75} z={0} onClick={handleSphereClick} /> */}
                     {/* <Sphere x={105} y={75} z={0} onClick={handleSphereClick} /> */}
                 </div>
-                <div id='zoom' style={{ position: "relative", background: 'transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'right', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', lineHeight: '15px' }}>
+                <div id='zoom' style={{ position: "relative", background: 'transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'right', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', lineHeight: '15px' }}>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
                         <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '5%', color: 'white' }}>Project Management</p>
-                        <img src={databaseIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
+                        <img src={projectManagementIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
                     </span>
-                    <Sphere x={25} y={105} z={0} color='#2E64A4' text='Joomla' onClick={handleSphereClick} hoverColor='transparent conic-gradient(from 114deg at 50% 50%, #EE4035 0.00%, #4F91CD 34.07%, #7AC043 58.51%, #F9AE41 81.52%, #F3AF41 100.00%) 0% 0% no-repeat padding-box' srcIcon={jawsDBIcon} textColor='#003B6D' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={55} y={105} z={0} color='#2E64A4' text='Nulab Backlog' onClick={handleSphereClick} hoverColor='#0D416D' srcIcon={dynamoDBIcon} textColor='#0D416D' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={10} y={75} z={0} color='#61DAFB' text='Joomla' onClick={handleSphereClick} hoverColor='transparent conic-gradient(from 114deg at 50% 50%, #EE4035 0.00%, #4F91CD 34.07%, #7AC043 58.51%, #F9AE41 81.52%, #F3AF41 100.00%) 0% 0% no-repeat padding-box' srcIcon={joomlaIcon} textColor='#26557C' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={40} y={75} z={0} color='#2E64A4' text='Nulab Backlog' onClick={handleSphereClick} hoverColor='#2E64A4' srcIcon={postgreSQLIcon} textColor='#2E64A4' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={70} y={75} z={0} color='#77B064' text='Agile...' onClick={handleSphereClick} hoverColor='#366931' srcIcon={mongodbIcon} textColor='#366931' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={100} y={75} z={0} color='#353535' text='ExpoGo' onClick={handleSphereClick} hoverColor='#CA3097' srcIcon={graphQLIcon} textColor='#CA3097' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={25} y={110} z={0} color='#2E64A4' text='Airtables' onClick={handleSphereClick} hoverColor='#000000' srcIcon={airtablesIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={55} y={110} z={0} color='#2E64A4' text='Slack' onClick={handleSphereClick} hoverColor='#000000' srcIcon={slackIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={85} y={110} z={0} color='#2E64A4' text='AdvancedMD' onClick={handleSphereClick} hoverColor='#FB6427' srcIcon={advancedMdIcon} textColor='#FB6427' notHoverColor='transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={10} y={75} z={0} color='#61DAFB' text='Joomla' onClick={handleSphereClick} hoverColor='#000000' srcIcon={joomlaIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={40} y={75} z={0} color='#2E64A4' text='Nulab Backlog' onClick={handleSphereClick} hoverColor='#42CE9F' srcIcon={nulabBacklogIcon} textColor='#42CE9F' notHoverColor='transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={70} y={75} z={0} color='#77B064' text='Agile...' onClick={handleSphereClick} hoverColor='#000000' srcIcon={agileIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={100} y={75} z={0} color='#353535' text='monday' onClick={handleSphereClick} hoverColor='#000000' srcIcon={mondayIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box' />
+                    {/* <Sphere x={35} y={75} z={0} onClick={handleSphereClick} /> */}
+                    {/* <Sphere x={75} y={75} z={0} onClick={handleSphereClick} /> */}
+                    {/* <Sphere x={105} y={75} z={0} onClick={handleSphereClick} /> */}
+                </div>
+                <div id='zoom' style={{ position: "relative", background: 'transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'right', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', lineHeight: '15px' }}>
+
+                    {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
+                        <p style={{ position: 'absolute', marginTop: '30px', marginLeft: '5%', color: 'white' }}>Development & Testing</p>
+                        <img src={developmentAndTestingIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
+                    </span>
+                    <Sphere x={10} y={110} z={0} color='#2E64A4' text='Heroku' onClick={handleSphereClick} hoverColor='#430098' srcIcon={herokuIcon} textColor='#430098' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={40} y={110} z={0} color='#2E64A4' text='Docker' onClick={handleSphereClick} hoverColor='#006BC0' srcIcon={dockerIcon} textColor='#006BC0' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={70} y={110} z={0} color='#2E64A4' text='Google Analytics' onClick={handleSphereClick} hoverColor='#FB6427' srcIcon={googleAnalyticsIcon} textColor='#FB6427' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={100} y={110} z={0} color='#2E64A4' text='Atlas' onClick={handleSphereClick} hoverColor='#424950' srcIcon={atlasIcon} textColor='#424950' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={10} y={75} z={0} color='#61DAFB' text='Workbench' onClick={handleSphereClick} hoverColor='#C8C8C7' srcIcon={workbenchIcon} textColor='#C8C8C7' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={40} y={75} z={0} color='#2E64A4' text='Postman' onClick={handleSphereClick} hoverColor='#E9663E' srcIcon={postmanIcon} textColor='#E9663E' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={70} y={75} z={0} color='#77B064' text='Insomnia' onClick={handleSphereClick} hoverColor='#4000BF' srcIcon={insomniaIcon} textColor='#4000BF' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={100} y={75} z={0} color='#353535' text='Compass' onClick={handleSphereClick} hoverColor='#13AA52' srcIcon={compassIcon} textColor='#13AA52' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
                     {/* <Sphere x={35} y={75} z={0} onClick={handleSphereClick} /> */}
                     {/* <Sphere x={75} y={75} z={0} onClick={handleSphereClick} /> */}
                     {/* <Sphere x={105} y={75} z={0} onClick={handleSphereClick} /> */}
