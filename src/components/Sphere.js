@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Sphere = (props) => {
-    const { x, y, z, color, text, onClick, hoverColor, srcIcon, textColor } = props;
+    const { x, y, z, color, text, onClick, hoverColor, srcIcon, textColor, notHoverColor } = props;
     const [isHovered, setIsHovered] = useState(false);
 
     const handleHover = () => {
@@ -53,7 +53,7 @@ const Sphere = (props) => {
                     // left: x,
                     top: position.y,
                     left: position.x,
-                    background: isHovered ? `${hoverColor}` : `transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box`,
+                    background: isHovered ? `${hoverColor}` : `${notHoverColor}`,
                     borderRadius: "50%",
                     width: "75px",
                     height: "75px",
