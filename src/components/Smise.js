@@ -92,7 +92,7 @@ const itemData = [
         marginTopSlogan: '30px',
         zIndex: 4,
         description: 'Keep Track of Your Teeth',
-        descriptionTwo: `An visual prototype I created with Adobe XD of a dental app aimed to personalize oral care and engage users through statistically relevant and animated feedback`,
+        descriptionTwo: `An visual prototype I created in Adobe XD of a dental app aimed to personalize oral care and engage users through statistically relevant feedback and animated design`,
         slogan: 'Keep Track of Your Teeth'
     },
 ]

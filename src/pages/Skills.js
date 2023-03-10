@@ -20,6 +20,7 @@ import { elementAcceptingRef } from '@mui/utils';
 import WorkYourSchedule from '../components/WorkYourSchedule';
 import CodingQuiz from '../components/CodingQuiz';
 import PasswordGenerator from '../components/PasswordGenerator';
+import YouMeMix from '../components/YouMeMix';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -67,7 +68,8 @@ const Skills = () => {
         } else if (selectedId === 13) {
             handleClick()
             return <div><PasswordGenerator /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#535963', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(180deg, #D56D6C 0%, #FFD6EE 47%, #9596DB 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
-
+        } else if (selectedId === 6) {
+            return <div><YouMeMix /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#535963', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(180deg, #010128 0%, #692659 46%, #E3B863 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
         }
     }
 
@@ -88,7 +90,7 @@ const Skills = () => {
         const elementPosition = element.getBoundingClientRect().bottom;
         // const viewportHeight = window.innerHeight;
         // const scrollHeight = document.documentElement.scrollHeight;
-        const offset = window.innerHeight - elementPosition - 375;
+        const offset = window.innerHeight - elementPosition - 320;
         window.scrollBy({
             top: offset,
             behavior: 'smooth'
