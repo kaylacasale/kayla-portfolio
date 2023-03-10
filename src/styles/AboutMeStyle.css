@@ -47,17 +47,38 @@
     /* animation-delay: 5s; */
     animation-name: display;
     position: absolute;
-    left: 350px;
+    left: 250px;
     animation-direction: normal;
 
 }
 
-.wheel-copied:hover {
+/* .wheel-copied:hover {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-name: rotateSome;
 
+} */
+
+#my-element {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* This rule defines the animation for rotating the element */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* This rule applies the animation to the element when the 'rotate' class is added */
+#my-element.rotate {
+    animation: rotate 0.5s ease-in-out;
 }
 
 @keyframes rotateSome {
@@ -94,3 +115,36 @@
     position: absolute;
     left: 300px
 } */
+
+.flipper-container {
+    perspective: 1000px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative
+}
+
+#circle-about {
+    position: absolute;
+    top: 50%;
+    left: 26.5%;
+    width: 150px;
+    height: 150px;
+    border-radius: 350px;
+    background: transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* src: url('../assets/my-logo-2.png'); */
+    /* margin-top: -50px;
+    margin-left: -30px; */
+
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // Here we import the Header.css file to grant access to some additional classNames
 import '../styles/Header.css';
-import "fontsource-cascadia-code"
-import myLogoTwo from '../assets/my-logo-2.png'
-
+import "fontsource-cascadia-code";
+import myLogoTwo from '../assets/my-logo-2.png';
+import myLogoLight from '../assets/my-logo-light.png';
+import myAtomIcon from '../assets/my-atom-icon.png';
 // TODO: Create a styles object called "styles"
 
 // const styles = {
@@ -33,11 +34,11 @@ function Header() {
 
   return (
     <header style={{ fontFamily: 'Climate Crisis' }}>
-      <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: '#EFEEF5' }}>
+      <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: '#C7C6D5' }}>
         <div id='canvas'>
           <div id='circle'>
-            <img className='my-logo' id='wiggle' src={myLogoTwo}></img>
-            <Link to='/' ><div id='ball-1' class='ball' style={{ zIndex: '3' }}>Kayla Casale</div></Link>
+            <img className='my-logo' id='wiggle' src={myAtomIcon} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
+            <Link to='/' ><div id='ball-1' class='ball' style={{ zIndex: '3' }}>KC</div></Link>
             <Link to='/' ><div id='ball-2' class='ball' style={{ zIndex: '2' }}>Home</div></Link>
             <Link to='/' ><div id='ball-3' class='ball' style={{ zIndex: '2' }}>About</div></Link>
             <Link to='/portfolio'><div id='ball-4' class='ball' style={{ zIndex: '2' }}>Work</div></Link>

@@ -1,0 +1,232 @@
+import React, { useState } from 'react';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import ListSubheader from '@mui/material/ListSubheader';
+import IconButton from "@mui/material/IconButton";
+import Card from '../components/Card'
+// import PortfolioBackground from '../components/PortfolioBackground'
+import '../styles/Background.css'
+import Background from '../components/Background';
+import MovingComponent from 'react-moving-text'
+import ReactImageListMasonry from '../components/ReactImageListMasonry';
+import shangoo from '../assets/shangoo-main.PNG'
+import BlockButton from '../components/BlockButton';
+
+import Sphere from '../components/Sphere'
+
+import reactIcon from '../assets/react-icon.png';
+import jQueryIcon from '../assets/jQuery-icon.png';
+import nodeIcon from '../assets/node-icon.png';
+import expressIcon from '../assets/express-icon.png';
+import javascriptIcon from '../assets/javascript-icon.png';
+import frameworksIcon from '../assets/frameworks-icon.png';
+import htmlIcon from '../assets/html-icon.png';
+import cssIcon from '../assets/css-icon.png';
+import matlabIcon from '../assets/matlab-icon.png';
+import phpIcon from '../assets/php-icon.png';
+import swiftIcon from '../assets/swift-icon.png';
+import typescriptIcon from '../assets/typescript-icon.png';
+import languagesIcon from '../assets/languages-icon.png';
+
+import databaseIcon from '../assets/database-technologies-icon.png';
+import mySQLIcon from '../assets/mysql-icon.png';
+import postgreSQLIcon from '../assets/postgreSQL-icon.png';
+import mongodbIcon from '../assets/mongdb-icon.png';
+import graphQLIcon from '../assets/graphql-icon.png';
+import bootstrapIcon from '../assets/bootstrap-icon.png';
+import materialUIIcon from '../assets/materialUI-icon.png';
+import jawsDBIcon from '../assets/jawsdb-icon.png';
+import dynamoDBIcon from '../assets/dynamodb-icon.png';
+import apolloIcon from '../assets/apollo-icon.png';
+import vscodeIcon from '../assets/vscode-icon.png';
+
+import idesIcon from '../assets/ides-icon.png';
+import xcodeIcon from '../assets/xcode-icon.png';
+
+import versionControlIcon from '../assets/version-control-icon.png';
+import gitHubIcon from '../assets/github-icon.png';
+import gitIcon from '../assets/git-icon.png';
+import gitHubPagesIcon from '../assets/github-pages-icon.png';
+
+import projectManagementIcon from '../assets/project-management-icon.png';
+import joomlaIcon from '../assets/joomla-icon.png';
+import nulabBacklogIcon from '../assets/nulab-backlog-icon.png';
+import agileIcon from '../assets/agile-icon.png';
+import mondayIcon from '../assets/monday-icon.png';
+import airtablesIcon from '../assets/airtables-icon.png';
+import slackIcon from '../assets/slack-icon.png';
+import advancedMdIcon from '../assets/advancedMd-icon.png';
+
+import developmentAndTestingIcon from '../assets/development-and-testing-icon.png';
+import workbenchIcon from '../assets/workbench-icon.png';
+import postmanIcon from '../assets/postman-icon.png';
+import insomniaIcon from '../assets/insomnia-icon.png';
+import compassIcon from '../assets/compass-icon.png';
+import herokuIcon from '../assets/heroku-icon.png';
+import dockerIcon from '../assets/docker-icon.png';
+import googleAnalyticsIcon from '../assets/google-analytics-icon.png';
+import atlasIcon from '../assets/atlas-icon.png';
+import expoIcon from '../assets/expo-icon.png';
+import myAtomLogo from '../assets/my-atom-icon.png';
+
+
+// import BoxShadow from 'react-native-shadow';
+// import InfoIcon from "@mui/material/InfoIcon";
+// import IconButton from '@mui/material/IconButton';
+// import InfoIcon from '@mui/icons-material/Info';
+// import { Link } from 'react-router-dom';
+//* Portfolio  ~ Project List (page)
+//* SingleProject ~ Single Project (component)
+
+// const styles = {
+//     section: {
+//         backgroundColor: 'black'
+//     }
+// }
+// const styles = {
+//     boxShadow: '1px 2px 9px #00FFFF',
+//     margin: '4em',
+//     padding: '1em'
+// }
+// added style to section, ImageListItem
+// const styles = {
+//     Background: {
+//         color: 'black'
+//     }
+// }
+
+function CirclesInCircles() {
+
+    const handleSphereClick = () => {
+        console.log("Sphere clicked!");
+    }
+    return (
+        <section style={{ marginTop: '0px', fontFamily: 'Climate Crisis', height: '1000px' }}>
+            <div className='container' style={{ marginTop: '0px' }}>
+                <div id='zoom' style={{ position: "absolute", height: "300px", width: '300px', width: '300px', height: '300px', borderRadius: '200px', boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)', top: '483px', left: '35%' }}>
+
+                    {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
+                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '80px', color: 'white' }}>KK</p>
+                        <img src={languagesIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '30px', marginTop: '60px' }}></img>
+                    </span>
+                    <Sphere x={20} y={90} z={-1} color='#353535' text='' onClick={handleSphereClick} hoverColor='#6C7EB7' srcIcon={phpIcon} textColor='#6C7EB7' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={64} y={110} z={-1} color='#FF5722' text='Swift' onClick={handleSphereClick} hoverColor='#FF5722' srcIcon={swiftIcon} textColor='#FF5722' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #F0EFF6 0%, #000000 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={106.5} y={85} z={-1} color='#FF5722' text='TypeScript' onClick={handleSphereClick} hoverColor='#3178C6' srcIcon={typescriptIcon} textColor='#3178C6' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={-5} y={59} z={0} color='#61DAFB' text='MATLAB' onClick={handleSphereClick} hoverColor='transparent linear-gradient(180deg, #B72C0F 0%, #FFAC0F 53%, #6DCDC4 100%) 0% 0% no-repeat padding-box' srcIcon={matlabIcon} textColor='#C3410F' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={58} y={70} z={0} color='#2E64A4' text='CSS...' onClick={handleSphereClick} hoverColor='#004CE8' srcIcon={cssIcon} textColor='#004CE8' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={89.6} y={25.2} z={0} color='#77B064' text='HTML' onClick={handleSphereClick} hoverColor='#FF641A' srcIcon={htmlIcon} textColor='#FF641A' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={130} y={55} z={0} color='#353535' text='JavaScript' onClick={handleSphereClick} hoverColor='#E4A126' srcIcon={javascriptIcon} textColor='#E4A126' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' />
+                    {/* <Sphere x={35} y={75} z={0} onClick={handleSphereClick} /> */}
+                    {/* <Sphere x={75} y={75} z={0} onClick={handleSphereClick} /> */}
+                    {/* <Sphere x={105} y={75} z={0} onClick={handleSphereClick} /> */}
+                </div>
+
+            </div>
+
+
+            {/* <Background style={styles.Background}>
+
+
+            </Background> */}
+            {/* <div>
+                <Card />
+            </div> */}
+
+        </section >
+    );
+}
+// const cardData = [
+//     {
+//         img: `${shangoo}`
+//     }
+// ]
+
+const itemData = [
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmQ5OGM1MGIzNjc0MzAwYzliZDk2OWNmZTU4OWU0NDMyY2UyZjJjNSZjdD1n/emFmKxgQdkMOumVPhf/giphy.gif',
+        title: 'Etiquette - Nail Salon Booking',
+        author: '@kaylacasale @bharatrai @salmaloum',
+        rows: 2,
+        cols: 2,
+        featured: true,
+        link: 'https://etiquette.herokuapp.com/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNmNTQ4YzI1NjgxZGQ0OTdlMWNhNTdiMWQyMGM4MmQ1ZDc3ODlhMiZjdD1n/5DK2cpXXE8ILNqX9pc/giphy.gif',
+        title: 'Blog For Techs - Tech Blog',
+        author: '@kaylacasale',
+        link: 'https://guarded-headland-91004.herokuapp.com/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODMzM2ZlYmMzZTU3MjVhOGE0OThlMTdhOTg0NjE2YzdiYTgyYjY4NSZjdD1n/cqMuhqltXsS7QlGU50/giphy.gif',
+        title: `What's the Weather - US Weather Dashboard`,
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/whats-the-weather/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzQ0OWViNGVhZGIyZjkzNzI4YTVjN2Q4MDgxNDFkZjBiZjM0NWM1YiZjdD1n/OaKJCdN4PbLMUjRFAt/giphy.gif',
+        title: 'WAKO - Real-time Real Estate',
+        author: '@kaylacasale @williamvoit @ambergreenberg @owengarret',
+        cols: 2,
+        link: 'https://wvoigt722.github.io/uclaTeamProject/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWY4YTgyZGQzZDNmY2ViOGJjMTZlMGExZTgxZTUzNjVhMDBhZTg0YyZjdD1n/548usG7ovvdlAjwGQo/giphy.gif',
+        title: 'Gs56thPick - Horse Racing Updates',
+        author: '@kaylacasale',
+        cols: 2,
+        link: 'https://gsbdaypicks.herokuapp.com/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif',
+        title: 'Jotter - Note-Taking App',
+        author: '@kaylacasale',
+        rows: 2,
+        cols: 2,
+        featured: true,
+        link: 'https://jotter-notetakerapp.herokuapp.com/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTRlZDRjZTM1NDFmOWNiZjJhNzdjZDFjNTg2Y2RkNTE2MDg4Y2IzMyZjdD1n/DeaZM3tmUZnUdRZZ27/giphy.gif',
+        title: 'My Metro Buddy - Quick & Reliable Metro Data',
+        author: '@kaylacasale @williamvoit @ambergreenberg @owengarret',
+        link: 'https://metro-buddy.herokuapp.com/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmI4YmQ3YTFmMTM0YWYwYjIxMjliNDczOTQzM2VjYjczZTM4ODJjOCZjdD1n/Nlhf6GgN46IyYgRcuE/giphy.gif',
+        title: 'Work Your Schedule - Workday Scheduler',
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/work-your-schedule/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWY1NzNlZmM0YTNmYTY3MGJmZWY4NmNkNDAzM2YxYjQ2NjhjMDk1MCZjdD1n/7LzJHaURMv7FzogBtW/giphy.gif',
+        title: 'Coding Quiz - Assessment for Developers',
+        author: '@kaylacasale',
+        rows: 2,
+        cols: 2,
+        link: 'https://kaylacasale.github.io/code-quiz/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Q4ZWNkNDNkM2UzMDYzMTJmN2M5YWFmNTM0ZDI0MGEzNjA0YjNhYSZjdD1n/uEEXByvQixnkNSla4Y/giphy.gif',
+        title: 'pA$sWoRd gEuerA+oR - Generate Random Strings',
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/generate-password/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTBkYzI1Y2NkNTBlMDM2MTQ2YjQ1YjA3YjkyZDc2YzNjZGYwMTdlNiZjdD1n/6JDvCpOmLp1jkElkBb/giphy.gif',
+        title: 'Portfolio - Version 1',
+        author: '@kaylacasale',
+        link: 'https://kaylacasale.github.io/portfolio/'
+    },
+    {
+        img: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QxMTNmOGM1NDc1ODg5ODUzNjA3NjRjMTczZDRiODdhMjAwMWJjYSZjdD1n/s3bTllyMaDBQI9KW0j/giphy.gif',
+        title: 'Horiseon Web App - Refactored',
+        author: '@kaylacasale',
+        cols: 2,
+        link: 'https://kaylacasale.github.io/horiseon-refactor-accessibility/'
+    },
+];
+export default CirclesInCircles
+
