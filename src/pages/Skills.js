@@ -350,7 +350,7 @@ const itemData = [
     },
     {
         id: 11,
-        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif`],
+        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZhNTlmOTM5OGU5YzEzMGJmZTAzZTYyMjA5MjM5NWExMzI4NjMwZiZjdD1n/FLQC2cAsx6Z1sHIPxR/giphy.gif`],
         link: 'https://kaylacasale.github.io/work-your-schedule/',
         top: '550px',
         left: '60.5%',
@@ -390,7 +390,7 @@ const itemData = [
     },
     {
         id: 13,
-        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Q4ZWNkNDNkM2UzMDYzMTJmN2M5YWFmNTM0ZDI0MGEzNjA0YjNhYSZjdD1n/uEEXByvQixnkNSla4Y/giphy.gif`],
+        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmM0MTg3YTczYTM5OWM1NjQ5ZWZmMzEwNTgwZTgzOTI3ZjcxMTA4YSZjdD1n/7K4jFp6dpUvCJWDke6/giphy.gif`],
         link: 'https://kaylacasale.github.io/generate-password/',
         top: '530px',
         left: '89.2%',

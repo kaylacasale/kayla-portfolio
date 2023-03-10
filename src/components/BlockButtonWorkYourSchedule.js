@@ -90,105 +90,112 @@ import mymetro17 from '../assets/mymetro-17.png';
 import mymetro18 from '../assets/mymetro-18.png';
 import mymetro19 from '../assets/Mymetro-19.png';
 
+import scheduler1 from '../assets/Scheduler-1.png';
+import scheduler2 from '../assets/Scheduler-2.png';
+import scheduler3 from '../assets/Scheduler-3.png';
+import scheduler4 from '../assets/Scheduler-4.png';
+import scheduler5 from '../assets/Scheduler-5.png';
+import scheduler6 from '../assets/Scheduler-6.png';
+
 
 
 function BlockButtonWorkYourSchedule() {
     const images = [
         {
             id: 1,
-            img: `${mymetro1}`,
+            img: `${scheduler1}`,
             description: 'Shangoo Desktop and Mobile App'
         },
         {
             id: 2,
-            img: `${mymetro2}`,
+            img: `${scheduler2}`,
             description: 'Get Your Prescribed or OTC Meds Delivered to You'
         },
         {
             id: 3,
-            img: `${mymetro3}`,
+            img: `${scheduler3}`,
             description: 'Register for an Account and Get Customer Support'
         },
         {
             id: 4,
-            img: `${mymetro4}`,
+            img: `${scheduler4}`,
             description: '3 Native iOS and Andriod applications (for drivers, pharmacies, and patients)'
         },
         {
             id: 5,
-            img: `${mymetro5}`,
+            img: `${scheduler5}`,
             description: 'Gather yearly comparisons of dental records which allow patients to track the progress of their dental health over time'
         },
         {
             id: 6,
-            img: `${mymetro6}`,
+            img: `${scheduler6}`,
             description: 'Refer to Simplified Clinical Notes Associated With a Tooth, Appointment Date, Provider, or Location'
         },
-        {
-            id: 7,
-            img: `${mymetro7}`,
-            description: 'Customized animated depiction of your true oral cavity in greater detail with more precise dental records'
-        },
-        {
-            id: 8,
-            img: `${mymetro8}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 9,
-            img: `${mymetro9}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 10,
-            img: `${mymetro10}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 11,
-            img: `${mymetro11}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 12,
-            img: `${mymetro12}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 13,
-            img: `${mymetro13}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 14,
-            img: `${mymetro14}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 15,
-            img: `${mymetro15}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 16,
-            img: `${mymetro16}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 17,
-            img: `${mymetro17}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 18,
-            img: `${mymetro18}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        },
-        {
-            id: 19,
-            img: `${mymetro19}`,
-            description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
-        }
+        // {
+        //     id: 7,
+        //     img: `${mymetro7}`,
+        //     description: 'Customized animated depiction of your true oral cavity in greater detail with more precise dental records'
+        // },
+        // {
+        //     id: 8,
+        //     img: `${mymetro8}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 9,
+        //     img: `${mymetro9}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 10,
+        //     img: `${mymetro10}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 11,
+        //     img: `${mymetro11}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 12,
+        //     img: `${mymetro12}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 13,
+        //     img: `${mymetro13}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 14,
+        //     img: `${mymetro14}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 15,
+        //     img: `${mymetro15}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 16,
+        //     img: `${mymetro16}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 17,
+        //     img: `${mymetro17}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 18,
+        //     img: `${mymetro18}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // },
+        // {
+        //     id: 19,
+        //     img: `${mymetro19}`,
+        //     description: 'SMISE analyzes dental records, patient input, and treatment outcomes among patients to provide increasingly personal, accurate, and predictive recommendations'
+        // }
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
 

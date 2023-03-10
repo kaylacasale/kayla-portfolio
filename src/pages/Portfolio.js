@@ -67,6 +67,7 @@ import herokuIcon from '../assets/heroku-icon.png';
 import dockerIcon from '../assets/docker-icon.png';
 import googleAnalyticsIcon from '../assets/google-analytics-icon.png';
 import atlasIcon from '../assets/atlas-icon.png';
+import expoIcon from '../assets/expo-icon.png';
 
 
 
@@ -215,10 +216,13 @@ function Portfolio() {
                         <p style={{ position: 'absolute', marginTop: '30px', marginLeft: '5%', color: 'white' }}>Development & Testing</p>
                         <img src={developmentAndTestingIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
                     </span>
-                    <Sphere x={10} y={110} z={0} color='#2E64A4' text='Heroku' onClick={handleSphereClick} hoverColor='#430098' srcIcon={herokuIcon} textColor='#430098' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={40} y={110} z={0} color='#2E64A4' text='Docker' onClick={handleSphereClick} hoverColor='#006BC0' srcIcon={dockerIcon} textColor='#006BC0' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={70} y={110} z={0} color='#2E64A4' text='Google Analytics' onClick={handleSphereClick} hoverColor='#FB6427' srcIcon={googleAnalyticsIcon} textColor='#FB6427' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
-                    <Sphere x={100} y={110} z={0} color='#2E64A4' text='Atlas' onClick={handleSphereClick} hoverColor='#424950' srcIcon={atlasIcon} textColor='#424950' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    {/* <Sphere x={40} y={135} z={0} color='#2E64A4' text='Heroku' onClick={handleSphereClick} hoverColor='#430098' srcIcon={herokuIcon} textColor='#430098' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' /> */}
+                    <Sphere x={25} y={50} z={0} color='#2E64A4' text='Atlas' onClick={handleSphereClick} hoverColor='#424950' srcIcon={atlasIcon} textColor='#424950' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={85} y={50} z={0} color='#2E64A4' text='ExpoGo' onClick={handleSphereClick} hoverColor='#00001A' srcIcon={expoIcon} textColor='#00001A' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={25} y={110} z={0} color='#2E64A4' text='Heroku' onClick={handleSphereClick} hoverColor='#430098' srcIcon={herokuIcon} textColor='#430098' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={55} y={110} z={0} color='#2E64A4' text='Docker' onClick={handleSphereClick} hoverColor='#006BC0' srcIcon={dockerIcon} textColor='#006BC0' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    <Sphere x={85} y={110} z={0} color='#2E64A4' text='Google Analytics' onClick={handleSphereClick} hoverColor='#FB6427' srcIcon={googleAnalyticsIcon} textColor='#FB6427' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
+                    {/* <Sphere x={100} y={110} z={0} color='#2E64A4' text='Atlas' onClick={handleSphereClick} hoverColor='#424950' srcIcon={atlasIcon} textColor='#424950' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' /> */}
                     <Sphere x={10} y={75} z={0} color='#61DAFB' text='Workbench' onClick={handleSphereClick} hoverColor='#C8C8C7' srcIcon={workbenchIcon} textColor='#C8C8C7' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
                     <Sphere x={40} y={75} z={0} color='#2E64A4' text='Postman' onClick={handleSphereClick} hoverColor='#E9663E' srcIcon={postmanIcon} textColor='#E9663E' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />
                     <Sphere x={70} y={75} z={0} color='#77B064' text='Insomnia' onClick={handleSphereClick} hoverColor='#4000BF' srcIcon={insomniaIcon} textColor='#4000BF' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' />

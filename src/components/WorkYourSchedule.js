@@ -29,6 +29,7 @@ import myMetroLogo from '../assets/mymetro-icon.png';
 import wheelTopperExtraHole from '../assets/wheel-topper-extra-whole.png';
 
 import BlockButtonWorkYourSchedule from './BlockButtonWorkYourSchedule'
+import workYourScheduleIcon from '../assets/work-your-schedule-icon.png';
 // import smiseOpening from '../assets/smise-opening.png'
 
 
@@ -63,7 +64,7 @@ function WorkYourSchedule() {
                     <BlockButtonWorkYourSchedule />
                     <p style={{ top: '920px', left: '23.5%', fontSize: '16px', width: '120px', textAlign: 'center', position: 'absolute', zIndex: 5, color: '#366F56' }}>{item.description}</p>
                     <p style={{ top: '698px', left: '31.3%', fontSize: '14px', width: '180px', textAlign: 'center', position: 'absolute', zIndex: 4, color: '#366F56' }}>{item.descriptionTwo}</p>
-                    <a href={item.link} target='_blank'><img src={myMetroLogo} style={{ top: '722px', left: '49.45%', width: '75px', position: 'absolute', zIndex: 6, boxShadow: '6px 9px 12px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
+                    <a href={item.link} target='_blank'><img src={workYourScheduleIcon} style={{ top: '722px', left: '49.45%', width: '75px', position: 'absolute', zIndex: 6, boxShadow: '6px 9px 12px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></a>
 
                     {/* <Link to='/smise-artboards'><img src={smiseLogo} style={{ top: '718px', left: '49.4%', width: '70px', position: 'absolute', zIndex: 4, boxShadow: '0px 3px 6px #00000029', borderRadius: '50px', borderColor: '#EFEEF5' }} id='wiggle'></img></Link> */}
                 </div>
@@ -92,7 +93,7 @@ function WorkYourSchedule() {
 const itemData = [
     {
         id: 11,
-        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTY0MmJlY2NiOTZiNjI3YTI1ZmFiNjJmOWRmYmRkM2UzYWZhMjJmZSZjdD1n/3C9NlxmNLEOQ0kbf7j/giphy.gif`],
+        img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZhNTlmOTM5OGU5YzEzMGJmZTAzZTYyMjA5MjM5NWExMzI4NjMwZiZjdD1n/FLQC2cAsx6Z1sHIPxR/giphy.gif`],
         // img: [`${smiseScreens}`, `${smiseScreensFour}`, `${smiseScreenTools}`, `${smiseScreenImplant}`, `${smiseScreenImaging}`],
         link: 'https://kaylacasale.github.io/work-your-schedule/',
         top1: '750px',
