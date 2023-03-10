@@ -36,8 +36,8 @@ function Smise() {
                         {/* <img src={item.img} style={{ top: `${item.topImg}`, left: `${item.leftImg}`, width: `${item.widthImg}`, height: `${item.heightImg}`, borderRadius: `${item.borderRadius}`, opacity: .85 }}></img> */}
                     </div>
                     <div id='ball-1' class={item.class} style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.width}`, height: `${item.height}`, position: 'absolute', opacity: `${item.opacityBubbleTwo}`, textAlign: 'center', borderRadius: `${item.borderRadius}` }}>
-                        <p style={{ marginTop: `${item.marginTop}`, color: `${item.color}`, fontSize: `${item.fontSize}`, textShadow: '1px 1px whitesmoke', lineHeight: '0px' }}>{item.title}</p>
-                        <p style={{ marginTop: `${item.marginTopSlogan}`, color: `${item.color}`, fontSize: `${item.fontSizeSlogan}`, textShadow: '1px 1px whitesmoke', lineHeight: '20px', width: '50%', textAlign: 'center', marginLeft: '25%' }}>{item.slogan}</p>
+                        <p style={{ marginTop: `${item.marginTop}`, color: `${item.color}`, fontSize: `${item.fontSize}`, textShadow: '1px 1px #F3D87E', lineHeight: '0px' }}>{item.title}</p>
+                        <p style={{ marginTop: `${item.marginTopSlogan}`, color: `${item.color}`, fontSize: `${item.fontSizeSlogan}`, textShadow: '1px 1px #F3D87E', lineHeight: '20px', width: '50%', textAlign: 'center', marginLeft: '25%' }}>{item.slogan}</p>
 
                         <img src={item.img} style={{ top: `${item.topImg}`, left: `${item.leftImg}`, width: `${item.widthImg}`, height: `${item.heightImg}`, borderRadius: `${item.borderRadius}`, opacity: 1, position: 'absolute' }}></img>
 

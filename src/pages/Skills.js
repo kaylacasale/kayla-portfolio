@@ -21,6 +21,7 @@ import WorkYourSchedule from '../components/WorkYourSchedule';
 import CodingQuiz from '../components/CodingQuiz';
 import PasswordGenerator from '../components/PasswordGenerator';
 import YouMeMix from '../components/YouMeMix';
+import WhatsTheWeather from '../components/WhatsTheWeather';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -46,10 +47,10 @@ const Skills = () => {
             return <div><BlogForTechs /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#BDF4FB', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 4) {
             handleClick()
-            return <div><Smise /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#E8873F', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
+            return <div><Smise /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#E8873F', boxShadow: '0px 3px 6px #00000029', background: 'transparent linear-gradient(180deg, #E4632A 0%, #EBA73B 23%, #EFBF41 34%, #F89468 46%, #EBA63A 58%, #FDE37B 73%, #F3D76A 86%, #F5DA5F 100%) 0% 0% no-repeat padding-box', borderColor: '#F3D87E' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 5) {
             handleClick()
-            return <div><Shangoo /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#525A70', boxShadow: '0px 3px 6px #00000029', color: 'white' }} id='wiggle'>Exit</button></div>;
+            return <div><Shangoo /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#525A70', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(180deg, #365D90 0%, #DB7450 100%) 0% 0% no-repeat padding-box', borderColor: '#286094' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 7) {
             handleClick()
             return <div><Wako /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#C5C7D5', borderColor: '#A2C4D7', boxShadow: '0px 3px 6px #00000029', color: 'black' }} id='wiggle'>Exit</button></div>;
@@ -69,7 +70,11 @@ const Skills = () => {
             handleClick()
             return <div><PasswordGenerator /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#535963', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(180deg, #D56D6C 0%, #FFD6EE 47%, #9596DB 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 6) {
+            handleClick()
             return <div><YouMeMix /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#535963', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent linear-gradient(180deg, #010128 0%, #692659 46%, #E3B863 100%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
+        } else if (selectedId === 3) {
+            handleClick()
+            return <div><WhatsTheWeather /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#DBFBEF', borderColor: '#535963', boxShadow: '0px 3px 6px #00000029', color: 'white', background: 'transparent conic-gradient(from 90deg at 50% 50%, #5DB7EB 0.00%, #B3B8EB 7.77%, #7FAEDC 19.25%, #B3AFFA 26.87%, #FECAFD 37.45%, #509ACC 44.42%, #4DB2E1 50.83%, #B0E7F2 59.83%, #3593C0 67.41%, #6B90BA 74.06%, #B494C1 81.83%, #3BC8EA 90.78%, #4BD3F3 100.00%) 0% 0% no-repeat padding-box' }} id='wiggle'>Exit</button></div>;
         }
     }
 
