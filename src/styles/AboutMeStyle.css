@@ -128,8 +128,8 @@
 
 #circle-about {
     position: absolute;
-    top: 50%;
-    left: 26.5%;
+    /* top: 0px;
+    left: 29%; */
     width: 150px;
     height: 150px;
     border-radius: 350px;

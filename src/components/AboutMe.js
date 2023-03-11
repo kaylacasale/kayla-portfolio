@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 import colorfulWheel from '../assets/colorful-wheel.png'
 import '../styles/AboutMeStyle.css'
 import wheelTopper from '../assets/wheel-topper.png'
-import wheelCopy from '../assets/wheel-2-copy.png'
+import wheelCopy from '../assets/wheel-topper-copy-2.png'
 import wheelLightColors from '../assets/light-colors.png';
 import SphereTwo from './SphereTwo';
 import myLogo from '../assets/my-logo-light.png';
 import myAtomLogo from '../assets/my-atom-icon.png';
 import CirclesInCircles from './CirclesInCircle';
+
 
 // document.getElementById('#copy').fadeIn('fast')
 
@@ -84,9 +85,12 @@ function AboutMe() {
 
                             </div>
                         </SphereTwo> */}
-                <div id='my-element-spinner'>
-                    <div id='circle-about'><img src={myAtomLogo} style={{ maxWidth: '60%', maxHeight: '60%', marginTop: '20%' }}></img></div>
-                    <SphereTwo id='circle-about' top='50%' left='26.5%' color='#353535' text='' hoverColor='rgba(255, 255, 255, 0.1)' srcIcon={myLogo} textColor='#6C7EB7' notHoverColor='transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box' hoverOpacity='0' notHoverOpacity='1' width='150px' height='150px' />
+                <div id='my-element-spinner' style={{ position: 'absolute', top: '810px', left: '29%', maxWidth: '100%', maxHeight: '100%' }}>
+                    <div id='circle-about'><img src={myAtomLogo} style={{ maxWidth: '60%', maxHeight: '60%', marginTop: '10%' }}></img>
+                    </div>
+                    <SphereTwo id='circle-about' color='#353535' text='' hoverColor='rgba(255, 255, 255, 0.1)' srcIcon={myLogo} textColor='#6C7EB7' notHoverColor='transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box' hoverOpacity='0' notHoverOpacity='1' width='150px' height='150px' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+
+
                 </div>
             </div>
             <div>
