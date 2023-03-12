@@ -33,7 +33,7 @@ function ReactCarousel() {
             <Carousel style={{ width: '80%', float: 'left', height: '700px', marginBottom: '100px' }}>
                 {itemData.map((item) => (
                     <Carousel.Item>
-                        <div style={{ width: '100%', height: '600px', backgroundColor: '#DFDFE3', borderRadius: '400px' }}>
+                        <div style={{ width: '100%', height: '600px', backgroundColor: '#DFDFE3', borderRadius: '300px' }}>
                             <a href={item.link}>
                                 < img
                                     className="center h-75"

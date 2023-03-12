@@ -79,6 +79,9 @@ import dnaIcon from '../assets/dna-icon.png';
 import collegeIcon from '../assets/college-icon.png';
 import threeDIcon from '../assets/3d-icon.png';
 
+
+// import '../styles/SphereTwoStyle.css'
+import $ from 'jquery';
 // import BoxShadow from 'react-native-shadow';
 // import InfoIcon from "@mui/material/InfoIcon";
 // import IconButton from '@mui/material/IconButton';
@@ -112,12 +115,23 @@ function CirclesInCircles() {
     // const { text } = props
     const [isActive, setIsActive] = useState(false)
     const [activeId, setActiveId] = useState(null)
+
+    const [zIndex, setZIndex] = useState(1);
+    const [isVisible, setIsVisible] = useState(true);
     // const [position, setPosition] = useState({ z: 1 })
     // const [isClicked, setIsClicked] = useState(false)
     // const [isZ, setIsZ] = useState(null)
-    const handleSphereClick = (id) => {
+    function handleSphereClick(id) {
+        // const sphere = $('#sphere-' + id);
         console.log(`Sphere with id ${id} clicked!`);
-        setActiveId(id)
+        // $('#sphere-' + id).toggleClass('active').siblings().removeClass('active');
+        // setActiveId(id)
+        // this.setState({
+        //     x: x2,
+        //     y: y2
+        // });
+        // $('#' + id).toggleClass('active').siblings().removeClass('active');
+        // handleZ()
         // if (id === activeId) {
         //     setIsActive(true)
         //     zIndex = 3
@@ -133,6 +147,16 @@ function CirclesInCircles() {
         // setSelectedSphere(SphereTwo)
     }
 
+
+
+    // function handleZ() {
+    //     setIsVisible(!isVisible);
+    //     // setZIndex(zIndex + 5);
+    // }
+
+    // const handleBack = () => {
+    //     setZIndex(zIndex - 5);
+    // };
     // const handleClick = (id) => {
     //     if (id === 0) {
     //         zIndex = 3;
@@ -165,6 +189,20 @@ function CirclesInCircles() {
     //     // setPosition({x: '115px', y: '365px', z: '1'})
     // }
     // }
+    // function handleResetClick(x, y,) {
+    //     ;
+    //     this.setState({
+    //         x: x,
+    //         y: y
+    //     })
+    // }
+    // function handleResetClick(x, y) {
+    //     this.setState({
+    //         x: x,
+    //         y: y
+    //     });
+    // }
+
     return (
         <section style={{ marginTop: '0px', fontFamily: 'Climate Crisis', height: '1000px' }}>
             <div className='container' style={{ marginTop: '200px', display: 'flex', justifyContent: 'center' }}>
@@ -172,38 +210,44 @@ function CirclesInCircles() {
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '80px', color: 'white' }}>KK</p>
-                        <img src={languagesIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '30px', marginTop: '60px' }}></img>
+                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '80px', color: 'white' }}></p>
+                        <img src={myAtomLogo} style={{ maxWidth: '100%', maxHeight: '100%' }}></img>
                     </span>
-                    <div>
 
-                        <SphereTwo x={45} y={210} color='#353535' text='Education' id={0} onClick={() => handleSphereClick(0)} hoverColor='#535353' srcIcon={collegeIcon} textColor='#535353' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' zIndex={0} zIndex2={4} text2={`UCLA (2022-2023):\nCertified Full-Stack Web Developer Boot Camp\n` + `\n` + `~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` + `\r` + ` UC Berkeley (2016-2020): \r\n B.S. in Molecular & Cellular Biology`} />
+                    <div id="sphere-container">
 
-
-                        <SphereTwo x={105} y={225} color='#FF5722' text='Perceptual Abilities' id={1} onClick={() => handleSphereClick(1)} hoverColor='#000000' srcIcon={threeDIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' zIndex={0} zIndex2={3} text2='My pre-medical journey involved interpreting & creating visual representations of data to reveal patterns and relationships, which combined theoretical knowledge with analytical skill. My free time creating vectors allows me to build and deconstruct, utilizing the power of reverse engineering and code.' />
+                        <SphereTwo x={45} y={210} z={0} color='#353535' text='Education' id='sphere-1' onClick={() => this.handleSphereClick(1)} hoverColor='#535353' srcIcon={collegeIcon} textColor='#535353' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2={`UCLA (2022-2023):\nCertified Full-Stack Web Developer Boot Camp\n` + `\n` + `~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` + `\r` + ` UC Berkeley (2016-2020): \r\n B.S. in Molecular & Cellular Biology`} className='sphere' />
 
 
-                        <SphereTwo x={155} y={210} color='#FF5722' text='' id={2} onClick={() => handleSphereClick(2)} hoverColor='#3178C6' srcIcon={typescriptIcon} textColor='#3178C6' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' zIndex={0} zIndex2={2} />
+                        <SphereTwo x={105} y={225} z={0} color='#FF5722' text='Perceptual Abilities' id='sphere-2' onClick={() => this.handleSphereClick(2)} hoverColor='#000000' srcIcon={threeDIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='My pre-medical journey involved interpreting & creating visual representations of data to reveal patterns and relationships, which combined theoretical knowledge with analytical skill. My free time creating vectors allows me to build and deconstruct, utilizing the power of reverse engineering and code.' className='sphere' />
 
 
-                        <SphereTwo x={10} y={165} color='#61DAFB' text='Neuroscienc & Psychology' id={3} onClick={() => handleSphereClick(3)} hoverColor='#FF0089' srcIcon={brainIcon} textColor='#FF0089' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' zIndex={0} zIndex2={2} text2='6+ years of Neuroscience Research and 2 years of Psychology Research at UCLA & UC Berkeley exposed me to the importance of programming in data analysis and modeling.' />
+                        <SphereTwo x={155} y={210} z={0} color='#FF5722' text='' id='sphere-3' onClick={() => handleSphereClick(3)} hoverColor='#3178C6' srcIcon={typescriptIcon} textColor='#3178C6' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' className='sphere' />
 
 
-                        <SphereTwo x={70} y={170} color='#2E64A4' text='Patient Care' id={4} onClick={() => handleSphereClick(4)} hoverColor='#1844BC' srcIcon={patientCareIcon} textColor='#1844BC' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' zIndex={0} zIndex2={2} text2='From Neurology to Gastrointerology and Emergency-Medicine, 6 years working patient care  to understand people and their health needs opened my eyes to the importance of reliable electronic health systems and inspired me to improve digital experience.' />
+                        <SphereTwo x={10} y={165} z={0} color='#61DAFB' text='Neuroscienc & Psychology' id='sphere-4' onClick={() => this.handleSphereClick(4)} hoverColor='#FF0089' srcIcon={brainIcon} textColor='#FF0089' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='6+ years of Neuroscience Research and 2 years of Psychology Research exposed me to the importance of programming in data analysis and modeling. The connection between neuroscience and development lies in the fact that both fields involve studying complex systems, solving problems using analytical thinking, and testing.' />
 
 
-                        <SphereTwo x={140} y={175} color='#77B064' text='Inventory Logistics' id={5} onClick={() => handleSphereClick(5)} hoverColor='#9F774D' srcIcon={boxIcon} textColor='#9F774D' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' zIndex={0} zIndex2={2} text2='My work in supply chain logistics elucidated the power of software applications to automate processes and improve efficiency amidst high demand and shortages in testing supplies throughout the pandemic.' />
+                        <SphereTwo x={70} y={170} z={0} color='#2E64A4' text='Patient Care' id='sphere-5' onClick={() => this.handleSphereClick(5)} hoverColor='#1844BC' srcIcon={patientCareIcon} textColor='#1844BC' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='From Neurology to Gastrointerology and Emergency-Medicine, 6 years working patient care  to understand people and their health needs opened my eyes to the importance of reliable electronic health systems and inspired me to improve digital experience.' className='sphere' />
 
 
-                        <SphereTwo x={200} y={175} color='#353535' text='STEM' id={6} onClick={() => handleSphereClick(6)} hoverColor='#7894AB' srcIcon={dnaIcon} textColor='#7894AB' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' zIndex={0} zIndex2={2} text2='As a Molecular & Cellular Biology major, I was fascinated by the mechanisms that give rise to the diversity and complexity of life. I reailzed coding could be used to model and simulate these molecular interactions, allowing for a deeper understanding of biological processes.' />
+                        <SphereTwo x={140} y={175} z={0} color='#77B064' text='Inventory Logistics' id='sphere-6' onClick={() => this.handleSphereClick(6)} hoverColor='#9F774D' srcIcon={boxIcon} textColor='#9F774D' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='My work in supply chain logistics elucidated the power of software applications to automate processes and improve efficiency amidst high demand and shortages in testing supplies throughout the pandemic.' className='sphere' />
+
+
+                        <SphereTwo x={205} y={175} z={0} color='#353535' text='STEM' id='sphere-7' onClick={() => this.handleSphereClick(7)} hoverColor='#7894AB' srcIcon={dnaIcon} textColor='#7894AB' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='As a Molecular & Cellular Biology major, I was fascinated by the mechanisms that give rise to the diversity and complexity of life. I reailzed coding could be used to model and simulate these molecular interactions, allowing for a deeper understanding of biological processes.' className='sphere' />
                         {/* <Sphere x={35} y={75} z={0} onClick={handleSphereClick} /> */}
                         {/* <Sphere x={75} y={75} z={0} onClick={handleSphereClick} /> */}
                         {/* <Sphere x={105} y={75} z={0} onClick={handleSphereClick} /> */}
 
+                        {/* <button onClick={() => handleResetClick(id)}>Reset Sphere Position</button> */}
+
                     </div>
 
+
                 </div>
+
             </div>
+
 
 
             {/* <Background style={styles.Background}>

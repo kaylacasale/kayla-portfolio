@@ -1,4 +1,6 @@
 import React from "react";
+import $ from 'jquery';
+
 // import {
 //   ApolloClient,
 //   InMemoryCache,
@@ -63,6 +65,8 @@ function App() {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
           <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300&family=Lobster&family=Roboto:wght@100&family=Rubik+Microbe&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet"></link>
+
+
           {/* <link rel="stylesheet" type="text/css" href="index.css" /> */}
         </Helmet>
         {/* <div>
