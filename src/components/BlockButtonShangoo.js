@@ -125,7 +125,7 @@ function BlockButtonShangoo() {
 
 
             } */}
-            <div className={showElement ? 'show-element' : 'hide-element'} style={{ left: '58%', top: '710px', position: 'absolute', zIndex: 5 }}>
+            <div className={showElement ? 'show-element' : 'hide-element'} style={{ left: '58%', top: '710px', position: 'absolute', zIndex: 6 }}>
 
                 {images.map((image, index) =>
                     <div>

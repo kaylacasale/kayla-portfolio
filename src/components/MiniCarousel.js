@@ -33,13 +33,15 @@ const MiniCarousel = ({ images }) => {
 
     return (
         <div className="carousel-container">
-            <div ref={carouselRef} className="carousel">
+            <div ref={carouselRef} className="carousel" style={{ width: '300px', height: '300px' }}>
                 {images.map((image, index) => (
-                    <img id='zoom' key={index} src={image} alt={`Image ${index}`} />
+                    <img id='zoom' key={index} src={image} alt={`Image ${index}`} style={{ marginBottom: '0px', maxWidth: '100%', maxHeight: '100%' }} />
                 ))}
             </div>
-            <button onClick={() => handleClick('prev')} style={{ width: '60px', height: '40px', fontSize: '10px' }}>Back</button>
-            <button onClick={() => handleClick('next')} style={{ width: '60px', height: '40px', fontSize: '10px' }}>Next</button>
+            <div style={{ marginTop: '-20px' }}>
+                <button onClick={() => handleClick('prev')} style={{ width: '40px', height: '40px', fontSize: '20px', borderRadius: '100px', boxShadow: '0px 3px 6px #FFFBFB', background: 'transparent linear-gradient(180deg, #EFEEF5 0%, #E3E1ED 49%, #EFEEF5 100%) 0% 0% no-repeat padding-box', borderColor: '#FFFBFB' }} id='wiggle'>↺</button>
+                <button onClick={() => handleClick('next')} style={{ width: '40px', height: '40px', fontSize: '20px', borderRadius: '100px', boxShadow: '0px 3px 6px #FFFBFB', background: 'transparent linear-gradient(180deg, #EFEEF5 0%, #E3E1ED 49%, #EFEEF5 100%) 0% 0% no-repeat padding-box', borderColor: '#FFFBFB' }} id='wiggle'>↻</button>
+            </div>
         </div>
     );
 };

@@ -14,8 +14,9 @@ import CirclesInCircles from './CirclesInCircle';
 import Flipper from './Flipper';
 import ReactCarousel from './ReactCarousel';
 import MiniCarousel from './MiniCarousel';
-import image1 from '../assets/Weather-7.png';
-import image2 from '../assets/Weather-8.png'
+import image1 from '../assets/front-teeth-2.png';
+import image2 from '../assets/bottom-teeth-2.png'
+import image3 from '../assets/franklin-album.png'
 
 
 
@@ -23,7 +24,7 @@ import image2 from '../assets/Weather-8.png'
 
 
 function AboutMe() {
-    const images = [image1, image2]
+    const images = [image1, image2, image3]
 
     // const [isFirstTopperVisible, setFirstTopperVisible] = React.useState(true)
 
@@ -93,7 +94,7 @@ function AboutMe() {
                             </div>
                         </SphereTwo> */}
 
-                <div style={{ position: 'absolute', top: '900px', left: '45%', width: '200px' }}>
+                <div style={{ position: 'absolute', top: '828px', left: '42%' }}>
                     {/* <ReactCarousel /> */}
                     <MiniCarousel images={images} />
                 </div>

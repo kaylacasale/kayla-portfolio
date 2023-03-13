@@ -364,12 +364,12 @@ const itemData = [
         id: 11,
         img: [`https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZhNTlmOTM5OGU5YzEzMGJmZTAzZTYyMjA5MjM5NWExMzI4NjMwZiZjdD1n/FLQC2cAsx6Z1sHIPxR/giphy.gif`],
         link: 'https://kaylacasale.github.io/work-your-schedule/',
-        top: '550px',
-        left: '60.5%',
-        widthBubbleOne: '122px',
-        heightBubbleOne: '122px',
-        width: '120px',
-        height: '120px',
+        top: '533px',
+        left: '61.5%',
+        widthBubbleOne: '102px',
+        heightBubbleOne: '102px',
+        width: '100px',
+        height: '100px',
         title: 'Work Your Schedule',
         class: 'bubbleTopBlueGreen',
         color: '#8FDA81',
@@ -378,7 +378,7 @@ const itemData = [
         fontSize: '12px',
         borderRadius: '100px',
         backgroundBubbleOne: 'transparent conic-gradient(from 90deg at 50% 50%, #B5FFA7 0.00%, #96DB96 12.32%, #B1DEEC 26.60%, #6FC2AA 50.74%, #A3EBC2 75.86%, #A5DDD9 88.67%, #77E8F7 100.00%) 0% 0% no-repeat padding-box',
-        marginTop: '35%'
+        marginTop: '33%'
     },
     {
         id: 12,
