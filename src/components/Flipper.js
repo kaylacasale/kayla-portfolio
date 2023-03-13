@@ -15,9 +15,10 @@ function Flipper() {
         <div
             className={`flip-container ${isFlipped ? 'flip' : ''}`}
             onClick={handleClick}
+
         >
-            <div className="flipper" >
-                <div className="front"  >
+            <div className="flipper"  >
+                <div className="front" >
 
                     <p>Click on a sphere...</p>
                 </div>

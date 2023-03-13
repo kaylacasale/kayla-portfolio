@@ -17,7 +17,9 @@ const TypeAnimate = () => {
                     1000, // Waits 1s
                     'developer', // Deletes 'One' and types 'Two'
                     2000, // Waits 2s
-                    'scientist...', // Types 'Three' without deleting 'Two'
+                    'scientist', // Types 'Three' without deleting 'Two'
+                    2000,
+                    'artist',
                     2000,
                     () => {
                         console.log('Done typing!'); // Place optional callbacks anywhere in the array

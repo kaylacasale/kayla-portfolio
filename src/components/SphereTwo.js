@@ -31,6 +31,9 @@ const SphereTwo = (props) => {
 
     // const [isZIndex, setIsZIndex] = useState(false);
     // const [zIndex, setZIndex] = useState(1);
+    const renderBtn = () => {
+        return <button onClick={() => handleReset()} style={{ borderRadius: '200px', width: '150px', height: '150px', fontSize: '16px', boxShadow: '12px 15px 17px #00000029', background: `${hoverColor}`, color: '#EFEEF5', textShadow: '1px 1px #FFFBFB', borderColor: '#FFFBFB', fontFamily: 'GravitasOne' }}>Put Back</button>
+    }
 
     const handleClick = () => {
         // setIsVisible(!isVisible);
@@ -53,7 +56,7 @@ const SphereTwo = (props) => {
         const y2 = 368;
         // const z2 = 3;
 
-        setPosition({ x: x2, y: y2, z: 5 });
+        setPosition({ x: x2, y: y2, z: 0 });
         onClick();
         // setIsZ(true)
     }
@@ -61,7 +64,14 @@ const SphereTwo = (props) => {
     // const handleResetClick = () => {
     //     setPosition({ x: x, y: y })
     // }
-
+    const handleReset = () => {
+        setPosition({ x: x, y: y, z: 0 })
+        setIsWidth(false)
+        setIsHeight(false)
+        setIsText(false)
+        setIsText2(false)
+        setClicked(false)
+    }
 
     return (
         <div className="sphere" >
@@ -116,10 +126,15 @@ const SphereTwo = (props) => {
                 onClick={() => handleClick()}
 
 
+
             >
                 <span style={{ fontSize: '14px', maxWidth: '100%', maxHeight: '100%', color: `${textColor}` }}>{isText ? `${text}` : ''}<img src={clicked ? null : `${srcIcon}`} style={{ maxWidth: '60%', maxHeight: '60%', marginTop: '0%', marginBottom: '0%', opacity: isOpaque ? `${hoverOpacity}` : `${notHoverOpacity}` }}></img><p style={{ fontSize: '11px', margin: '15px' }}>{isText2 ? `${text2}` : ''}</p></span>
                 {/* <button onClick={() => handleResetClick()}>Reset Sphere Position</button> */}
 
+            </div>
+            {/* <button onClick={() => handleReset()}></button> */}
+            <div style={{ position: 'absolute', left: '128%', top: '245px', color: `${textColor}` }}>
+                {clicked ? renderBtn() : !renderBtn()}
             </div>
 
 

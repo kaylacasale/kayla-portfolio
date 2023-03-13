@@ -121,9 +121,18 @@ function CirclesInCircles() {
     // const [position, setPosition] = useState({ z: 1 })
     // const [isClicked, setIsClicked] = useState(false)
     // const [isZ, setIsZ] = useState(null)
+
+    const [selectedId, setSelectedId] = useState(0);
     function handleSphereClick(id) {
         // const sphere = $('#sphere-' + id);
         console.log(`Sphere with id ${id} clicked!`);
+
+        // if (selectedId === 1) {
+
+        //     return <button onClick={handleVisibility}>Exit</button>
+        // }
+        // setSelectedId(id)
+        // renderButton()
         // $('#sphere-' + id).toggleClass('active').siblings().removeClass('active');
         // setActiveId(id)
         // this.setState({
@@ -146,8 +155,15 @@ function CirclesInCircles() {
         // setClickedSphere(sphere)
         // setSelectedSphere(SphereTwo)
     }
+    // function renderButton() {
+    //     if (selectedId === 1) {
+    //         return <button onClick={handleVisibility}>Exit</button>
+    //     }
+    // }
 
-
+    const handleVisibility = () => {
+        setSelectedId(null)
+    }
 
     // function handleZ() {
     //     setIsVisible(!isVisible);
@@ -216,7 +232,7 @@ function CirclesInCircles() {
 
                     <div id="sphere-container">
 
-                        <SphereTwo x={45} y={210} z={0} color='#353535' text='Education' id='sphere-1' onClick={() => this.handleSphereClick(1)} hoverColor='#535353' srcIcon={collegeIcon} textColor='#535353' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2={`UCLA (2022-2023):\nCertified Full-Stack Web Developer Boot Camp\n` + `\n` + `~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` + `\r` + ` UC Berkeley (2016-2020): \r\n B.S. in Molecular & Cellular Biology`} className='sphere' />
+                        <SphereTwo x={45} y={210} z={0} color='#353535' text='Education' id='1' onClick={() => setSelectedId(1)} hoverColor='#535353' srcIcon={collegeIcon} textColor='#535353' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2={`UCLA (2022-2023):\nCertified Full-Stack Web Developer Boot Camp\n` + `\n` + `~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` + `\r` + ` UC Berkeley (2016-2020): \r\n B.S. in Molecular & Cellular Biology`} className='sphere' />
 
 
                         <SphereTwo x={105} y={225} z={0} color='#FF5722' text='Perceptual Abilities' id='sphere-2' onClick={() => this.handleSphereClick(2)} hoverColor='#000000' srcIcon={threeDIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='My pre-medical journey involved interpreting & creating visual representations of data to reveal patterns and relationships, which combined theoretical knowledge with analytical skill. My free time creating vectors allows me to build and deconstruct, utilizing the power of reverse engineering and code.' className='sphere' />
@@ -242,7 +258,9 @@ function CirclesInCircles() {
                         {/* <button onClick={() => handleResetClick(id)}>Reset Sphere Position</button> */}
 
                     </div>
-
+                    {/* <div>
+                        {selectedId ? handleSphereClick() : !handleSphereClick()}
+                    </div> */}
 
                 </div>
 

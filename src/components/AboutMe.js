@@ -14,17 +14,24 @@ import CirclesInCircles from './CirclesInCircle';
 import Flipper from './Flipper';
 import ReactCarousel from './ReactCarousel';
 import MiniCarousel from './MiniCarousel';
+
+import image0 from '../assets/self-photo.png'
 import image1 from '../assets/front-teeth-2.png';
 import image2 from '../assets/bottom-teeth-2.png'
 import image3 from '../assets/franklin-album.png'
-
-
-
+import image4 from '../assets/franklin-crystal-2.png'
+import image5 from '../assets/covid-drop.png'
+import image6 from '../assets/covid-balls.png'
+import image7 from '../assets/izykaya-interior.png'
+import image8 from '../assets/testing-tent.png'
+import image9 from '../assets/ttc-lab.png'
+import image10 from '../assets/bar-lis.png'
+import image11 from '../assets/testing-process.png'
 // document.getElementById('#copy').fadeIn('fast')
 
 
 function AboutMe() {
-    const images = [image1, image2, image3]
+    const images = [image0, image1, image2, image3, image4, image5, image6, image11, image7, image8, image9, image10]
 
     // const [isFirstTopperVisible, setFirstTopperVisible] = React.useState(true)
 
@@ -94,7 +101,7 @@ function AboutMe() {
                             </div>
                         </SphereTwo> */}
 
-                <div style={{ position: 'absolute', top: '828px', left: '42%' }}>
+                <div style={{ position: 'absolute', top: '831px', left: '42%' }}>
                     {/* <ReactCarousel /> */}
                     <MiniCarousel images={images} />
                 </div>
