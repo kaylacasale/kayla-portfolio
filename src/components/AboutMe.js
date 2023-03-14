@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import colorfulWheel from '../assets/colorful-wheel.png'
@@ -63,7 +63,18 @@ function AboutMe() {
 
 
 
+    const [showElements, setShowElements] = useState(false);
 
+    // Delay the showing of elements by 1 second
+    useEffect(() => {
+
+
+        const timer = setTimeout(() => {
+            setShowElements(true);
+        }, 4000);
+
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <div>
             <div>
@@ -101,11 +112,11 @@ function AboutMe() {
                             </div>
                         </SphereTwo> */}
 
-                <div style={{ position: 'absolute', top: '831px', left: '42%' }}>
+                <div style={{ position: 'absolute', top: '831px', left: '42%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
                     {/* <ReactCarousel /> */}
                     <MiniCarousel images={images} />
                 </div>
-                <div id='wiggle' style={{ position: 'absolute', top: '810px', left: '29%', maxWidth: '100%', maxHeight: '100%' }}>
+                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '810px', left: '29%', maxWidth: '100%', maxHeight: '100%' }}>
                     <div style={{ width: '150px', height: '150px', marginTop: '50px' }}>
                         <Flipper style={{ maxWidth: '100%', maxHeight: '100%' }}></Flipper>
                     </div>
@@ -116,7 +127,7 @@ function AboutMe() {
 
                 </div>
             </div>
-            <div>
+            <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`}>
                 <CirclesInCircles />
             </div>
 

@@ -1,0 +1,139 @@
+.circle-animation {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box:hover {
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
+/* .circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.outer-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.red {
+  background-color: #f00;
+}
+
+.green {
+  background-color: #0f0;
+}
+
+.blue {
+  background-color: #00f;
+}
+
+.yellow {
+  background-color: #ff0;
+}
+
+.inner-circle:hover {
+  transform: scale(1.1);
+}
+
+.expanded {
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+} */
+
+#main-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.sub-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+#sub-circle1 {
+    top: 25px;
+    left: 25px;
+}
+
+#sub-circle2 {
+    top: 25px;
+    right: 25px;
+}
+
+#sub-circle3 {
+    bottom: 25px;
+    left: 25px;
+}
+
+#sub-circle4 {
+    bottom: 25px;
+    right: 25px;
+}
+
+.sub-circle:hover {
+    background-color: lightblue;
+}
+
+.sub-circle.active {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

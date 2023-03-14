@@ -22,6 +22,7 @@ import { Helmet } from "react-helmet"
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Skills from './pages/Skills'
+import Contact from './pages/Contact'
 import SmiseArtboards from "./pages/SmiseArtboards";
 import './index.css'
 import './styles/Background.css'
@@ -92,6 +93,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path='/smise-artboards' element={<SmiseArtboards />} />
             {/* <Route path="/skills/project" element={<Project />} /> */}
           </Routes>

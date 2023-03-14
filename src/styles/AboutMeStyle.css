@@ -149,3 +149,34 @@
     top: 0;
     left: 0;
 } */
+
+/* Set initial opacity to 0 */
+.fade-in {
+    opacity: 0;
+}
+
+/* Transition to full opacity over 1 second */
+.fade-in.active {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.bounce-in {
+    animation: bounce-in 0.75s;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

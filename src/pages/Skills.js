@@ -126,7 +126,7 @@ const Skills = () => {
             {itemData.map((item) => (
 
                 // <a href={item.link} target="_blank" >
-                <div key={item.id} onClick={() => setSelectedId(item.id)} >
+                <div key={item.id} onClick={() => setSelectedId(item.id)} className='bounce-in' >
 
 
 

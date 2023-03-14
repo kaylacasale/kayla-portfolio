@@ -219,3 +219,28 @@
     margin-top: 100px;
     border-radius: 50px;
 }
+
+.bounce-in {
+    animation: bounce-in 1.5s ease-out;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    30% {
+        transform: scale(0.1);
+        opacity: 0.5;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

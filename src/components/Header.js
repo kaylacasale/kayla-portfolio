@@ -33,14 +33,14 @@ function Header() {
   // TODO: Add a style attribute to header and the h1 element
 
   return (
-    <header style={{ fontFamily: 'Climate Crisis' }}>
+    <header style={{ fontFamily: 'Gravitas One' }}>
       <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: '#C7C6D5' }}>
         <div id='canvas'>
           <div id='circle'>
             <img className='my-logo' id='wiggle' src={myAtomIcon} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
-            <Link to='/' ><div id='ball-1' class='ball' style={{ zIndex: '3' }}>KC</div></Link>
-            <Link to='/' ><div id='ball-2' class='ball' style={{ zIndex: '2' }}>Home</div></Link>
-            <Link to='/' ><div id='ball-3' class='ball' style={{ zIndex: '2' }}>About</div></Link>
+            <Link to='/'><div id='ball-1' class='ball' style={{ zIndex: '3' }}>KC</div></Link>
+            <Link to='/'><div id='ball-2' class='ball' style={{ zIndex: '2' }}>About</div></Link>
+            <Link to='/contact' ><div id='ball-3' class='ball' style={{ zIndex: '2' }}>Contact</div></Link>
             <Link to='/portfolio'><div id='ball-4' class='ball' style={{ zIndex: '2' }}>Skills</div></Link>
             <Link to='/skills'><div id='ball-5' class='ball' style={{ zIndex: '2' }}>Work</div></Link>
             {/* include Contact section */}
