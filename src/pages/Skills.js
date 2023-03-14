@@ -118,6 +118,7 @@ const Skills = () => {
     //     setSelected(!selected)
     // }
 
+
     return (
 
         <div id='canvas'>
