@@ -34,7 +34,7 @@ function Header() {
 
   return (
     <header style={{ fontFamily: 'Gravitas One' }}>
-      <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: '#C7C6D5' }}>
+      <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: 'transparent white' }}>
         <div id='canvas'>
           <div id='circle'>
             <img className='my-logo' id='wiggle' src={myAtomIcon} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
