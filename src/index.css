@@ -10,6 +10,11 @@
     }
 } */
 
+
+.twinkling:hover {
+    background-color: blue;
+}
+
 header {
     font-family: 'Climate Crisis';
 }
@@ -44,6 +49,43 @@ header {
 
     /* animation-iteration-count: infinite; */
 
+}
+
+.b-div-outer {
+    /* top: 520px;
+    left: 35%; */
+    position: absolute;
+    width: 30%;
+    height: 200px;
+    /* border: 1px solid rgba(49, 195, 244, 0.3) */
+}
+
+.b-div-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-div-inner button {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    font-size: 30px;
+
+}
+
+.b-colored {
+    transition: background 0.3s ease;
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+
+    /* border: 1px solid rgba(245, 167, 19, 0.3); */
+
+}
+
+.b-colored:hover {
+    background: rgba(223, 218, 209, 0.14);
 }
 
 /* .logo img:hover {

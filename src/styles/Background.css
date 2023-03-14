@@ -51,8 +51,8 @@
 }
 
 .stars,
-.twinkling,
 .cloud {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -64,17 +64,38 @@
 }
 
 
+.twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+}
+
+
 /* changed from #000 (black) */
 .stars {
+    /* background: #cccadc url(../assets/stars.png) repeat top center; */
     background: #cccadc url(../assets/stars.png) repeat top center;
-    z-index: -2;
+
+    z-index: -20;
 }
 
 .twinkling {
-    background: transparent url(../assets/twinkling-2.png) repeat top center;
+    /* background: transparent url(../assets/twinkling-2.png) repeat top center; */
+    background: url(../assets/ball-test.png) repeat top center;
     z-index: -1;
-    animation: move-twink-back 200s linear infinite;
+    animation: move-twink-back 2000s linear infinite;
 }
+
+/* 
+.twinkling:hover {
+    background-color: blue;
+} */
 
 .clouds {
     background: transparent url(../assets/clouds.png) repeat top center;

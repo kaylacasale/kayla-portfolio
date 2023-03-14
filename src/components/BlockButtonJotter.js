@@ -189,7 +189,7 @@ function BlockButtonJotter() {
             {/* <Button variant="primary" size="lg">
                 Block level button
             </Button> */}
-            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '105px', height: '105px', borderRadius: '50px', borderColor: '#EFEEF5', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '840px', left: '42.2%', background: 'none', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
+            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '65px', height: '65px', borderRadius: '50px', borderColor: '#EFEEF5', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '803px', left: '22.45%', background: 'none', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
                 {Text ? 'See Less' : 'See More...'}
             </Button>
             {/* if (Button.onClick === 'true') {

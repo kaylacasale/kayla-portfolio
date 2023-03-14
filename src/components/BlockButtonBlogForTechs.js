@@ -156,8 +156,14 @@ function BlockButtonBlogForTechs() {
 
                     </div>
                 )}
-                <button id='wiggle' onClick={handleNextImage} style={{ width: '14%', height: '75px', marginTop: '10px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '250px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
-                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '7%', height: '38px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-115px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
+                {/* <button id='wiggle' onClick={handleNextImage} style={{ width: '14%', height: '75px', marginTop: '10px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '250px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
+                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '7%', height: '38px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-115px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button> */}
+                <div className='b-div-outer' style={{ top: '510px', left: '35%' }}>
+                    <div className='b-div-inner'>
+                        <button id='wiggle' onClick={handlePreviousImage} className='b-colored' style={{ border: 'blue', color: '#B2CBDF' }}>↺</button>
+                        <button id='wiggle' onClick={handleNextImage} style={{ border: 'blue', color: '#B2CBDF' }} className='b-colored'>↻</button>
+                    </div>
+                </div>
             </div>
         </div >
     );

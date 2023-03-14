@@ -110,7 +110,7 @@ function BlockButtonSmise() {
             {/* <Button variant="primary" size="lg">
                 Block level button
             </Button> */}
-            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '105px', height: '105px', borderRadius: '50px', borderColor: '#F4CC69', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '845px', left: '52.2%', background: '#EFEEF5 0% 0% no-repeat padding-box', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
+            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '65px', height: '65px', borderRadius: '50px', borderColor: '#F4CC69', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '803px', left: '22.45%', background: '#EFEEF5 0% 0% no-repeat padding-box', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
                 {Text ? 'See Less' : 'See More...'}
             </Button>
             {/* if (Button.onClick === 'true') {
@@ -120,18 +120,34 @@ function BlockButtonSmise() {
 
 
             } */}
-            <div className={showElement ? 'show-element' : 'hide-element'} style={{ left: '53%', top: '580px', position: 'absolute', zIndex: 5 }}>
+            <div className={showElement ? 'show-element' : 'hide-element'} style={{ left: '55%', top: '600px', position: 'absolute', zIndex: 5 }}>
 
                 {images.map((image, index) =>
-                    <div>
+                    <div >
                         {/* <p style={{ textAlign: 'center', width: '300px', margin: '8px' }}>{image.description}</p> */}
-                        <img id='zoom' key={image.id} src={image.img} style={{ display: index === currentIndex ? 'block' : 'none', width: '500px' }} ></img>
-                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', fontSize: '12px', marginLeft: '21%', marginTop: '-35px', color: '#F76503' }}>{image.description}</p>
+                        <img id='zoom' key={image.id} src={image.img} style={{ display: index === currentIndex ? 'block' : 'none', width: '450px' }} ></img>
+                        <p key={image.id} style={{ display: index === currentIndex ? 'block' : 'none', textAlign: 'center', width: '300px', fontSize: '12px', marginLeft: '18%', marginTop: '-35px', color: '#F76503' }}>{image.description}</p>
 
                     </div>
                 )}
-                <button id='wiggle' onClick={handleNextImage} style={{ width: '15%', height: '70px', marginTop: '-5px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '240px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
-                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '8%', height: '38px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-120px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
+                <div className='b-div-outer' style={{ top: '520px', left: '35%' }}>
+                    <div className='b-div-inner'>
+                        <button id='wiggle' onClick={handlePreviousImage} className='b-colored' style={{ border: '1px solid rgba(245, 167, 19, 0.3)', color: 'orange' }}>↺</button>
+                        <button id='wiggle' onClick={handleNextImage} style={{ border: '1px solid rgba(245, 167, 19, 0.3)', color: 'orange' }} className='b-colored'>↻</button>
+                    </div>
+                </div>
+                {/* <div style={{ top: '900px', left: '200px', position: 'absolute', width: '100px', height: '100px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <button style={{ width: '30%', height: 'auto' }}>Hi</button>
+                        <button>Bi</button>
+                    </div>
+                </div> */}
+                {/* <div className='b-div-outer'>
+                    <div className='b-div-inner'>
+                        <button className='b-colored' id='wiggle' style={{ border: '1px solid rgba(245, 167, 19, 0.3)', color: 'orange' }} onClick={handleNextImage}>↺</button>
+                        <button className='b-colored' id='wiggle' style={{ border: '1px solid rgba(245, 167, 19, 0.3)', color: 'orange' }} onClick={handlePreviousImage}>↻</button>
+                    </div>
+                </div> */}
             </div>
         </div >
     );

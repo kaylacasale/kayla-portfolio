@@ -115,7 +115,7 @@ function BlockButtonShangoo() {
             {/* <Button variant="primary" size="lg">
                 Block level button
             </Button> */}
-            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '105px', height: '105px', borderRadius: '50px', borderColor: '#EA6B4B', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '845px', left: '52.2%', background: '#EFEEF5 0% 0% no-repeat padding-box', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
+            <Button id='wiggle' onClick={handleClick} variant="secondary" size="sm" text={Text} style={{ width: '65px', height: '65px', borderRadius: '50px', borderColor: '#325782', boxShadow: '0px 3px 6px #00000029', fontSize: '10px', position: 'absolute', top: '803px', left: '22.45%', background: '#EFEEF5 0% 0% no-repeat padding-box', zIndex: 6, fontSize: '14px', color: '#A2A3A7' }} >{Text}
                 {Text ? 'See Less' : 'See More...'}
             </Button>
             {/* if (Button.onClick === 'true') {
@@ -135,8 +135,14 @@ function BlockButtonShangoo() {
 
                     </div>
                 )}
-                <button id='wiggle' onClick={handleNextImage} style={{ width: '20%', height: '75px', marginTop: '-5px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '170px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
-                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '10%', height: '38px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-120px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button>
+                <div className='b-div-outer' style={{ top: '450px', left: '35%' }}>
+                    <div className='b-div-inner'>
+                        <button id='wiggle' onClick={handlePreviousImage} className='b-colored' style={{ border: '1px solid rgba(245, 167, 19, 0.3)', color: 'orange' }}>↺</button>
+                        <button id='wiggle' onClick={handleNextImage} style={{ border: '1px solid rgba(245, 167, 19, 0.3)', color: 'orange' }} className='b-colored'>↻</button>
+                    </div>
+                </div>
+                {/* <button id='wiggle' onClick={handleNextImage} style={{ width: '20%', height: '75px', marginTop: '-5px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '170px', fontSize: '40px', borderRadius: '50px' }}><NextIcon /></button>
+                <button id='wiggle' onClick={handlePreviousImage} style={{ width: '10%', height: '38px', marginTop: '0px', backgroundColor: '#EFEEF5 0% 0% no-repeat padding-box', color: '#A2A3A7', borderColor: 'white', marginLeft: '-120px', top: '-5px', borderRadius: '30px' }}><BackIcon /></button> */}
             </div>
         </div >
     );

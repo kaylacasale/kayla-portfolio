@@ -25,6 +25,8 @@ import wakoLogo from '../assets/wako-logo.png'
 import jotterLogo from '../assets/jotter-logo.png'
 // import smiseOpening from '../assets/smise-opening.png'
 
+import wheelTopperExtraHole from '../assets/wheel-topper-extra-whole.png';
+
 
 
 function Jotter() {
@@ -40,7 +42,7 @@ function Jotter() {
 
 
                     {/* <BlockButton /> */}
-                    <img src={wheelCopy2} id='ball-1' class='bubble' style={{ top: `${item.top1}`, left: `${item.left1}`, width: `${item.widthBubbleOne}`, height: `${item.heightBubbleOne}`, borderRadius: `${item.borderRadius}`, opacity: `${item.opacityBubbleOne}`, position: 'absolute', boxShadow: '0px 3px 6px #00000029', background: `${item.backgroundBubbleOne}` }} ></img>
+                    <img src={wheelTopperExtraHole} id='ball-1' class='bubble' style={{ top: `${item.top1}`, left: `${item.left1}`, width: `${item.widthBubbleOne}`, height: `${item.heightBubbleOne}`, borderRadius: `${item.borderRadius}`, opacity: `${item.opacityBubbleOne}`, position: 'absolute', boxShadow: '0px 3px 6px #00000029', background: `${item.backgroundBubbleOne}` }} ></img>
                     <div id='ball-1' class='bubble' style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.width}`, height: `${item.height}`, borderRadius: `${item.borderRadius}`, position: 'absolute', opacity: 1 }}>
 
 
