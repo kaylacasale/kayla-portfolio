@@ -33,7 +33,7 @@
   background: rgb(255, 0, 100); */
 }
 
-#circle {
+/* #circle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,12 +44,77 @@
   margin-top: -30px;
   margin-left: -30px;
   border-radius: 50px;
+} */
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  /* background: transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box; */
+  background: transparent white;
+  src: url('../assets/my-logo-2.png');
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50px;
 }
 
 .my-logo {
   left: 0px;
   width: 100px;
   height: 100px;
+  transition: background 0.3s ease;
+
+  /* width: 150px;
+  height: 150px; */
+  border-radius: 50%;
+  /* background-color: #fff; */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  animation: float 5s ease-in-out infinite;
+  background: radial-gradient(circle at 75% 30%,
+      white 5px,
+      rgb(116, 254, 254) 8%,
+      rgb(245, 240, 245) 60%,
+      rgb(196, 251, 251) 100%);
+  /* background: #FBFFFF; */
+  box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc,
+    inset 88px 0px 60px #c2d8fe, inset -20px -60px 100px #fde9ea,
+    inset 0 50px 140px #fde9ea, 0 0 90px #fff;
+}
+
+.my-logo:hover+.shadow {
+  background: radial-gradient(circle at 75% 30%, white 5px, #97e9f6 8%, #b8f2ad 60%, #fba3f5 80%, #f8f8b8 90%);
+  border: #FF71E9;
+  box-shadow: 0 5px 10px rgba(245, 111, 216, 0.5);
+}
+
+/* .my-logo {
+  left: 0px;
+  width: 100px;
+  height: 100px;
+} */
+
+.shadow {
+  /* background: #b490b2; */
+  background: radial-gradient(50% 50%, #4F5A74 0%, #93A1BA 100%);
+  /* background: url('../assets/topper-squished.png'); */
+  background-size: cover;
+  width: 100px;
+  height: 40px;
+  left: -20px;
+  /* top: 70%; */
+  animation: expand 4s infinite;
+  position: absolute;
+  border-radius: 50%;
+  /* margin-top: -20px; */
+  opacity: .3;
 }
 
 .ball {

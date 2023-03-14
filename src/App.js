@@ -50,7 +50,7 @@ function App() {
       </style>
 
       <div className="App" style={{ backgroundImage: `url(${Background})`, fontFamily: 'Gravitas One' }}>
-        <div>
+        <div >
           <Header />
         </div>
         {/* <nav>
