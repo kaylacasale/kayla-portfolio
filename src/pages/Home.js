@@ -24,7 +24,7 @@ const Home = () => {
             {/* vector art - carousel */}
             {/* <TypeAnimate /> */}
 
-            <div style={{ marginBottom: '30px', marginTop: '220px' }}>
+            <div style={{ marginBottom: '0px', marginTop: '250px', opacity: '1', textShadow: '2px 2px #9CCFEA' }}>
                 <TypeAnimate />
             </div>
             <div>
