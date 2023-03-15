@@ -24,7 +24,7 @@ function Flipper() {
                     </div>
                 </div>
                 <div className="back" >
-                    <div className='flip-div' style={{ background: 'radial-gradient(circle at 100px 100px, #ffffff, #EF66E6)', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', display: 'flex', boxShadow: '5px 10px 10px rgba(39, 116, 149, 0.5)' }}>
+                    <div className='flip-div' style={{ background: 'radial-gradient(circle at 100px 100px, #E4D6F3, #ffffff)', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', display: 'flex', boxShadow: '5px 10px 10px rgba(39, 116, 149, 0.5)' }}>
                         <p style={{ color: '#EFEEF5', textShadow: '2px 2px #EF66E6' }}>To learn about me</p>
                     </div>
                 </div>

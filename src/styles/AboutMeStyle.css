@@ -1,6 +1,6 @@
 #wheel {
-    transform: rotate(360deg);
-    animation-duration: 5s;
+    transform: rotate(1800deg);
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-name: rotate;

@@ -229,7 +229,7 @@ function CirclesInCircles() {
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
                         <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '80px', color: 'white' }}></p>
-                        <img src={bubbleBunch} style={{ maxWidth: '100%', maxHeight: '100%' }}></img>
+                        {/* <img src={bubbleBunch} style={{ maxWidth: '100%', maxHeight: '100%' }}></img> */}
                     </span>
 
                     <div id="sphere-container">

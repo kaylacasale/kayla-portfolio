@@ -31,6 +31,7 @@ import image10 from '../assets/bar-lis.png'
 import image11 from '../assets/testing-process.png'
 
 import wheelThreeColors from '../assets/wheel-three-colors.png';
+import wheelTwoColors from '../assets/wheel-two-colors.png';
 // document.getElementById('#copy').fadeIn('fast')
 
 import bubbleTopper from '../assets/bubble-topper.png';
@@ -85,7 +86,7 @@ function AboutMe() {
         <div>
             <div>
                 <div id='canvas'>
-                    <img src={wheelThreeColors} style={{ width: '750px', margin: '20px' }} id='wheel' className='rotator'></img>
+                    <img src={wheelTwoColors} style={{ width: '750px', margin: '20px' }} id='wheel' className='rotator'></img>
                     {isTopperVisible ? (
                         <img></img>
                     ) : (
@@ -118,12 +119,12 @@ function AboutMe() {
                             </div>
                         </SphereTwo> */}
 
-                <div style={{ position: 'absolute', top: '840px', left: '43.8%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
+                <div style={{ position: 'absolute', top: '855px', left: '43.8%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
                     {/* <ReactCarousel /> */}
                     <MiniCarousel images={images} />
                 </div>
-                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '805px', left: '31%', maxWidth: '100%', maxHeight: '100%' }}>
-                    <div style={{ width: '150px', height: '150px', marginTop: '0px' }}>
+                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '808px', left: '30.3%', maxWidth: '100%', maxHeight: '100%' }}>
+                    <div style={{ width: '130px', height: '130px', marginTop: '0px' }}>
                         <Flipper style={{ maxWidth: '100%', maxHeight: '100%' }}></Flipper>
                     </div>
                     {/* <div id='circle-about'><img src={myAtomLogo} style={{ width: '150px', height: '150px', maxWidth: '100%', maxHeight: '100%' }}></img>

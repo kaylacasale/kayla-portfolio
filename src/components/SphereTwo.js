@@ -32,7 +32,7 @@ const SphereTwo = (props) => {
     // const [isZIndex, setIsZIndex] = useState(false);
     // const [zIndex, setZIndex] = useState(1);
     const renderBtn = () => {
-        return <div id='wiggle' style={{}}><button onClick={() => handleReset()} style={{ borderRadius: '200px', width: '150px', height: '150px', fontSize: '16px', boxShadow: '12px 15px 17px #00000029', background: `${hoverColor}`, color: '#EFEEF5', textShadow: '1px 1px #FFFBFB', borderColor: '#FFFBFB', fontFamily: 'GravitasOne' }} >Put Back</button>
+        return <div id='wiggle' style={{}}><button onClick={() => handleReset()} style={{ borderRadius: '200px', width: '120px', height: '120px', fontSize: '16px', boxShadow: '12px 15px 17px #00000029', background: `${hoverColor}`, color: '#EFEEF5', textShadow: '1px 1px #FFFBFB', borderColor: '#FFFBFB', fontFamily: 'GravitasOne' }} >Put Back</button>
             <img src={srcIcon} style={{ width: '40px', marginTop: '-150px' }}></img></div>
     }
 
@@ -53,8 +53,8 @@ const SphereTwo = (props) => {
         // const newX = '50px'
         // const newY = '200px'
 
-        const x2 = 112;
-        const y2 = 368;
+        const x2 = 108;
+        const y2 = 345;
         // const z2 = 3;
 
         setPosition({ x: x2, y: y2, z: 0 });
@@ -134,7 +134,7 @@ const SphereTwo = (props) => {
 
             </div>
             {/* <button onClick={() => handleReset()}></button> */}
-            <div style={{ position: 'absolute', left: '128%', top: '245px', color: `${textColor}` }}>
+            <div style={{ position: 'absolute', left: '123%', top: '245px', color: `${textColor}` }}>
                 {clicked ? renderBtn() : !renderBtn()}
             </div>
 
