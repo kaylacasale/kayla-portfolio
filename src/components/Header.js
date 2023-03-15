@@ -43,7 +43,7 @@ function Header() {
               <img className='my-logo' id='wiggle' src={bubbleBunchTwo} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
               <div className='shadow' style={{}}></div>
             </div>
-            <Link to='/'><div id='ball-1' class='ball' style={{ zIndex: '3' }}>KC</div></Link>
+            <Link to='/'><div id='ball-1' class='ball' style={{ zIndex: '3', color: 'white' }}>KC</div></Link>
             <Link to='/'><div id='ball-2' class='ball' style={{ zIndex: '2' }}>About</div></Link>
             <Link to='/contact' ><div id='ball-3' class='ball' style={{ zIndex: '2' }}>Contact</div></Link>
             <Link to='/portfolio'><div id='ball-4' class='ball' style={{ zIndex: '2' }}>Skills</div></Link>
