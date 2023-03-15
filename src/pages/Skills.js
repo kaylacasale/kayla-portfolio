@@ -121,7 +121,7 @@ const Skills = () => {
 
     return (
 
-        <div id='canvas'>
+        <div id='canvas' style={{ fontFamily: 'Climate Crisis' }}>
 
 
             {itemData.map((item) => (
@@ -139,7 +139,7 @@ const Skills = () => {
                         <img src={item.img} style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.width}`, height: `${item.height}`, borderRadius: `${item.borderRadius}`, opacity: .85 }}></img>
                     </div>
                     <div id='ball-1' class={item.class} style={{ top: `${item.top}`, left: `${item.left}`, width: `${item.width}`, height: `${item.height}`, position: 'absolute', opacity: `${item.opacityBubbleTwo}`, textAlign: 'center', borderRadius: `${item.borderRadius}` }}>
-                        <p style={{ marginTop: `${item.marginTop}`, color: `${item.color}`, fontSize: `${item.fontSize}`, textShadow: '1px 1px whitesmoke', lineHeight: '20px' }}>{item.title}</p>
+                        <p style={{ marginTop: `${item.marginTop}`, color: `${item.color}`, fontSize: `${item.fontSize}`, textShadow: '1px 1px whitesmoke', lineHeight: '20px', fontFamily: 'Climate Crisis' }}>{item.title}</p>
                     </div>
 
                 </div>

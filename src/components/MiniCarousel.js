@@ -33,7 +33,7 @@ const MiniCarousel = ({ images }) => {
 
     return (
         <div className="carousel-container">
-            <div ref={carouselRef} className="carousel" style={{ width: '230px', height: '230px', alignItems: 'center' }}>
+            <div ref={carouselRef} className="carousel" style={{ width: '230px', height: '230px', alignItems: 'center' }} id='scale'>
                 {images.map((image, index) => (
                     <img key={index} src={image} alt={`Image ${index}`} style={{ marginBottom: '0px', maxWidth: '100%', maxHeight: '100%' }} />
                 ))}
