@@ -71,6 +71,7 @@
   /* background-color: #fff; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   position: absolute;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +81,7 @@
   animation: float 5s ease-in-out infinite;
   background: radial-gradient(circle at 75% 30%,
       white 5px,
-      rgb(116, 254, 254) 8%,
+      rgb(181, 251, 254) 8%,
       rgb(245, 240, 245) 60%,
       rgb(196, 251, 251) 100%);
   /* background: #FBFFFF; */
@@ -105,16 +106,18 @@
   /* background: #b490b2; */
   background: radial-gradient(50% 50%, #4F5A74 0%, #93A1BA 100%);
   /* background: url('../assets/topper-squished.png'); */
-  background-size: cover;
-  width: 100px;
+  /* background-size: cover; */
+  width: 75px;
   height: 40px;
-  left: -20px;
+  left: -30px;
   /* top: 70%; */
   animation: expand 4s infinite;
   position: absolute;
   border-radius: 50%;
-  /* margin-top: -20px; */
-  opacity: .3;
+  margin-top: 60px;
+  top: 300px;
+  opacity: .2;
+  position: absolute;
 }
 
 .ball {

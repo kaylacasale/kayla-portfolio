@@ -17,7 +17,7 @@ function BackgroundCircles() {
     //     />
     // ));
     const [hoveredIndex, setHoveredIndex] = useState(null);
-    const circleCount = 200;
+    const circleCount = 214.8;
     const circleSize = 50;
     const circleGap = 0;
 
@@ -29,8 +29,8 @@ function BackgroundCircles() {
                 key={index}
                 className="circle"
                 style={{
-                    background: hoveredIndex === index ? "rgba(156, 255, 253, 0.2)" : "linear-gradient(217deg, rgba(207, 255, 255, 0.8), rgba(255, 255, 251, 0) 70.71%), linear-gradient(127deg, rgb(233, 255, 212), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(237, 220, 250, 0.8), rgb(0, 255, 127, 0) 70.71%)",
-                    transform: `translate(${x}px, ${y}px)`,
+                    background: hoveredIndex === index ? "linear-gradient(to right, #EFEEF5, #FCFCFC, #EFEEF6)" : "linear-gradient(217deg, rgba(207, 255, 255, 0.8), rgba(255, 255, 251, 0) 70.71%), linear-gradient(127deg, rgb(233, 255, 212), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(237, 220, 250, 0.8), rgb(0, 255, 127, 0) 70.71%)",
+                    // transform: `translate(${x}px, ${y}px)`,
                     width: `${circleSize}px`,
                     height: `${circleSize}px`,
                     marginRight: `${circleGap}px`,

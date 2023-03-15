@@ -100,12 +100,16 @@ function App() {
 
           {/* <Link to="/" element={<Home />} /> */}
         </div>
-
+        <footer>
+          Handcrafted by Me <span><a href="https://github.com/kaylacasale" style={{ color: '#C6F4FD' }}>@Kayla Casale </a></span> in React
+        </footer>
 
         {/* <Section /> */}
       </div>
 
+
     </>
+
   );
 }
 

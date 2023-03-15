@@ -16,6 +16,16 @@ header {
     font-family: 'Climate Crisis';
 }
 
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 1500px;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+
 .hide-element {
     display: none;
 }
