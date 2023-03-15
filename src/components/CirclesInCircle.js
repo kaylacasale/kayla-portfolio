@@ -79,7 +79,7 @@ import dnaIcon from '../assets/dna-icon.png';
 import collegeIcon from '../assets/college-icon.png';
 import threeDIcon from '../assets/3d-icon.png';
 import communicationIcon from '../assets/social-icon.png'
-import bubbleBunch from '../assets/bubble-bunch.png'
+import bubbleBunch from '../assets/favicon-bubble-bunch.png'
 
 
 // import '../styles/SphereTwoStyle.css'
@@ -224,7 +224,7 @@ function CirclesInCircles() {
     return (
         <section style={{ marginTop: '0px', fontFamily: 'Climate Crisis', height: '100%' }}>
             <div className='container' style={{ marginTop: '200px', display: 'flex', justifyContent: 'center' }}>
-                <div style={{ position: "absolute", height: "300px", width: '300px', borderRadius: '200px', boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)', top: '486px', left: '35.7%' }}>
+                <div style={{ position: "absolute", height: "300px", width: '300px', borderRadius: '200px', boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)', top: '506px', left: '36%' }}>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>

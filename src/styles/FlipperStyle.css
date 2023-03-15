@@ -1,3 +1,7 @@
+p {
+    font-family: Cascadia One;
+}
+
 .flip-container {
     perspective: 1000px;
 }

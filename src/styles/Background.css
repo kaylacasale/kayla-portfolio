@@ -109,7 +109,9 @@
 
 .twinkling {
     /* background: transparent url(../assets/twinkling-2.png) repeat top center; */
-    background: url(../assets/ball-test.png) repeat top center;
+    /* background: url(../assets/ball-test.png) repeat top center; */
+    background: url(../assets/favicon-bubble-one.png) repeat top center;
+
     z-index: -2;
     animation: move-twink-back 2000s linear infinite;
 }

@@ -7,11 +7,13 @@ import { TypeAnimation } from 'react-type-animation';
 
 const TypeAnimate = () => {
     return (
-        <div>
+        <div style={{ fontFamily: 'Gravitas One' }}>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
             </style>
             <TypeAnimation
+
                 sequence={[
                     'I am a...', // Types 'One'
                     1000, // Waits 1s
@@ -28,7 +30,7 @@ const TypeAnimate = () => {
                 wrapper="div"
                 cursor={true}
                 repeat={Infinity}
-                style={{ fontSize: '2em', fontFamily: 'Climate Crisis' }}
+                style={{ fontSize: '2em', fontFamily: 'Gravitas One' }}
             />
         </div>
     );

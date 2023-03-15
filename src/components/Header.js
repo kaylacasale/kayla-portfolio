@@ -8,7 +8,8 @@ import myLogoLight from '../assets/my-logo-light.png';
 import myAtomIcon from '../assets/my-atom-icon.png';
 // TODO: Create a styles object called "styles"
 
-import bubbleBunch from '../assets/bubble-bunch.png'
+import bubbleBunch from '../assets/bubble-bunch.png';
+import bubbleBunchTwo from '../assets/favicon-bubble-bunch.png';
 // const styles = {
 //   header: {
 //     background: 'red',
@@ -39,7 +40,7 @@ function Header() {
         <div id='canvas'>
           <div id='circle'>
             <div style={{ zIndex: '4', position: 'absolute', top: '50px' }}>
-              <img className='my-logo' id='wiggle' src={bubbleBunch} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
+              <img className='my-logo' id='wiggle' src={bubbleBunchTwo} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
               <div className='shadow' style={{}}></div>
             </div>
             <Link to='/'><div id='ball-1' class='ball' style={{ zIndex: '3' }}>KC</div></Link>

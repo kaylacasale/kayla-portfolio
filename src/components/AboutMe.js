@@ -15,7 +15,9 @@ import Flipper from './Flipper';
 import ReactCarousel from './ReactCarousel';
 import MiniCarousel from './MiniCarousel';
 
-import image0 from '../assets/self-photo.png'
+import image0Draft from '../assets/self-photo.png'
+import image0 from '../assets/self-photo-2.png'
+
 import image1 from '../assets/front-teeth-2.png';
 import image2 from '../assets/bottom-teeth-2.png'
 import image3 from '../assets/franklin-album.png'
@@ -28,8 +30,10 @@ import image9 from '../assets/ttc-lab.png'
 import image10 from '../assets/bar-lis.png'
 import image11 from '../assets/testing-process.png'
 
-import wheelThreeColors from '../assets/wheel-three-colors.png'
+import wheelThreeColors from '../assets/wheel-three-colors.png';
 // document.getElementById('#copy').fadeIn('fast')
+
+import bubbleTopper from '../assets/bubble-topper.png';
 
 
 function AboutMe() {
@@ -81,17 +85,17 @@ function AboutMe() {
         <div>
             <div>
                 <div id='canvas'>
-                    <img src={wheelThreeColors} style={{ width: '800px' }} id='wheel' className='rotator'></img>
+                    <img src={wheelThreeColors} style={{ width: '750px', margin: '20px' }} id='wheel' className='rotator'></img>
                     {isTopperVisible ? (
                         <img></img>
                     ) : (
-                        <img src={wheelTopper} style={{ width: '800px' }} id='wheel-topper' className='stayLeft' onLoad={useEffect}></img>
+                        <img src={bubbleTopper} style={{ width: '800px' }} id='wheel-topper' className='stayLeft' onLoad={useEffect}></img>
 
 
                     )}
                     {isTopperVisible ? (
 
-                        <img src={wheelCopy} style={{ width: '800px' }} id='my-element' className='wheel-copied' onLoad={useEffect}>
+                        <img src={bubbleTopper} style={{ width: '800px' }} id='my-element' className='wheel-copied' onLoad={useEffect}>
 
                         </img>
 
@@ -114,11 +118,11 @@ function AboutMe() {
                             </div>
                         </SphereTwo> */}
 
-                <div style={{ position: 'absolute', top: '831px', left: '42%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
+                <div style={{ position: 'absolute', top: '840px', left: '43.8%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
                     {/* <ReactCarousel /> */}
                     <MiniCarousel images={images} />
                 </div>
-                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '810px', left: '28.8%', maxWidth: '100%', maxHeight: '100%' }}>
+                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '805px', left: '31%', maxWidth: '100%', maxHeight: '100%' }}>
                     <div style={{ width: '150px', height: '150px', marginTop: '0px' }}>
                         <Flipper style={{ maxWidth: '100%', maxHeight: '100%' }}></Flipper>
                     </div>

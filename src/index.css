@@ -10,7 +10,14 @@
     }
 } */
 
+#scale {
 
+    transform: scale(1);
+}
+
+#scale:hover {
+    transform: scale(1.1);
+}
 
 header {
     font-family: 'Climate Crisis';
