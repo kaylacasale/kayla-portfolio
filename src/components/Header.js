@@ -8,6 +8,7 @@ import myLogoLight from '../assets/my-logo-light.png';
 import myAtomIcon from '../assets/my-atom-icon.png';
 // TODO: Create a styles object called "styles"
 
+import bubbleBunch from '../assets/bubble-bunch.png'
 // const styles = {
 //   header: {
 //     background: 'red',
@@ -37,9 +38,9 @@ function Header() {
       <nav class="navbar navbar-expand-lg shadow-lg px-3" style={{ backgroundColor: 'transparent white' }}>
         <div id='canvas'>
           <div id='circle'>
-            <div style={{ zIndex: '4', position: 'relative' }}>
-              <img className='my-logo' id='wiggle' src={myAtomIcon} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
-              <div className='shadow'></div>
+            <div style={{ zIndex: '4', position: 'absolute', top: '50px' }}>
+              <img className='my-logo' id='wiggle' src={bubbleBunch} style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)', borderRadius: '50px' }}></img>
+              <div className='shadow' style={{}}></div>
             </div>
             <Link to='/'><div id='ball-1' class='ball' style={{ zIndex: '3' }}>KC</div></Link>
             <Link to='/'><div id='ball-2' class='ball' style={{ zIndex: '2' }}>About</div></Link>

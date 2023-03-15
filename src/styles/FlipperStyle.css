@@ -13,6 +13,12 @@
     height: 150px;
 }
 
+/* .flipper .front:hover {
+    transition: background 0.3s ease;
+    cursor: pointer;
+    background-color: blue;
+} */
+
 .flip-container .front,
 .flip-container .back {
     position: absolute;
@@ -25,8 +31,45 @@
 
 .flip-container .back {
     transform: rotateY(180deg);
+    /* background-color: pink; */
+
 }
 
 .flip-container.flip .flipper {
     transform: rotateY(180deg);
+}
+
+/* .flip-div:hover {
+    background: blue;
+} */
+
+.flip-div {
+    transition: background 0.3s ease;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+    /* color: #000; */
+    /* animation: float 3.5s ease-in-out infinite; */
+    /* background: radial-gradient(circle at 75% 30%,
+            white 5px,
+            aqua 8%,
+            darkblue 60%,
+            aqua 100%); */
+    /* background: radial-gradient(circle at 75% 30%,
+            white 5px,
+            aqua 8%,
+            rgb(112, 246, 241) 60%,
+            rgb(157, 255, 142) 100%); */
+    /* box-shadow: inset 0 0 20px #fff, inset 10px 0 46px #eaf5fc,
+        inset 88px 0px 60px #c2d8fe, inset -20px -60px 100px #fde9ea,
+        inset 0 50px 140px #fde9ea, 0 0 90px #fff; */
 }

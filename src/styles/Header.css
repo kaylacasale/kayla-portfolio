@@ -50,12 +50,12 @@
   top: 50%;
   left: 50%;
   width: 100px;
-  height: 100px;
+  height: 200px;
   /* background: transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box; */
   background: transparent white;
   src: url('../assets/my-logo-2.png');
-  margin-top: -30px;
-  margin-left: -30px;
+  /* margin-top: -30px;
+  margin-left: -30px; */
   border-radius: 50px;
 }
 
@@ -109,13 +109,13 @@
   /* background-size: cover; */
   width: 75px;
   height: 40px;
-  left: -30px;
+  left: -25px;
   /* top: 70%; */
   animation: expand 4s infinite;
   position: absolute;
   border-radius: 50%;
-  margin-top: 60px;
-  top: 300px;
+  /* margin-top: 100px; */
+  /* top: 300px; */
   opacity: .2;
   position: absolute;
 }

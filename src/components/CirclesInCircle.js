@@ -79,6 +79,7 @@ import dnaIcon from '../assets/dna-icon.png';
 import collegeIcon from '../assets/college-icon.png';
 import threeDIcon from '../assets/3d-icon.png';
 import communicationIcon from '../assets/social-icon.png'
+import bubbleBunch from '../assets/bubble-bunch.png'
 
 
 // import '../styles/SphereTwoStyle.css'
@@ -228,7 +229,7 @@ function CirclesInCircles() {
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
                         <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '80px', color: 'white' }}></p>
-                        <img src={myAtomLogo} style={{ maxWidth: '100%', maxHeight: '100%' }}></img>
+                        <img src={bubbleBunch} style={{ maxWidth: '100%', maxHeight: '100%' }}></img>
                     </span>
 
                     <div id="sphere-container">

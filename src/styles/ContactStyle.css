@@ -187,6 +187,7 @@
     background: radial-gradient(circle at 75% 30%, white 5px, #97e9f6 8%, #b8f2ad 60%, #fba3f5 80%, #f8f8b8 90%);
     border: #FF71E9;
     box-shadow: 0 5px 10px rgba(245, 111, 216, 0.5);
+    /* box-shadow: 0 5px 10px rgba(39, 116, 149, 0.5); */
 
 }
 

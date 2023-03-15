@@ -27,6 +27,8 @@ import image8 from '../assets/testing-tent.png'
 import image9 from '../assets/ttc-lab.png'
 import image10 from '../assets/bar-lis.png'
 import image11 from '../assets/testing-process.png'
+
+import wheelThreeColors from '../assets/wheel-three-colors.png'
 // document.getElementById('#copy').fadeIn('fast')
 
 
@@ -79,7 +81,7 @@ function AboutMe() {
         <div>
             <div>
                 <div id='canvas'>
-                    <img src={wheelLightColors} style={{ width: '800px' }} id='wheel' className='rotator'></img>
+                    <img src={wheelThreeColors} style={{ width: '800px' }} id='wheel' className='rotator'></img>
                     {isTopperVisible ? (
                         <img></img>
                     ) : (
@@ -116,8 +118,8 @@ function AboutMe() {
                     {/* <ReactCarousel /> */}
                     <MiniCarousel images={images} />
                 </div>
-                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '810px', left: '29%', maxWidth: '100%', maxHeight: '100%' }}>
-                    <div style={{ width: '150px', height: '150px', marginTop: '50px' }}>
+                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '810px', left: '28.8%', maxWidth: '100%', maxHeight: '100%' }}>
+                    <div style={{ width: '150px', height: '150px', marginTop: '0px' }}>
                         <Flipper style={{ maxWidth: '100%', maxHeight: '100%' }}></Flipper>
                     </div>
                     {/* <div id='circle-about'><img src={myAtomLogo} style={{ width: '150px', height: '150px', maxWidth: '100%', maxHeight: '100%' }}></img>

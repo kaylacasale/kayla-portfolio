@@ -98,10 +98,10 @@ function App() {
             {/* <Route path="/skills/project" element={<Project />} /> */}
           </Routes>
 
-          {/* <Link to="/" element={<Home />} /> */}
+          {/* <Link to="/" elemen t={<Home />} /> */}
         </div>
-        <footer>
-          Handcrafted by Me <span><a href="https://github.com/kaylacasale" style={{ color: '#C6F4FD' }}>@Kayla Casale </a></span> in React
+        <footer id='wiggle'>
+          Designed & Built by <span><a href="https://github.com/kaylacasale" style={{ color: '#6CDDF4' }}>Kayla Casale</a></span> in React
         </footer>
 
         {/* <Section /> */}
