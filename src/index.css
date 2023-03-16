@@ -216,9 +216,9 @@ footer {
     height: 200px;
     background: #EEEDF4;
     border-radius: 50%;
-    background: -webkit-radial-gradient(25px 25px, circle, red, #000);
+    /* background: -webkit-radial-gradient(25px 25px, circle, red, #000);
     background: -moz-radial-gradient(25px 25px, circle, red, #000);
-    background: radial-gradient(25px 25px, circle, red, #000);
+    background: radial-gradient(25px 25px, circle, red, #000); */
 
     /* Animation to spin and move the sphere */
     -webkit-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;

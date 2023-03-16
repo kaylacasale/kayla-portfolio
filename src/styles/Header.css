@@ -104,7 +104,7 @@
 
 .shadow {
   /* background: #b490b2; */
-  background: radial-gradient(50% 50%, #4F5A74 0%, #93A1BA 100%);
+  background: radial-gradient(closest-side at 50% 50%, #4F5A74 0%, #93A1BA 100%);
   /* background: url('../assets/topper-squished.png'); */
   /* background-size: cover; */
   width: 75px;
