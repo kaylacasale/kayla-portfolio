@@ -1,37 +1,37 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import wheelTopper from '../assets/wheel-topper.png'
-import wheelCopy from '../assets/wheel-2-copy.png'
-import BlockButton from './BlockButton';
-import wheelCopy2 from '../assets/wheel-topper-copy-2.png'
-import topper from '../assets/etiquette-topper.png'
-import homepage from '../assets/etiquette-homepage-fullscreen.png'
-import BlockButtonEtiquette from './BlockButtonEtiquette';
-// import etiquettLogo from '../assets/logo500.png'
-import smiseLogo from '../assets/smise-logo.png';
+// import wheelTopper from '../assets/wheel-topper.png'
+// import wheelCopy from '../assets/wheel-2-copy.png'
+// import BlockButton from './BlockButton';
+// import wheelCopy2 from '../assets/wheel-topper-copy-2.png'
+// import topper from '../assets/etiquette-topper.png'
+// import homepage from '../assets/etiquette-homepage-fullscreen.png'
+// import BlockButtonEtiquette from './BlockButtonEtiquette';
+// // import etiquettLogo from '../assets/logo500.png'
+// import smiseLogo from '../assets/smise-logo.png';
 
-import shangooLogo from '../assets/shangoo-logo.png'
-import BlockButtonShangoo from './BlockButtonShangoo';
-import appleStoreLogo from '../assets/apple-store-logo.png'
-import shangooDriverLogo from '../assets/shangoo-driver-logo.png'
-import shangooPharmacyLogo from '../assets/shangoo-pharmacy-logo.png'
-import shangooPatientLogo from '../assets/shangoo-patient-logo.png'
-import BlockButtonWako from './BlockButtonWako';
-import BlockButtonJotter from './BlockButtonJotter'
-import BlockButtonMyMetro from './BlockButtonMyMetro'
-import blogForTechsLogo from '../assets/blog-for-techs-logo.png'
-import wakoLogo from '../assets/wako-logo.png'
+// import shangooLogo from '../assets/shangoo-logo.png'
+// import BlockButtonShangoo from './BlockButtonShangoo';
+// import appleStoreLogo from '../assets/apple-store-logo.png'
+// import shangooDriverLogo from '../assets/shangoo-driver-logo.png'
+// import shangooPharmacyLogo from '../assets/shangoo-pharmacy-logo.png'
+// import shangooPatientLogo from '../assets/shangoo-patient-logo.png'
+// import BlockButtonWako from './BlockButtonWako';
+// import BlockButtonJotter from './BlockButtonJotter'
+// import BlockButtonMyMetro from './BlockButtonMyMetro'
+// import blogForTechsLogo from '../assets/blog-for-techs-logo.png'
+// import wakoLogo from '../assets/wako-logo.png'
 
-import jotterLogo from '../assets/jotter-logo.png';
-import myMetroLogo from '../assets/mymetro-icon.png';
+// import jotterLogo from '../assets/jotter-logo.png';
+// import myMetroLogo from '../assets/mymetro-icon.png';
 
 import wheelTopperExtraHole from '../assets/wheel-topper-extra-whole.png';
 
-import BlockButtonWorkYourSchedule from './BlockButtonWorkYourSchedule'
-import BlockButtonPasswordGenerator from './BlockButtonPasswordGenerator'
-import workYourScheduleIcon from '../assets/work-your-schedule-icon.png';
-import passwordGeneratorIcon from '../assets/password-generator-icon.png';
+// import BlockButtonWorkYourSchedule from './BlockButtonWorkYourSchedule'
+// import BlockButtonPasswordGenerator from './BlockButtonPasswordGenerator'
+// import workYourScheduleIcon from '../assets/work-your-schedule-icon.png';
+// import passwordGeneratorIcon from '../assets/password-generator-icon.png';
 // import smiseOpening from '../assets/smise-opening.png'
 
 import BlockButtonYouMeMix from './BlockButtonYouMeMix';

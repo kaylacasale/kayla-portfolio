@@ -7,70 +7,70 @@ import IconButton from "@mui/material/IconButton";
 import Card from '../components/Card'
 // import PortfolioBackground from '../components/PortfolioBackground'
 import '../styles/Background.css'
-import Background from '../components/Background';
-import MovingComponent from 'react-moving-text'
-import ReactImageListMasonry from '../components/ReactImageListMasonry';
-import shangoo from '../assets/shangoo-main.PNG'
-import BlockButton from '../components/BlockButton';
+// import Background from '../components/Background';
+// import MovingComponent from 'react-moving-text'
+// import ReactImageListMasonry from '../components/ReactImageListMasonry';
+// import shangoo from '../assets/shangoo-main.PNG'
+// import BlockButton from '../components/BlockButton';
 
 // import Sphere from '../components/Sphere'
 import SphereTwo from './SphereTwo';
 
-import reactIcon from '../assets/react-icon.png';
-import jQueryIcon from '../assets/jQuery-icon.png';
-import nodeIcon from '../assets/node-icon.png';
-import expressIcon from '../assets/express-icon.png';
-import javascriptIcon from '../assets/javascript-icon.png';
-import frameworksIcon from '../assets/frameworks-icon.png';
-import htmlIcon from '../assets/html-icon.png';
-import cssIcon from '../assets/css-icon.png';
-import matlabIcon from '../assets/matlab-icon.png';
-import phpIcon from '../assets/php-icon.png';
-import swiftIcon from '../assets/swift-icon.png';
-import typescriptIcon from '../assets/typescript-icon.png';
-import languagesIcon from '../assets/languages-icon.png';
+// import reactIcon from '../assets/react-icon.png';
+// import jQueryIcon from '../assets/jQuery-icon.png';
+// import nodeIcon from '../assets/node-icon.png';
+// import expressIcon from '../assets/express-icon.png';
+// import javascriptIcon from '../assets/javascript-icon.png';
+// import frameworksIcon from '../assets/frameworks-icon.png';
+// import htmlIcon from '../assets/html-icon.png';
+// import cssIcon from '../assets/css-icon.png';
+// import matlabIcon from '../assets/matlab-icon.png';
+// import phpIcon from '../assets/php-icon.png';
+// import swiftIcon from '../assets/swift-icon.png';
+// import typescriptIcon from '../assets/typescript-icon.png';
+// import languagesIcon from '../assets/languages-icon.png';
 
-import databaseIcon from '../assets/database-technologies-icon.png';
-import mySQLIcon from '../assets/mysql-icon.png';
-import postgreSQLIcon from '../assets/postgreSQL-icon.png';
-import mongodbIcon from '../assets/mongdb-icon.png';
-import graphQLIcon from '../assets/graphql-icon.png';
-import bootstrapIcon from '../assets/bootstrap-icon.png';
-import materialUIIcon from '../assets/materialUI-icon.png';
-import jawsDBIcon from '../assets/jawsdb-icon.png';
-import dynamoDBIcon from '../assets/dynamodb-icon.png';
-import apolloIcon from '../assets/apollo-icon.png';
-import vscodeIcon from '../assets/vscode-icon.png';
+// import databaseIcon from '../assets/database-technologies-icon.png';
+// import mySQLIcon from '../assets/mysql-icon.png';
+// import postgreSQLIcon from '../assets/postgreSQL-icon.png';
+// import mongodbIcon from '../assets/mongdb-icon.png';
+// import graphQLIcon from '../assets/graphql-icon.png';
+// import bootstrapIcon from '../assets/bootstrap-icon.png';
+// import materialUIIcon from '../assets/materialUI-icon.png';
+// import jawsDBIcon from '../assets/jawsdb-icon.png';
+// import dynamoDBIcon from '../assets/dynamodb-icon.png';
+// import apolloIcon from '../assets/apollo-icon.png';
+// import vscodeIcon from '../assets/vscode-icon.png';
 
-import idesIcon from '../assets/ides-icon.png';
-import xcodeIcon from '../assets/xcode-icon.png';
+// import idesIcon from '../assets/ides-icon.png';
+// import xcodeIcon from '../assets/xcode-icon.png';
 
-import versionControlIcon from '../assets/version-control-icon.png';
-import gitHubIcon from '../assets/github-icon.png';
-import gitIcon from '../assets/git-icon.png';
-import gitHubPagesIcon from '../assets/github-pages-icon.png';
+// import versionControlIcon from '../assets/version-control-icon.png';
+// import gitHubIcon from '../assets/github-icon.png';
+// import gitIcon from '../assets/git-icon.png';
+// import gitHubPagesIcon from '../assets/github-pages-icon.png';
 
-import projectManagementIcon from '../assets/project-management-icon.png';
-import joomlaIcon from '../assets/joomla-icon.png';
-import nulabBacklogIcon from '../assets/nulab-backlog-icon.png';
-import agileIcon from '../assets/agile-icon.png';
-import mondayIcon from '../assets/monday-icon.png';
-import airtablesIcon from '../assets/airtables-icon.png';
-import slackIcon from '../assets/slack-icon.png';
-import advancedMdIcon from '../assets/advancedMd-icon.png';
+// import projectManagementIcon from '../assets/project-management-icon.png';
+// import joomlaIcon from '../assets/joomla-icon.png';
+// import nulabBacklogIcon from '../assets/nulab-backlog-icon.png';
+// import agileIcon from '../assets/agile-icon.png';
+// import mondayIcon from '../assets/monday-icon.png';
+// import airtablesIcon from '../assets/airtables-icon.png';
+// import slackIcon from '../assets/slack-icon.png';
+// import advancedMdIcon from '../assets/advancedMd-icon.png';
 
-import developmentAndTestingIcon from '../assets/development-and-testing-icon.png';
-import workbenchIcon from '../assets/workbench-icon.png';
-import postmanIcon from '../assets/postman-icon.png';
-import insomniaIcon from '../assets/insomnia-icon.png';
-import compassIcon from '../assets/compass-icon.png';
-import herokuIcon from '../assets/heroku-icon.png';
-import dockerIcon from '../assets/docker-icon.png';
-import googleAnalyticsIcon from '../assets/google-analytics-icon.png';
-import atlasIcon from '../assets/atlas-icon.png';
-import expoIcon from '../assets/expo-icon.png';
-import myAtomLogo from '../assets/my-atom-icon.png';
-import zIndex from '@mui/material/styles/zIndex';
+// import developmentAndTestingIcon from '../assets/development-and-testing-icon.png';
+// import workbenchIcon from '../assets/workbench-icon.png';
+// import postmanIcon from '../assets/postman-icon.png';
+// import insomniaIcon from '../assets/insomnia-icon.png';
+// import compassIcon from '../assets/compass-icon.png';
+// import herokuIcon from '../assets/heroku-icon.png';
+// import dockerIcon from '../assets/docker-icon.png';
+// import googleAnalyticsIcon from '../assets/google-analytics-icon.png';
+// import atlasIcon from '../assets/atlas-icon.png';
+// import expoIcon from '../assets/expo-icon.png';
+// import myAtomLogo from '../assets/my-atom-icon.png';
+// import zIndex from '@mui/material/styles/zIndex';
 
 import brainIcon from '../assets/brain-icon.png';
 import patientCareIcon from '../assets/patient-care-icon.png';

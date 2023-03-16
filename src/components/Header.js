@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 // Here we import the Header.css file to grant access to some additional classNames
 import '../styles/Header.css';
 import "fontsource-cascadia-code";
-import myLogoTwo from '../assets/my-logo-2.png';
-import myLogoLight from '../assets/my-logo-light.png';
-import myAtomIcon from '../assets/my-atom-icon.png';
+// import myLogoTwo from '../assets/my-logo-2.png';
+// import myLogoLight from '../assets/my-logo-light.png';
+// import myAtomIcon from '../assets/my-atom-icon.png';
 // TODO: Create a styles object called "styles"
 
-import bubbleBunch from '../assets/bubble-bunch.png';
+// import bubbleBunch from '../assets/bubble-bunch.png';
 import bubbleBunchTwo from '../assets/favicon-bubble-bunch.png';
 // const styles = {
 //   header: {

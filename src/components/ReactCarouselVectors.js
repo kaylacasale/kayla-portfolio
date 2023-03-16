@@ -3,31 +3,14 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import MovingComponent from 'react-moving-text'
 // import myImage from '../assets/clouds.png'
-import selectiveAttention from '../assets/mouse-studies.webp'
-import SfnPoster from '../assets/SfN-poster.png'
-import bioRxivPublication from '../assets/bioRxiv-publication.png'
-import sfnPosterPresentation from '../assets/sfn-poster-presentation.png'
-import publicationSources from '../assets/journals-publications.png'
 
-import bioengineering from '../assets/echolocation.png'
-import institutions from '../assets/research-institutions-6.png'
-import technologies from '../assets/technologies-yartsev-3.png'
-import epilepticus from '../assets/embryonic-stem-cells.jpeg'
 import topTeethOne from '../assets/top-teeth-1.png'
 import topTeethTwo from '../assets/top-teeth-2.png'
-import topTeethThree from '../assets/top-teeth-3.png'
-import topTeethFour from '../assets/top-teeth-4.png'
-import { width } from '@mui/system';
+
 import albumCover from '../assets/album-cover.png'
-import franklin from '../assets/franklin.png'
-import franklinSnakes from '../assets/franklin-snakes.png'
-import balloon from '../assets/franklin-balloon.png'
-import smiseScreens from '../assets/SMISE-screen.png'
-import implant from '../assets/SMISE-implant.png'
-import imaging from '../assets/SMISE-imaging.png'
+
 import covid from '../assets/covid-virus.png'
 import tentTTC from '../assets/TTC-testing-tent.png'
-import swabTTC from '../assets/TTC-swab-training.png'
 import detectCam from '../assets/TTC-detectCam.png'
 import crystal from '../assets/franklin-crystal.png'
 import smise360 from '../assets/smise-360.png'

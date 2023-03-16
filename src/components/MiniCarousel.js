@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import '../styles/MiniCarouselStyle.css';
-import myLogo from '../assets/my-logo-light.png';
+// import myLogo from '../assets/my-logo-light.png';
 const MiniCarousel = ({ images }) => {
     const [counter, setCounter] = useState(0);
     const [size, setSize] = useState(0);

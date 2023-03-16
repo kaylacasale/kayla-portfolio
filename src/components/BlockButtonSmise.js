@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import shangoo from '../assets/shangoo-main.PNG'
-import shangooTwo from '../assets/smise-360.png'
-import shangooRegister from '../assets/shangoo-register-screen.png'
-import shangooMain from '../assets/shangoo-mainpage-screen.png'
-import shangooOpenAsset from '../assets/shangoo-open-onasset.png'
-import etiquette1 from '../assets/etiquette-computer-home.png'
-import etiquetteSalons from '../assets/etiquette-computer-see-salons.png'
-import etiquetteLogin from '../assets/etiquette-computer-login.png'
-import etiquetteSignup from '../assets/etiquette-computer-signup.png'
-import NextIcon from '@mui/icons-material/ArrowRight';
-import BackIcon from '@mui/icons-material/ArrowLeft'
-import etiquetteAddSalon from '../assets/etiquette-computer-add-salon.png';
-import etiquetteAddGallery from '../assets/etiquette-computer-add-to-gallery.png';
-import etiquetteAddAppointment from '../assets/etiquette-computer-add-appointment.png';
-import etiquetteAppointments from '../assets/etiquette-computer-see-appointments.png'
-import etiquetteProfile from '../assets/etiquette-computer-see-profile.png'
+// import shangoo from '../assets/shangoo-main.PNG'
+// import shangooTwo from '../assets/smise-360.png'
+// import shangooRegister from '../assets/shangoo-register-screen.png'
+// import shangooMain from '../assets/shangoo-mainpage-screen.png'
+// import shangooOpenAsset from '../assets/shangoo-open-onasset.png'
+// import etiquette1 from '../assets/etiquette-computer-home.png'
+// import etiquetteSalons from '../assets/etiquette-computer-see-salons.png'
+// import etiquetteLogin from '../assets/etiquette-computer-login.png'
+// import etiquetteSignup from '../assets/etiquette-computer-signup.png'
+// import NextIcon from '@mui/icons-material/ArrowRight';
+// import BackIcon from '@mui/icons-material/ArrowLeft'
+// import etiquetteAddSalon from '../assets/etiquette-computer-add-salon.png';
+// import etiquetteAddGallery from '../assets/etiquette-computer-add-to-gallery.png';
+// import etiquetteAddAppointment from '../assets/etiquette-computer-add-appointment.png';
+// import etiquetteAppointments from '../assets/etiquette-computer-see-appointments.png'
+// import etiquetteProfile from '../assets/etiquette-computer-see-profile.png'
 import smiseOpening from '../assets/smise-opening.png'
 import smiseAddSymptomsFourScreens from '../assets/smise-fourscreens-add-symptoms.png'
 import smiseSelectTooth from '../assets/smise-select-tooth.png'

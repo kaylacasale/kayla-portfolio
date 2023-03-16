@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import wheelTopper from '../assets/wheel-topper.png'
-import wheelCopy from '../assets/wheel-2-copy.png'
-import BlockButton from './BlockButton';
-import wheelCopy2 from '../assets/wheel-topper-copy-2.png'
-import topper from '../assets/etiquette-topper.png'
-import homepage from '../assets/etiquette-homepage-fullscreen.png'
-import BlockButtonEtiquette from './BlockButtonEtiquette';
+// import wheelTopper from '../assets/wheel-topper.png'
+// import wheelCopy from '../assets/wheel-2-copy.png'
+// import BlockButton from './BlockButton';
+// import wheelCopy2 from '../assets/wheel-topper-copy-2.png'
+// import topper from '../assets/etiquette-topper.png'
+// import homepage from '../assets/etiquette-homepage-fullscreen.png'
+// import BlockButtonEtiquette from './BlockButtonEtiquette';
 // import etiquettLogo from '../assets/logo500.png'
 import smiseLogo from '../assets/smise-logo.png';
 import BlockButtonSmise from './BlockButtonSmise';

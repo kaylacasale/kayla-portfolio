@@ -2,34 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import shangoo from '../assets/shangoo-main.PNG'
 // import shangooTwo from '../assets/smise-360.png'
-import shangooRegister from '../assets/shangoo-register-screen.png'
-import shangooMain from '../assets/shangoo-mainpage-screen.png'
-import shangooOpenAsset from '../assets/shangoo-open-onasset.png'
-import etiquette1 from '../assets/etiquette-computer-home.png'
-import etiquetteSalons from '../assets/etiquette-computer-see-salons.png'
-import etiquetteLogin from '../assets/etiquette-computer-login.png'
-import etiquetteSignup from '../assets/etiquette-computer-signup.png'
-import NextIcon from '@mui/icons-material/ArrowRight';
-import BackIcon from '@mui/icons-material/ArrowLeft'
-import etiquetteAddSalon from '../assets/etiquette-computer-add-salon.png';
-import etiquetteAddGallery from '../assets/etiquette-computer-add-to-gallery.png';
-import etiquetteAddAppointment from '../assets/etiquette-computer-add-appointment.png';
-import etiquetteAppointments from '../assets/etiquette-computer-see-appointments.png'
-import etiquetteProfile from '../assets/etiquette-computer-see-profile.png'
-import smiseOpening from '../assets/smise-opening.png'
-import smiseAddSymptomsFourScreens from '../assets/smise-fourscreens-add-symptoms.png'
-import smiseSelectTooth from '../assets/smise-select-tooth.png'
-import smiseVisualizeTooth from '../assets/smise-visualize-tooth.png'
-import smiseHidden from '../assets/smise-visualized-hidden.png'
-import smiseNotes from '../assets/smise-notes.png'
-import smiseImaging from '../assets/SMISE-imaging.png'
-import smiseScreens from '../assets/smise-screens-many.png'
-import smiseImagingTwo from '../assets/smise-imaging-2.png'
 
-import shangooDesktopHomeOne from '../assets/shangoo-desktop-home-2.png'
-import shangooOrderMeds from '../assets/shangoo-order-meds.png'
-import shangooRegisterAndContact from '../assets/shangoo-register-and-contact.png'
-import shangooThreeApps from '../assets/shangoo-3-apps.png'
 // import Button from 'react-bootstrap/Button'
 
 import blogForTechsSeeBlogs from '../assets/blog-for-techs-see-blogs.png';

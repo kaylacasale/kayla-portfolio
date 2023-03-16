@@ -1,19 +1,19 @@
 import React from 'react'
-import TypeAnimate from '../components/TypeAnimate'
-import MovingComponent from 'react-moving-text'
-import Header from '../components/Header'
-import ReactCarousel from '../components/ReactCarousel'
-import Background from '../components/Background'
-import ReactCarouselTwo from '../components/ReactCarouselTwo'
+import AnimateText from '../components/AnimateText'
+// import MovingComponent from 'react-moving-text'
+// import Header from '../components/Header'
+// import ReactCarousel from '../components/ReactCarousel'
+// import Background from '../components/Background'
+// import ReactCarouselTwo from '../components/ReactCarouselTwo'
 import '../styles/Background.css'
-import BackgroundTwo from '../components/BackgroundTwo'
+// import BackgroundTwo from '../components/BackgroundTwo'
 // import HomeCarousel from '../components/HomeCarousel'
 // import HomeCarousel from '../components/HomeCarousel'
 
-import ReactCarouselVectors from '../components/ReactCarouselVectors'
+// import ReactCarouselVectors from '../components/ReactCarouselVectors'
 import "fontsource-cascadia-code"
-import ReactCarouselPrototyping from '../components/ReactCarouselPrototyping'
-import MainIcons from '../components/MainIcons'
+// import ReactCarouselPrototyping from '../components/ReactCarouselPrototyping'
+// import MainIcons from '../components/MainIcons'
 import AboutMe from '../components/AboutMe'
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
@@ -22,13 +22,13 @@ const Home = () => {
 
         <div style={{ textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Climate Crisis', color: 'white', textShadow: '2px 2px #DFDFE3' }} >
             {/* vector art - carousel */}
-            {/* <TypeAnimate /> */}
+            =
 
             <div style={{ marginBottom: '0px', marginTop: '250px', opacity: '1', textShadow: '2px 2px #9CCFEA' }}>
-                <TypeAnimate />
+                <AnimateText />
             </div>
             <div>
-                <MainIcons />
+                {/* <MainIcons /> */}
             </div>
             <div>
                 <AboutMe />
