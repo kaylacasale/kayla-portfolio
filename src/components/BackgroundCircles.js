@@ -18,9 +18,9 @@ function BackgroundCircles() {
     //     />
     // ));
     const [hoveredIndex, setHoveredIndex] = useState(null);
-    const circleCount = 241.7;
+    const circleCount = 50;
     const circleSize = 50;
-    const circleGap = 0;
+    const circleGap = 100;
 
     const circles = Array.from({ length: circleCount * 3 }, (_, index) => {
         const x = (index % circleCount) * circleSize + (index % circleCount) * circleGap

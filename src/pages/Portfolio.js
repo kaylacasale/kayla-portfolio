@@ -118,9 +118,9 @@ function Portfolio() {
                 <div id='zoom' style={{ position: "relative", height: "300px", width: '300px', background: 'transparent radial-gradient(closest-side at 50% 50%, #F0EFF6 0%, #000000 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }} className='bounce-in'>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
-                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '80px', color: 'white' }}>Languages</p>
-                        <img src={languagesIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '30px', marginTop: '60px' }}></img>
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center', display: 'block', alignItems: 'center' }}>
+                        <p style={{ position: 'absolute', marginTop: '20px', width: '100%', color: 'white' }}>Languages</p>
+                        <img src={languagesIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginTop: '60px' }}></img>
                     </span>
                     {spheresLoaded >= 1 && (
                         <Sphere x={25} y={110} z={-1} color='#353535' text='PHP...' onClick={handleSphereClick} hoverColor='#6C7EB7' srcIcon={phpIcon} textColor='#6C7EB7' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #F0EFF6 0%, #000000 100%) 0% 0% no-repeat padding-box' />
@@ -150,9 +150,9 @@ function Portfolio() {
                 <div id='zoom' style={{ position: "relative", background: 'transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #D49F41 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }} className='bounce-in'>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
-                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '25%', color: 'white' }}>Frameworks</p>
-                        <img src={frameworksIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '30px', marginTop: '60px' }}></img>
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center', display: 'block' }}>
+                        <p style={{ position: 'absolute', marginTop: '20px', width: '100%', color: 'white' }}>Frameworks</p>
+                        <img src={frameworksIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginTop: '60px' }}></img>
                     </span>
                     {spheresLoaded >= 1 && (
                         <Sphere x={25} y={110} z={-1} color='#353535' text='Bootstrap...' onClick={handleSphereClick} hoverColor='#4F06BC' srcIcon={bootstrapIcon} textColor='#4F06BC' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
@@ -182,8 +182,8 @@ function Portfolio() {
                 <div id='zoom' style={{ position: "relative", background: 'transparent radial-gradient(closest-side at 50% 50%, #E4E4E4 0%, #469DDC 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'right', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }} className='bounce-in'>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
-                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '75px', color: 'white' }}>Databases</p>
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center', display: 'block' }}>
+                        <p style={{ position: 'absolute', marginTop: '20px', width: '100%', color: 'white' }}>Databases</p>
                         <img src={databaseIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
                     </span>
                     {spheresLoaded >= 1 && (
@@ -211,8 +211,8 @@ function Portfolio() {
                 <div id='zoom' style={{ position: "relative", background: 'transparent radial-gradient(closest-side at 50% 50%, #767676 0%, #E5E5E5 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'right', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }} className='bounce-in'>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
-                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '40%', color: 'white' }}>IDEs</p>
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center', display: 'block', alignItems: 'center' }}>
+                        <p style={{ position: 'absolute', marginTop: '20px', color: 'white', width: '100%' }}>IDEs</p>
                         <img src={idesIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
                     </span>
                     {/* <Sphere x={25} y={105} z={0} color='#2E64A4' text='JawsDB' onClick={handleSphereClick} hoverColor='#003B6D' srcIcon={vscodeIcon} textColor='#003B6D' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #C7C7C7 0%, #646464 100%) 0% 0% no-repeat padding-box' />
@@ -232,9 +232,9 @@ function Portfolio() {
                 <div id='zoom' style={{ position: "relative", background: 'transparent radial-gradient(closest-side at 50% 50%, #AAE965 0%, #295819 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'left', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }} className='bounce-in'>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
-                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '35px', marginLeft: '15%', color: 'white' }}>Version Control</p>
-                        <img src={versionControlIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center', display: 'block', alignItems: 'center' }}>
+                        <p style={{ position: 'absolute', marginTop: '35px', width: '100%', color: 'white' }}>Version Control</p>
+                        <img src={versionControlIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginTop: '60px' }}></img>
                     </span>
                     {/* <Sphere x={25} y={105} z={0} color='#2E64A4' text='JawsDB' onClick={handleSphereClick} hoverColor='#003B6D' srcIcon={jawsDBIcon} textColor='#003B6D' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #AAE965 0%, #295819 100%) 0% 0% no-repeat padding-box' />
                     <Sphere x={55} y={105} z={0} color='#2E64A4' text='DynamoDB' onClick={handleSphereClick} hoverColor='#0D416D' srcIcon={dynamoDBIcon} textColor='#0D416D' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #AAE965 0%, #295819 100%) 0% 0% no-repeat padding-box' /> */}
@@ -255,8 +255,8 @@ function Portfolio() {
                 <div id='zoom' style={{ position: "relative", background: 'transparent linear-gradient(180deg, #EE4035 0%, #4F91CD 34%, #7AC043 58%, #F9AE41 82%, #F3AF41 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'right', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', lineHeight: '15px' }} className='bounce-in'>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
-                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '20px', marginLeft: '5%', color: 'white' }}>Project Management</p>
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center', display: 'block', alignItems: 'center' }}>
+                        <p style={{ position: 'absolute', marginTop: '20px', width: '100%', color: 'white' }}>Project Management</p>
                         <img src={projectManagementIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
                     </span>
                     {spheresLoaded >= 1 && (
@@ -287,8 +287,8 @@ function Portfolio() {
                 <div id='zoom' style={{ position: "relative", background: 'transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', display: 'flex', float: 'right', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', lineHeight: '15px' }} className='bounce-in'>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
-                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
-                        <p style={{ position: 'absolute', marginTop: '30px', marginLeft: '5%', color: 'white' }}>Development & Testing</p>
+                    <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center', display: 'block', alignItems: 'center' }}>
+                        <p style={{ position: 'absolute', marginTop: '30px', width: '100%', color: 'white' }}>Development & Testing</p>
                         <img src={developmentAndTestingIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginLeft: '0px', marginTop: '60px' }}></img>
                     </span>
                     {/* <Sphere x={40} y={135} z={0} color='#2E64A4' text='Heroku' onClick={handleSphereClick} hoverColor='#430098' srcIcon={herokuIcon} textColor='#430098' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #3F81B5 0%, #144771 100%) 0% 0% no-repeat padding-box' /> */}

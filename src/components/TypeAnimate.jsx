@@ -3,15 +3,16 @@ import React from 'react';
 
 
 
+import { TypeAnimation } from 'react-type-animation';
 
-const AnimateText = () => {
+const TypeAnimate = () => {
     return (
         <div style={{ fontFamily: 'Gravitas One' }}>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
 
             </style>
-            <div
+            <TypeAnimation
 
                 sequence={[
                     'I am a...', // Types 'One'
@@ -35,4 +36,4 @@ const AnimateText = () => {
     );
 };
 
-export default AnimateText
+export default TypeAnimate

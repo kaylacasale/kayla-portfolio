@@ -1,5 +1,5 @@
 import React from 'react'
-import AnimateText from '../components/AnimateText'
+import TypeAnimate from '../components/TypeAnimate'
 // import MovingComponent from 'react-moving-text'
 // import Header from '../components/Header'
 // import ReactCarousel from '../components/ReactCarousel'
@@ -22,10 +22,10 @@ const Home = () => {
 
         <div style={{ textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Climate Crisis', color: 'white', textShadow: '2px 2px #DFDFE3' }} >
             {/* vector art - carousel */}
-            =
+
 
             <div style={{ marginBottom: '0px', marginTop: '250px', opacity: '1', textShadow: '2px 2px #9CCFEA' }}>
-                <AnimateText />
+                <TypeAnimate />
             </div>
             <div>
                 {/* <MainIcons /> */}
