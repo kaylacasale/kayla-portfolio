@@ -10,6 +10,7 @@
 
 .rotator {
     animation-play-state: running;
+    z-index: 1;
 }
 
 @keyframes rotate {
@@ -47,7 +48,9 @@
     /* animation-delay: 5s; */
     animation-name: display;
     position: absolute;
-    left: 250px;
+    /* left: 250px; */
+    left: 19%;
+
     animation-direction: normal;
 
 }
@@ -118,6 +121,7 @@
 
 .flipper-container {
     perspective: 1000px;
+    position: absolute;
 }
 
 .flipper {

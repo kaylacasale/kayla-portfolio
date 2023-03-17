@@ -69,6 +69,8 @@ import dockerIcon from '../assets/docker-icon.png';
 import googleAnalyticsIcon from '../assets/google-analytics-icon.png';
 import atlasIcon from '../assets/atlas-icon.png';
 import expoIcon from '../assets/expo-icon.png';
+import threeJsIcon from '../assets/three-js-icon.png';
+import nextJsIcon from '../assets/next-js-icon.png';
 
 
 
@@ -143,6 +145,7 @@ function Portfolio() {
                     {spheresLoaded >= 7 && (
                         <Sphere x={100} y={75} z={0} color='#353535' text='JavaScript' onClick={handleSphereClick} hoverColor='#E4A126' srcIcon={javascriptIcon} textColor='#E4A126' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #F0EFF6 0%, #000000 100%) 0% 0% no-repeat padding-box' />
                     )}
+
                     {/* <Sphere x={35} y={75} z={0} onClick={handleSphereClick} /> */}
                     {/* <Sphere x={75} y={75} z={0} onClick={handleSphereClick} /> */}
                     {/* <Sphere x={105} y={75} z={0} onClick={handleSphereClick} /> */}
@@ -155,24 +158,30 @@ function Portfolio() {
                         <img src={frameworksIcon} style={{ maxWidth: '80%', maxHeight: '80%', marginTop: '60px' }}></img>
                     </span>
                     {spheresLoaded >= 1 && (
-                        <Sphere x={25} y={110} z={-1} color='#353535' text='Bootstrap...' onClick={handleSphereClick} hoverColor='#4F06BC' srcIcon={bootstrapIcon} textColor='#4F06BC' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                        <Sphere x={25} y={50} z={0} color='#2E64A4' text='Three.js' onClick={handleSphereClick} hoverColor='#424950' srcIcon={threeJsIcon} textColor='#424950' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
                     )}
                     {spheresLoaded >= 2 && (
-                        <Sphere x={55} y={110} z={-1} color='#0081CB' text='MaterialUI' onClick={handleSphereClick} hoverColor='#0081CB' srcIcon={materialUIIcon} textColor='#0081CB' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                        <Sphere x={85} y={50} z={0} color='#2E64A4' text='Next.js' onClick={handleSphereClick} hoverColor='#FFFFFF' srcIcon={nextJsIcon} textColor='#FFFFFF' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
                     )}
                     {spheresLoaded >= 3 && (
-                        <Sphere x={85} y={110} z={-1} color='#0081CB' text='Apollo' onClick={handleSphereClick} hoverColor='#3E1CC1' srcIcon={apolloIcon} textColor='#3E1CC1' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                        <Sphere x={25} y={110} z={-1} color='#353535' text='Bootstrap...' onClick={handleSphereClick} hoverColor='#4F06BC' srcIcon={bootstrapIcon} textColor='#4F06BC' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
                     )}
                     {spheresLoaded >= 4 && (
-                        <Sphere x={10} y={75} z={0} color='#61DAFB' text='React' onClick={handleSphereClick} hoverColor='#61DAFB' srcIcon={reactIcon} textColor='#61DAFB' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                        <Sphere x={55} y={110} z={-1} color='#0081CB' text='MaterialUI' onClick={handleSphereClick} hoverColor='#0081CB' srcIcon={materialUIIcon} textColor='#0081CB' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
                     )}
                     {spheresLoaded >= 5 && (
-                        <Sphere x={40} y={75} z={0} color='#2E64A4' text='jQuery' onClick={handleSphereClick} hoverColor='#2E64A4' srcIcon={jQueryIcon} textColor='#2E64A4' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                        <Sphere x={85} y={110} z={-1} color='#0081CB' text='Apollo' onClick={handleSphereClick} hoverColor='#3E1CC1' srcIcon={apolloIcon} textColor='#3E1CC1' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
                     )}
                     {spheresLoaded >= 6 && (
-                        <Sphere x={70} y={75} z={0} color='#77B064' text='Node.js' onClick={handleSphereClick} hoverColor='#77B064' srcIcon={nodeIcon} textColor='#77B064' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                        <Sphere x={10} y={75} z={0} color='#61DAFB' text='React' onClick={handleSphereClick} hoverColor='#6DB8D5' srcIcon={reactIcon} textColor='#61DAFB' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
                     )}
                     {spheresLoaded >= 7 && (
+                        <Sphere x={40} y={75} z={0} color='#2E64A4' text='jQuery' onClick={handleSphereClick} hoverColor='#2E64A4' srcIcon={jQueryIcon} textColor='#2E64A4' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                    )}
+                    {spheresLoaded >= 8 && (
+                        <Sphere x={70} y={75} z={0} color='#77B064' text='Node.js' onClick={handleSphereClick} hoverColor='#77B064' srcIcon={nodeIcon} textColor='#77B064' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
+                    )}
+                    {spheresLoaded >= 9 && (
                         <Sphere x={100} y={75} z={0} color='#353535' text='Express.js' onClick={handleSphereClick} hoverColor='#353535' srcIcon={expressIcon} textColor='#353535' notHoverColor='transparent radial-gradient(closest-side at 50% 50%, #E2BA48 0%, #F6EAC6 100%) 0% 0% no-repeat padding-box' />
                     )}
                     {/* <Sphere x={35} y={75} z={0} onClick={handleSphereClick} /> */}
