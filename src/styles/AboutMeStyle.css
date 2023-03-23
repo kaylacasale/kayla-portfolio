@@ -1,6 +1,26 @@
+#rotate {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    /* Set transform origin to left side */
+    animation: spin 3s linear infinite;
+    z-index: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #wheel {
     transform: rotate(1800deg);
-    animation-duration: 20s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-name: rotate;
@@ -38,7 +58,7 @@
     }
 
     to {
-        left: 330px;
+        left: 100px;
     }
 }
 
@@ -49,7 +69,7 @@
     animation-name: display;
     position: absolute;
     /* left: 250px; */
-    left: 19%;
+    /* left: 19%; */
 
     animation-direction: normal;
 
@@ -64,8 +84,14 @@
 } */
 
 #my-element {
-    transform: rotate(0deg);
-    transition: transform 0.5s ease-in-out;
+    /* transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out; */
+    /* transform: rotate(360); */
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    /* animation-name: rotate; */
+    z-index: 0;
 }
 
 /* This rule defines the animation for rotating the element */
@@ -81,7 +107,8 @@
 
 /* This rule applies the animation to the element when the 'rotate' class is added */
 #my-element.rotate {
-    animation: rotate 0.5s ease-in-out;
+    /* animation: rotate 0.5s ease-in-out; */
+    animation: rotate 2s linear infinite;
 }
 
 @keyframes rotateSome {
@@ -183,4 +210,18 @@
     100% {
         transform: scale(1);
     }
+}
+
+.bubble-container {
+
+    display: flex;
+    flex-direction: column;
+    /* Added to center images vertically */
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    /* Added to fill height of the page */
+    /* margin: 0 auto; */
+
 }

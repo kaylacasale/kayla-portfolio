@@ -22,6 +22,7 @@ import CodingQuiz from '../components/CodingQuiz';
 import PasswordGenerator from '../components/PasswordGenerator';
 import YouMeMix from '../components/YouMeMix';
 import WhatsTheWeather from '../components/WhatsTheWeather';
+import BackgroundCircles from '../components/BackgroundCircles';
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -122,6 +123,7 @@ const Skills = () => {
     return (
 
         <div id='canvas' style={{ fontFamily: 'Climate Crisis' }}>
+            <BackgroundCircles />
 
 
             {itemData.map((item) => (

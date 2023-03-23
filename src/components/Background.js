@@ -15,6 +15,7 @@ function Background() {
         const gridItem = gridItems[i];
         gridItem.addEventListener("mouseover", function () {
             gridItem.style.backgroundColor = "transparent linear-gradient(180deg, #B0C6D8 0%, #E7F1F8 20%, #E1EDF5 43%, #D5E1E6 69%, #ADD7E3 100%) 0% 0% no-repeat padding-box";
+
         });
         gridItem.addEventListener("mouseout", function () {
             gridItem.style.backgroundColor = "#f0f0f0";
@@ -22,15 +23,20 @@ function Background() {
     }
     return (
 
-        <section >
-            <div className="stars"></div>
-            <div className="twinkle"></div>
-            <div className="twinkling"></div>
-            {/* <BackgroundCircles className='my-component' /> */}
-            <BackgroundCircles />
-            {/* <div className="twinkling"><BackgroundCircles /></div> */}
-            {/* <BackgroundCircles  /> */}
-            <div className="clouds"></div>
+        <section className='grid-container'>
+            {/* <BackgroundCircles /> */}
+            <div>
+                <div className="stars"></div>
+                <div className="twinkle"></div>
+                <div className="twinkling"></div>
+                {/* <BackgroundCircles className='my-component' /> */}
+                {/* <div>
+                <BackgroundCircles />
+            </div> */}
+                {/* <div className="twinkling"><BackgroundCircles /></div> */}
+                {/* <BackgroundCircles  /> */}
+                <div className="clouds"></div>
+            </div>
             {/* <div className='title'>
                 <h1>Kayla's Portfolio</h1>
             </div> */}

@@ -223,8 +223,8 @@ function CirclesInCircles() {
 
     return (
         <section style={{ marginTop: '0px', fontFamily: 'Climate Crisis', height: '100%' }}>
-            <div className='container' style={{ marginTop: '200px', display: 'flex', justifyContent: 'center' }}>
-                <div style={{ position: "absolute", height: "300px", width: '300px', borderRadius: '200px', boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)', top: '506px', left: '36%' }}>
+            <div className='container' style={{ marginTop: '600px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ position: "absolute", height: "300px", width: '300px', borderRadius: '200px', boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)', top: '570px', left: '47%' }}>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>

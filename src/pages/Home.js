@@ -15,6 +15,7 @@ import "fontsource-cascadia-code"
 // import ReactCarouselPrototyping from '../components/ReactCarouselPrototyping'
 // import MainIcons from '../components/MainIcons'
 import AboutMe from '../components/AboutMe'
+import BackgroundCircles from '../components/BackgroundCircles'
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
         <div style={{ textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Climate Crisis', color: 'white', textShadow: '2px 2px #DFDFE3' }} >
             {/* vector art - carousel */}
 
-
+            <BackgroundCircles />
             <div style={{ marginBottom: '0px', marginTop: '250px', opacity: '1', textShadow: '2px 2px #9CCFEA' }}>
                 <TypeAnimate />
             </div>

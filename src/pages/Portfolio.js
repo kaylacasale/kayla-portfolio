@@ -71,6 +71,7 @@ import atlasIcon from '../assets/atlas-icon.png';
 import expoIcon from '../assets/expo-icon.png';
 import threeJsIcon from '../assets/three-js-icon.png';
 import nextJsIcon from '../assets/next-js-icon.png';
+import BackgroundCircles from '../components/BackgroundCircles';
 
 
 
@@ -116,6 +117,7 @@ function Portfolio() {
     }
     return (
         <section style={{ marginTop: '3em', fontFamily: 'Climate Crisis', height: '1000px' }}>
+            <BackgroundCircles />
             <div className='container row' style={{ display: 'flex', marginTop: '200px', justifyContent: 'center' }}>
                 <div id='zoom' style={{ position: "relative", height: "300px", width: '300px', background: 'transparent radial-gradient(closest-side at 50% 50%, #F0EFF6 0%, #000000 100%) 0% 0% no-repeat padding-box', width: '300px', height: '300px', borderRadius: '200px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)' }} className='bounce-in'>
 

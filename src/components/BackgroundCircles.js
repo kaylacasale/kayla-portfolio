@@ -18,9 +18,10 @@ function BackgroundCircles() {
     //     />
     // ));
     const [hoveredIndex, setHoveredIndex] = useState(null);
-    const circleCount = 50;
-    const circleSize = 50;
-    const circleGap = 100;
+    const circleCount = 40;
+    const circleSize = 100;
+    const circleGap = 30;
+    const circleGapBottom = 14;
 
     const circles = Array.from({ length: circleCount * 3 }, (_, index) => {
         const x = (index % circleCount) * circleSize + (index % circleCount) * circleGap
@@ -31,12 +32,12 @@ function BackgroundCircles() {
                 className="circle" id={hoveredIndex === index ? 'wiggle' : ''}
                 style={{
                     // background: hoveredIndex === index ? "radial-gradient(circle at 100px 100px, #ffffff, #BEFDFF)" : "linear-gradient(217deg, rgba(207, 255, 255, 0.8), rgba(255, 255, 251, 0) 70.71%), linear-gradient(127deg, rgb(233, 255, 212), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(237, 220, 250, 0.8), rgb(0, 255, 127, 0) 70.71%)", transform: hoveredIndex === index ? "scale(1.2)" : "scale(1.1)",
-                    background: hoveredIndex === index ? "radial-gradient(circle at 100px 100px, #ffffff, #BEFDFF)" : "url(", transform: hoveredIndex === index ? "scale(1.2)" : "scale(1.1)",
+                    background: hoveredIndex === index ? "radial-gradient(circle at 100px 100px, #ffffff, #4BD3FD)" : "url(", transform: hoveredIndex === index ? "scale(1.2)" : "scale(1.1)", opacity: '.8',
                     // transform: `translate(${x}px, ${y}px)`,
                     width: `${circleSize}px`,
                     height: `${circleSize}px`,
                     marginRight: `${circleGap}px`,
-                    marginBottom: `${circleGap}px`,
+                    marginBottom: `${circleGapBottom}px`,
                 }}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}

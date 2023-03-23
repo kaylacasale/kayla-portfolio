@@ -36,6 +36,17 @@ import wheelTwoColors from '../assets/wheel-two-colors.png';
 
 import bubbleTopper from '../assets/bubble-topper.png';
 
+import bubblesInBubbles from '../assets/bubbles-in-bubbles-yellow.png';
+import bubbleTopperYellow from '../assets/bubble-topper-yellow.png';
+import bubbleYellow from '../assets/yellow-bubble-full.png';
+import testTumble from '../assets/test-tumble.png'
+import testTumbleTwo from '../assets/test-tumble-2.png'
+import testTumbleThree from '../assets/test-tumble-3.png';
+import testTumbleFour from '../assets/test-tumble-4.png';
+import testTumbleFive from '../assets/test-tumble-5.png';
+
+
+
 
 function AboutMe() {
     const images = [image0, image1, image2, image3, image4, image5, image6, image11, image7, image8, image9, image10]
@@ -84,19 +95,22 @@ function AboutMe() {
     }, []);
     return (
         <div>
-            <div>
-                <div id='canvas'>
-                    <img src={wheelTwoColors} style={{ width: '750px', margin: '20px' }} id='wheel' className='rotator'></img>
+            <div className='bubble-container' style={{}}>
+                <div id='canvas' style={{ width: '1000px', display: 'flex', justifyContent: 'center', maxWidth: '100%', margin: '0px' }}>
+                    <img src={testTumble} style={{ maxWidth: '100%', justifyContent: 'center' }} id='rotate' className='rotator'></img>
+                    <img src={testTumbleThree} style={{ maxWidth: '100%', justifyContent: 'center', alignContent: 'middle' }} id='rotate' className='rotator'></img>
+                    <img src={testTumbleFour} style={{ maxWidth: '100%', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img>
                     {isTopperVisible ? (
                         <img></img>
                     ) : (
-                        <img src={bubbleTopper} style={{ width: '800px' }} id='wheel-topper' className='stayLeft' onLoad={useEffect}></img>
+
+                        <img src={testTumble} style={{ maxWidth: '100%' }} id='wheel-topper' className='stayLeft' onLoad={useEffect}></img>
+
 
 
                     )}
                     {isTopperVisible ? (
-
-                        <img src={bubbleTopper} style={{ width: '800px' }} id='my-element' className='wheel-copied' onLoad={useEffect}>
+                        <img src={testTumbleTwo} style={{ maxWidth: '100%', opacity: '.4' }} id='rotate' className='wheel-copied' onLoad={useEffect}>
 
                         </img>
 
@@ -119,12 +133,18 @@ function AboutMe() {
                             </div>
                         </SphereTwo> */}
 
-                <div style={{ position: 'absolute', top: '855px', left: '43.8%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
-                    {/* <ReactCarousel /> */}
-                    <MiniCarousel images={images} />
+                <div style={{ position: 'absolute', top: '950px', left: '48%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
+                    <div>
+                        <img src={testTumbleFive} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-140px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
+                        <img src={testTumble} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-140px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
+                    </div>
+                    <div style={{ zIndex: '6' }}>
+                        {/* <ReactCarousel /> */}
+                        <MiniCarousel images={images} />
+                    </div>
                 </div>
                 <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '808px', left: '30.3%', maxWidth: '100%', maxHeight: '100%' }}>
-                    <div style={{ width: '130px', height: '130px', marginTop: '0px' }}>
+                    <div style={{ width: '100px', height: '100px', marginTop: '0px' }}>
                         <Flipper style={{ maxWidth: '100%', maxHeight: '100%' }}></Flipper>
                     </div>
                     {/* <div id='circle-about'><img src={myAtomLogo} style={{ width: '150px', height: '150px', maxWidth: '100%', maxHeight: '100%' }}></img>
@@ -135,6 +155,8 @@ function AboutMe() {
                 </div>
             </div>
             <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`}>
+                {/* <img src={testTumbleFive} style={{ maxWidth: '25%', marginTop: '-100px', marginLeft: '-90px', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img>
+                <img src={testTumbleFive} style={{ maxWidth: '25%', marginTop: '-100px', marginLeft: '-90px', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img> */}
                 <CirclesInCircles />
             </div>
 

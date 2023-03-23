@@ -49,7 +49,7 @@ function App() {
         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
       </style>
 
-      <div className="App" style={{ backgroundImage: `url(${Background})`, fontFamily: 'Gravitas One' }}>
+      <div className="App" style={{ fontFamily: 'Gravitas One' }}>
         <div >
           <Header />
         </div>

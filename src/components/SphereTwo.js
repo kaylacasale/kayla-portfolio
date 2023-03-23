@@ -53,8 +53,8 @@ const SphereTwo = (props) => {
         // const newX = '50px'
         // const newY = '200px'
 
-        const x2 = 108;
-        const y2 = 345;
+        const x2 = -250;
+        const y2 = 235;
         // const z2 = 3;
 
         setPosition({ x: x2, y: y2, z: 0 });

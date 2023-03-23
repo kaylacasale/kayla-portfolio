@@ -32,18 +32,18 @@ const MiniCarousel = ({ images }) => {
     };
 
     return (
-        <div className="carousel-container">
+        <div className="carousel-container" id='zoom'>
             <div ref={carouselRef} className="carousel" style={{ width: '230px', height: '230px', alignItems: 'center' }} id='scale'>
                 {images.map((image, index) => (
                     <img key={index} src={image} alt={`Image ${index}`} style={{ marginBottom: '0px', maxWidth: '100%', maxHeight: '100%' }} />
                 ))}
             </div>
-            <div style={{ marginTop: '-50px' }}>
-                <button onClick={() => handleClick('prev')} style={{ width: '30px', height: '30px', fontSize: '20px', borderRadius: '100px', boxShadow: '0px 6px 12px #FFFBFB', background: 'transparent linear-gradient(180deg, #D5F6F2 0%, #DFF9F0 19%, #9CCFEA 47%, #F2D7F5 100%) 0% 0% no-repeat padding-box', borderColor: 'white', borderWidth: '.1px' }} id='wiggle'>↺</button>
-                <button onClick={() => handleClick('next')} style={{ width: '30px', height: '30px', fontSize: '20px', borderRadius: '100px', boxShadow: '0px 6px 12px #FFFBFB', background: 'transparent linear-gradient(180deg, #D5F6F2 0%, #DFF9F0 19%, #9CCFEA 47%, #F2D7F5 100%) 0% 0% no-repeat padding-box', borderColor: 'white', borderWidth: '.1px' }} id='wiggle'>↻</button>
+            <div style={{ margin: '10px' }}>
+                <button onClick={() => handleClick('prev')} style={{ width: '60px', height: '60px', fontSize: '20px', borderRadius: '100px', boxShadow: '0px 6px 6px #D1F2FF', background: 'radial-gradient(circle at 100px 100px, #D1F2FF, #4BD3FD)', borderColor: 'white', borderWidth: '.1px', color: 'white' }} id='wiggle'>↺</button>
+                <button onClick={() => handleClick('next')} style={{ width: '60px', height: '60px', fontSize: '20px', borderRadius: '100px', boxShadow: '0px 6px 6px #D1F2FF', background: 'radial-gradient(circle at 100px 100px, #D1F2FF, #4BD3FD)', borderColor: 'white', borderWidth: '.1px', color: 'white' }} id='wiggle'>↻</button>
                 {/* <button onClick={() => handleClick('next')} style={{ width: '40px', height: '40px', fontSize: '20px', borderRadius: '100px', boxShadow: '0px 3px 6px #FFFBFB', background: 'transparent linear-gradient(180deg, #EFEEF5 0%, #E3E1ED 49%, #EFEEF5 100%) 0% 0% no-repeat padding-box', borderColor: '#FFFBFB' }} id='wiggle'>↻</button> */}
             </div>
-        </div>
+        </div >
     );
 };
 
