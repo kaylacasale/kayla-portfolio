@@ -32,6 +32,7 @@ import myLogo from './assets/kaylacasale-logo.png'
 import myLogoPartOne from './assets/mylogo-part-one.png'
 import myLogoPartTwo from './assets/mylogo-part-two.png'
 
+import testTumble from './assets/test-tumble.png';
 // import BackgroundTwo from "./components/BackgroundTwo";
 
 // const styles = {
@@ -70,12 +71,12 @@ function App() {
 
           {/* <link rel="stylesheet" type="text/css" href="index.css" /> */}
         </Helmet>
-        {/* <div>
+        {/* <div style={{ zIndex: 8 }}>
           <div className="moon">
-            <img src={myLogoPartOne}></img>
+            <img src={testTumble}></img>
           </div>
           <div className="logo">
-            <img src={myLogoPartTwo}></img>
+            <img src={testTumble}></img>
           </div>
         </div> */}
         {/* <div>
@@ -100,6 +101,14 @@ function App() {
 
           {/* <Link to="/" elemen t={<Home />} /> */}
         </div>
+        {/* <div style={{ zIndex: 8 }}>
+          <div className="tumble" id='rotate'>
+            <img src={testTumble}></img>
+          </div>
+          <div className="logo">
+            <img src={testTumble}></img>
+          </div>
+        </div> */}
         <footer id='wiggle'>
           Designed & Built by <span><a href="https://github.com/kaylacasale" style={{ color: '#6CDDF4' }}>Kayla Casale</a></span> in React
         </footer>

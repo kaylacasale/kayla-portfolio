@@ -32,7 +32,7 @@ const SphereTwo = (props) => {
     // const [isZIndex, setIsZIndex] = useState(false);
     // const [zIndex, setZIndex] = useState(1);
     const renderBtn = () => {
-        return <div id='wiggle' style={{}}><button onClick={() => handleReset()} style={{ borderRadius: '200px', width: '120px', height: '120px', fontSize: '16px', boxShadow: '12px 15px 17px #00000029', background: `${hoverColor}`, color: '#EFEEF5', textShadow: '1px 1px #FFFBFB', borderColor: '#FFFBFB', fontFamily: 'GravitasOne' }} >Put Back</button>
+        return <div id='wiggle' style={{}}><button onClick={() => handleReset()} style={{ borderRadius: '200px', width: '120px', height: '120px', fontSize: '16px', boxShadow: '12px 15px 17px #00000029', background: `${hoverColor}`, color: '#EFEEF5', textShadow: '.1px .1px #FFFBFB', borderColor: '#FFFBFB', fontFamily: 'GravitasOne' }} >Put Back</button>
             <img src={srcIcon} style={{ width: '40px', marginTop: '-150px' }}></img></div>
     }
 
@@ -53,11 +53,11 @@ const SphereTwo = (props) => {
         // const newX = '50px'
         // const newY = '200px'
 
-        const x2 = -250;
-        const y2 = 235;
+        const x2 = -275;
+        const y2 = 80;
         // const z2 = 3;
 
-        setPosition({ x: x2, y: y2, z: 0 });
+        setPosition({ x: x2, y: y2, z: 10 });
         onClick();
         // setIsZ(true)
     }
@@ -125,16 +125,17 @@ const SphereTwo = (props) => {
                 onMouseEnter={handleHover}
                 onMouseLeave={handleMouseLeave}
                 onClick={() => handleClick()}
+                id='zoom'
 
 
 
             >
-                <span style={{ fontSize: '14px', maxWidth: '100%', maxHeight: '100%', color: `${textColor}` }}>{isText ? `${text}` : ''}<img src={clicked ? null : `${srcIcon}`} style={{ maxWidth: '60%', maxHeight: '60%', marginTop: '0%', marginBottom: '0%', opacity: isOpaque ? `${hoverOpacity}` : `${notHoverOpacity}` }}></img><p style={{ fontSize: '11px', margin: '15px' }}>{isText2 ? `${text2}` : ''}</p></span>
+                <span style={{ fontSize: '14px', maxWidth: '100%', maxHeight: '100%', color: `${textColor}` }}>{isText ? `${text}` : ''}<img src={clicked ? null : `${srcIcon}`} style={{ maxWidth: '60%', maxHeight: '60%', marginTop: '0%', marginBottom: '0%', opacity: isOpaque ? `${hoverOpacity}` : `${notHoverOpacity}` }}></img><p style={{ fontSize: '11px', margin: '15px' }} >{isText2 ? `${text2}` : ''}</p></span>
                 {/* <button onClick={() => handleResetClick()}>Reset Sphere Position</button> */}
 
             </div>
             {/* <button onClick={() => handleReset()}></button> */}
-            <div style={{ position: 'absolute', left: '123%', top: '245px', color: `${textColor}` }}>
+            <div style={{ position: 'absolute', left: '30%', top: '50px', color: `${textColor}` }}>
                 {clicked ? renderBtn() : !renderBtn()}
             </div>
 

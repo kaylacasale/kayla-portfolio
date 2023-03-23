@@ -60,7 +60,7 @@
 }
 
 .my-logo {
-  left: 0px;
+  /* left: 300px; */
   width: 100px;
   height: 100px;
   transition: background 0.3s ease;

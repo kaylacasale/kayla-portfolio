@@ -16,23 +16,30 @@ import "fontsource-cascadia-code"
 // import MainIcons from '../components/MainIcons'
 import AboutMe from '../components/AboutMe'
 import BackgroundCircles from '../components/BackgroundCircles'
+import Section from '../components/Section'
 // import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 
 const Home = () => {
     return (
 
-        <div style={{ textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Climate Crisis', color: 'white', textShadow: '2px 2px #DFDFE3' }} >
+        <div style={{ textAlign: 'center', marginTop: '2em', fontSize: '48px', fontFamily: 'Climate Crisis', color: 'white', textShadow: '1px 1px #DFDFE3' }} >
             {/* vector art - carousel */}
 
             <BackgroundCircles />
-            <div style={{ marginBottom: '0px', marginTop: '250px', opacity: '1', textShadow: '2px 2px #9CCFEA' }}>
+            <div style={{ left: '10px', top: '10px', position: 'absolute', fontSize: '30px' }}>
                 <TypeAnimate />
+            </div>
+            <div style={{ marginBottom: '0px', marginTop: '250px', opacity: '1', textShadow: '2px 2px #9CCFEA' }}>
+                {/* <TypeAnimate /> */}
             </div>
             <div>
                 {/* <MainIcons /> */}
             </div>
             <div>
                 <AboutMe />
+            </div>
+            <div style={{ left: '90%', top: '0px', position: 'absolute' }}>
+                <Section />
             </div>
 
 

@@ -44,6 +44,7 @@ import testTumbleTwo from '../assets/test-tumble-2.png'
 import testTumbleThree from '../assets/test-tumble-3.png';
 import testTumbleFour from '../assets/test-tumble-4.png';
 import testTumbleFive from '../assets/test-tumble-5.png';
+import Section from './Section';
 
 
 
@@ -95,7 +96,8 @@ function AboutMe() {
     }, []);
     return (
         <div>
-            <div className='bubble-container' style={{}}>
+
+            <div className='bubble-container' style={{ textShadow: '.2px .2px #2C2D2E' }}>
                 <div id='canvas' style={{ width: '1000px', display: 'flex', justifyContent: 'center', maxWidth: '100%', margin: '0px' }}>
                     <img src={testTumble} style={{ maxWidth: '100%', justifyContent: 'center' }} id='rotate' className='rotator'></img>
                     <img src={testTumbleThree} style={{ maxWidth: '100%', justifyContent: 'center', alignContent: 'middle' }} id='rotate' className='rotator'></img>
@@ -118,7 +120,13 @@ function AboutMe() {
                         <img></img>
                     )}
                 </div>
+                {/* <div>
+                    <Section>
+                        <div >
 
+                        </div>
+                    </Section>
+                </div> */}
                 {/* <SphereTwo id='circle-about-two' top='30%' left='70%' color='#353535' text='' hoverColor='transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box' textColor='#6C7EB7' notHoverColor='transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box' hoverOpacity='1' notHoverOpacity='1' width='400px' height='400px' >
                             <div >
                                 {itemData.map((item) => (
@@ -133,20 +141,24 @@ function AboutMe() {
                             </div>
                         </SphereTwo> */}
 
-                <div style={{ position: 'absolute', top: '950px', left: '48%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
+                <div style={{ position: 'absolute', top: '820px', left: '44%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
                     <div>
-                        <img src={testTumbleFive} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-140px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
-                        <img src={testTumble} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-140px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
+                        <img src={testTumbleFive} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-151px', marginTop: '-25px' }} id='rotate' className='rotator'></img>
+                        <img src={testTumble} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-151px', marginTop: '-25px' }} id='rotate' className='rotator'></img>
                     </div>
                     <div style={{ zIndex: '6' }}>
                         {/* <ReactCarousel /> */}
                         <MiniCarousel images={images} />
                     </div>
                 </div>
-                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '808px', left: '30.3%', maxWidth: '100%', maxHeight: '100%' }}>
+                <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} id='wiggle' style={{ position: 'absolute', top: '600px', left: '30.3%', maxWidth: '200%', maxHeight: '200%' }}>
+
                     <div style={{ width: '100px', height: '100px', marginTop: '0px' }}>
                         <Flipper style={{ maxWidth: '100%', maxHeight: '100%' }}></Flipper>
                     </div>
+                    {/* <div id='logo'>
+                        <img src={testTumble}></img>
+                    </div> */}
                     {/* <div id='circle-about'><img src={myAtomLogo} style={{ width: '150px', height: '150px', maxWidth: '100%', maxHeight: '100%' }}></img>
                     </div>
                     <div id='wiggle' color='#353535' text='' hoverColor='rgba(255, 255, 255, 0.1)' srcIcon={myLogo} textColor='#6C7EB7' notHoverColor='transparent linear-gradient(180deg, #C6F4FD 0%, #DDFEEA 15%, #FFF7FC 29%, #FFE0FD 47%, #F4E6FF 60%, #DFD5FC 75%, #F0D5FF 90%, #F9E8FE 100%) 0% 0% no-repeat padding-box' hoverOpacity='0' notHoverOpacity='1' width='150px' height='150px' style={{ maxWidth: '100%', maxHeight: '100%' }} ></div> */}
@@ -155,7 +167,7 @@ function AboutMe() {
                 </div>
             </div>
             <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`}>
-                {/* <img src={testTumbleFive} style={{ maxWidth: '25%', marginTop: '-100px', marginLeft: '-90px', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img>
+                {/* <img src={testTumbleFive} style={{ maxWidth: '25%', marginLeft: '-90px', marginTop: '-100px', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img>
                 <img src={testTumbleFive} style={{ maxWidth: '25%', marginTop: '-100px', marginLeft: '-90px', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img> */}
                 <CirclesInCircles />
             </div>

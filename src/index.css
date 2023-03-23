@@ -318,7 +318,9 @@ footer {
 
 /* rotate */
 
-
+.tumble img:hover {
+    animation: rotate;
+}
 
 
 .logo img:hover {
