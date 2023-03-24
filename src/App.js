@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import $ from 'jquery';
 
 // import {
@@ -33,6 +33,7 @@ import myLogoPartOne from './assets/mylogo-part-one.png'
 import myLogoPartTwo from './assets/mylogo-part-two.png'
 
 import testTumble from './assets/test-tumble.png';
+import BackgroundCircles from "./components/BackgroundCircles";
 // import BackgroundTwo from "./components/BackgroundTwo";
 
 // const styles = {
@@ -40,7 +41,221 @@ import testTumble from './assets/test-tumble.png';
 //     backgroundRepeat: 'repeat-y'
 //   }
 // }
+
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+//     'X-RapidAPI-Host': 'us-gun-laws.p.rapidapi.com'
+//   }
+// };
+
+// fetch('https://us-gun-laws.p.rapidapi.com/states', options)
+//   .then(response => response.json())
+//   .then(response => console.log(response))
+//   .catch(err => console.error(err));
+
+
+//   const fetch = require('node-fetch');
+
+// const url = 'https://api-basketball.p.rapidapi.com/timezone';
+
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+//     'X-RapidAPI-Host': 'api-basketball.p.rapidapi.com'
+//   }
+// };
+
+// fetch(url, options)
+//   .then(res => res.json())
+//   .then(json => console.log(json))
+//   .catch(err => console.error('error:' + err));
+
+// var express = require('express');
+// var app = express();
+// var http = require('http');
+// var router = express.Router();
+
+// module.exports = (app) => {
+
+//   /* GET league tables */
+//   app.get('/api/:term', function (req, res, next) {
+
+//     var apiKey = process.env.API_KEY;
+
+//     let url = "http://api.football-data.org/v2/competitions/BL1/standings"; // + req.params.term + "/standings";
+
+//     const options = {
+//       method: 'GET',
+//       headers: {
+//         'X-RapidAPI-Key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+//         'X-RapidAPI-Host': 'api-basketball.p.rapidapi.com'
+//       }
+//     };
+
+//     fetch('https://api-basketball.p.rapidapi.com/timezone', options)
+//       .then(response => response.json())
+//       .then(response => console.log(response))
+//       .catch(err => console.error(err));
+
+//     var getReq = http.request(options, function (res) {
+//       console.log("Connected");
+//       res.on('data', function (data) {
+//         console.log(data);
+//       });
+//     });
+
+//     getReq.end();
+
+//   })
+
+
+//   app.get('/api', function (req, res, next) {
+//     res.writeHead(200, { 'Content-Type': 'text/html' });
+//     res.end('Now add a search term to the end of the URL in the address bar');
+
+//   })
+// }
+
+
+
+// var myHeaders = new Headers();
+// myHeaders.append("x-rapidapi-key", "b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3");
+// myHeaders.append("x-rapidapi-host", "v1.basketball.api-sports.io");
+
+// var requestOptions = {
+//   method: 'GET',
+//   headers: myHeaders,
+//   redirect: 'follow'
+// };
+
+// fetch("https://v1.basketball.api-sports.io/{endpoint}", requestOptions)
+//   .then(response => response.text())
+//   .then(result => console.log(result))
+//   .catch(error => console.log('error', error));
+
+
+
+import axios from 'axios';
+// import { useState } from 'react';
+
+// function App() {
+// const [data, setData] = useState(null);
+
+// useEffect(() => {
+//   const fetchData = async () => {
+//     const headers = {
+//       'x-rapidapi-key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+//       'x-rapidapi-host': 'v1.basketball.api-sports.io"',
+//     };
+//     const endpoint = '{endpoint}'; // replace with the actual endpoint
+//     const response = await axios.get(`https://v1.basketball.api-sports.io/${endpoint}`, { headers });
+//     setData(response.data);
+//   };
+
+//   fetchData();
+// }, []);
+
+// // Display the data in the console
+// console.log(data);
+
+// return (
+//   <div>
+//     <h1>API Data</h1>
+//     {/* Display the data in Postman */}
+//     {data && <textarea readOnly value={JSON.stringify(data)} rows={10} cols={50} />}
+//   </div>
+// );
+// }
+
+
 function App() {
+  const [timezones, setTimezones] = useState([]);
+
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+      'X-RapidAPI-Host': 'api-basketball.p.rapidapi.com'
+    }
+  };
+  const bets = 'bets'
+
+  fetch(`https://api-basketball.p.rapidapi.com/${bets}`, options)
+    .then(response => response.json())
+    .then(response => console.log(response))
+    .then(data => {
+      const americaTimezones = data.response.filter(tz => tz.startsWith('America/'));
+      setTimezones(americaTimezones);
+      console.log(data)
+      function seeBets() {
+        return (
+          <div>
+            data
+          </div>
+        )
+      }
+    })
+    .catch(err => {
+      console.error(err)
+
+    });
+
+
+  // const options = {
+  //   method: 'GET',
+  //   url: 'https://api-basketball.p.rapidapi.com/timezone',
+  //   headers: {
+  //     'X-RapidAPI-Key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+  //     'X-RapidAPI-Host': 'api-basketball.p.rapidapi.com'
+  //   }
+  // };
+
+  // axios.request(options).then(function (response) {
+  //   console.log(response.data);
+  // }).catch(function (error) {
+
+  //   console.error(error);
+  // });
+
+  // const [timezones, setTimezones] = useState([]);
+
+  // const options = {
+  //   method: 'GET',
+  //   headers: {
+  //     'X-RapidAPI-Key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+  //     'X-RapidAPI-Host': 'api-basketball.p.rapidapi.com'
+  //   }
+  // };
+
+  // fetch('https://api-basketball.p.rapidapi.com/timezone', options)
+  //   .then(response => response.json())
+  //   .then(response => {
+  //     console.log(response)
+  //     console.log(response[100])
+  //   })
+  //   .catch(err => console.error(err));
+  // const [data, setData] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const headers = {
+  //       'x-rapidapi-key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+  //       'x-rapidapi-host': 'v1.basketball.api-sports.io',
+  //     };
+  //     const endpoint = '{endpoint}'; // replace with the actual endpoint
+  //     const response = await axios.get(`https://v1.basketball.api-sports.io/${endpoint}`, { headers });
+  //     setData(response.data);
+  //   };
+
+  //   fetchData();
+  // }, []);
+  // // const currentUrl = window.location.href;
+
+  // // Display the data in the console
+  // console.log(data);
   return (
     <>
 
@@ -71,6 +286,7 @@ function App() {
 
           {/* <link rel="stylesheet" type="text/css" href="index.css" /> */}
         </Helmet>
+
         {/* <div style={{ zIndex: 8 }}>
           <div className="moon">
             <img src={testTumble}></img>
@@ -82,11 +298,22 @@ function App() {
         {/* <div>
           <Background />
         </div> */}
-
+        {/* <div>
+          <h2>Timezones in America</h2>
+          <ul>
+            {timezones.map(tz => <li>{tz}</li>)}
+          </ul>
+        </div> */}
+        <BackgroundCircles />
         {/* <BackgroundTwo /> */}
         <AnimatedCursor
           color="255, 105, 180"
         />
+        {/* <div>
+          <button >
+            bets
+          </button>
+        </div> */}
 
         <div className="container">
           <Background />
@@ -109,6 +336,8 @@ function App() {
             <img src={testTumble}></img>
           </div>
         </div> */}
+
+
         <footer id='wiggle'>
           Designed & Built by <span><a href="https://github.com/kaylacasale" style={{ color: '#6CDDF4' }}>Kayla Casale</a></span> in React
         </footer>

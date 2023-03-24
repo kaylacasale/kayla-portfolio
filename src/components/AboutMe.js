@@ -44,13 +44,59 @@ import testTumbleTwo from '../assets/test-tumble-2.png'
 import testTumbleThree from '../assets/test-tumble-3.png';
 import testTumbleFour from '../assets/test-tumble-4.png';
 import testTumbleFive from '../assets/test-tumble-5.png';
+import tumbleBlack from '../assets/tumble-black.png'
+
+import testTumbleOuter from '../assets/test-tumble-outer.png';
 import Section from './Section';
 
 
 
 
 function AboutMe() {
-    const images = [image0, image1, image2, image3, image4, image5, image6, image11, image7, image8, image9, image10]
+
+
+    const [timezones, setTimezones] = useState([]);
+
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'b9ab6f30f2mshc158b857771ac33p1c7625jsnbcdb136ab6b3',
+            'X-RapidAPI-Host': 'api-basketball.p.rapidapi.com'
+        }
+    };
+    const bets = 'bets'
+
+    fetch(`https://api-basketball.p.rapidapi.com/${bets}`, options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .then(data => {
+            const americaTimezones = data.response.filter(tz => tz.startsWith('America/'));
+            setTimezones(americaTimezones);
+            console.log(data)
+            return data
+            function seeBets() {
+                return (
+                    <div>
+                        data
+                    </div>
+                )
+            }
+        })
+        .catch(err => {
+            console.error(err)
+
+        });
+
+    // const bet = document.querySelector('bets')
+    // bets.addEventListener(function onClick() {
+    //     return (
+    //         <div>
+    //             {bet}
+    //         </div>
+    //     )
+    // })
+
+    const images = [image1, image2, image3, image4, image5, image6, image11, image7, image8, image9, image10]
 
     // const [isFirstTopperVisible, setFirstTopperVisible] = React.useState(true)
 
@@ -81,6 +127,7 @@ function AboutMe() {
     // }
 
 
+    const currentUrl = window.location.href;
 
     const [showElements, setShowElements] = useState(false);
 
@@ -96,7 +143,15 @@ function AboutMe() {
     }, []);
     return (
         <div>
+            {/* <div>
+                <button className='bets' >
+                    bets
 
+                </button>
+            </div> */}
+            {/* <div>
+                <p>Current URL: {currentUrl}</p>
+            </div> */}
             <div className='bubble-container' style={{ textShadow: '.2px .2px #2C2D2E' }}>
                 <div id='canvas' style={{ width: '1000px', display: 'flex', justifyContent: 'center', maxWidth: '100%', margin: '0px' }}>
                     <img src={testTumble} style={{ maxWidth: '100%', justifyContent: 'center' }} id='rotate' className='rotator'></img>
@@ -143,8 +198,8 @@ function AboutMe() {
 
                 <div style={{ position: 'absolute', top: '820px', left: '44%' }} className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`} >
                     <div>
-                        <img src={testTumbleFive} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-151px', marginTop: '-25px' }} id='rotate' className='rotator'></img>
-                        <img src={testTumble} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '.4', marginLeft: '-151px', marginTop: '-25px' }} id='rotate' className='rotator'></img>
+                        <img src={testTumbleFive} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '1', marginLeft: '-151px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
+                        <img src={testTumble} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '1', marginLeft: '-151px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
                     </div>
                     <div style={{ zIndex: '6' }}>
                         {/* <ReactCarousel /> */}
@@ -169,7 +224,13 @@ function AboutMe() {
             <div className={`my-element ${showElements ? 'fade-in active' : 'fade-in'}`}>
                 {/* <img src={testTumbleFive} style={{ maxWidth: '25%', marginLeft: '-90px', marginTop: '-100px', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img>
                 <img src={testTumbleFive} style={{ maxWidth: '25%', marginTop: '-100px', marginLeft: '-90px', justifyContent: 'center', alignContent: 'middle', opacity: '.4' }} id='rotate' className='rotator'></img> */}
-                <CirclesInCircles />
+                <div style={{ width: '300px', height: '300px', position: 'absolute' }}>
+                    <img src={testTumbleFive} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '1', marginLeft: '-151px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
+                    <img src={testTumble} style={{ maxWidth: '120%', justifyContent: 'center', alignContent: 'middle', opacity: '1', marginLeft: '-151px', marginTop: '-20px' }} id='rotate' className='rotator'></img>
+                </div>
+                <div>
+                    <CirclesInCircles />
+                </div>
             </div>
 
 

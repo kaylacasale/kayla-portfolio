@@ -54,7 +54,7 @@ const SphereTwo = (props) => {
         // const newY = '200px'
 
         const x2 = -275;
-        const y2 = 80;
+        const y2 = 150;
         // const z2 = 3;
 
         setPosition({ x: x2, y: y2, z: 10 });

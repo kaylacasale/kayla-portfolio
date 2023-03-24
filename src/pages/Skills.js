@@ -23,6 +23,7 @@ import PasswordGenerator from '../components/PasswordGenerator';
 import YouMeMix from '../components/YouMeMix';
 import WhatsTheWeather from '../components/WhatsTheWeather';
 import BackgroundCircles from '../components/BackgroundCircles';
+import Section from '../components/Section'
 // ultimately use Link to to link to further component than map through that to display main diplay with more info about the item
 const Skills = () => {
     // const [itemData, setItemData] = useState(null);
@@ -42,7 +43,7 @@ const Skills = () => {
 
         if (selectedId === 1) {
             handleClick()
-            return <div><Etiquette /> <button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#F4E4A4', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
+            return <div><Etiquette /> <button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#F4E4A4', boxShadow: '0px 3px 6px #00000029', zIndex: 10 }} id='wiggle'>Exit</button></div>;
         } else if (selectedId === 2) {
             handleClick()
             return <div><BlogForTechs /><button className='exitBtn' onClick={handleComponentVisibility} style={{ backgroundColor: '#BDF4FB', boxShadow: '0px 3px 6px #00000029' }} id='wiggle'>Exit</button></div>;
@@ -123,7 +124,12 @@ const Skills = () => {
     return (
 
         <div id='canvas' style={{ fontFamily: 'Climate Crisis' }}>
-            <BackgroundCircles />
+            <div style={{ left: '-5%', top: '0px', position: 'absolute' }}>
+                <Section />
+            </div>
+            {/* <div style={{ zIndex: -1 }}>
+                <BackgroundCircles />
+            </div> */}
 
 
             {itemData.map((item) => (
@@ -151,6 +157,9 @@ const Skills = () => {
                 {selectedId ? renderComponent() : !renderComponent()}
                 {/* {isClicked ? <button>Exit</button> : 'No Btn'} */}
             </div>
+            {/* <div style={{ zIndex: -1 }}>
+                <BackgroundCircles />
+            </div> */}
 
             {/* <img id='threeD' src={threeDBubble}></img> */}
             {/* <svg viewBox="-40 0 150 100" xmlns={threeDBubble} id='threeD'></svg> */}
