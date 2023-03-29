@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import Card from '../components/Card'
 // import PortfolioBackground from '../components/PortfolioBackground'
 import '../styles/Background.css'
+import '../styles/CirclesInCircleStyle.css'
 // import Background from '../components/Background';
 // import MovingComponent from 'react-moving-text'
 // import ReactImageListMasonry from '../components/ReactImageListMasonry';
@@ -229,12 +230,12 @@ function CirclesInCircles() {
         <section style={{ marginTop: '0px', fontFamily: 'Climate Crisis', height: '100%' }}>
 
 
-            <div className='container' style={{ marginTop: '300px', display: 'flex', justifyContent: 'center' }}>
+            <div className='container' style={{ marginTop: '300px', display: 'flex', justifyContent: 'center', maxWidth: '100%' }}>
                 <div>
                     <img src={testTumble} style={{ maxWidth: '30%', top: '410px', left: '42%' }} id='rotate'></img>
                     <img src={testTumbleFive} style={{ maxWidth: '30%', top: '410px', left: '42%' }} id='rotate'></img>
                 </div>
-                <div style={{ position: "absolute", height: "300px", width: '300px', borderRadius: '200px', boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)', top: '480px', left: '47%' }}>
+                <div class='spheres-wrapper' style={{ position: "absolute", height: "300px", width: '300px', borderRadius: '200px', boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)', top: '480px', left: '47%' }}>
 
                     {/* <p style={{ position: 'absolute', top: '20%', left: '28%' }}>JavaScript</p> */}
                     <span style={{ maxWidth: '100%', maxHeight: '100%', position: 'relative', textAlign: 'center' }}>
@@ -242,12 +243,12 @@ function CirclesInCircles() {
                         {/* <img src={bubbleBunch} style={{ maxWidth: '100%', maxHeight: '100%' }}></img> */}
                     </span>
 
-                    <div id="sphere-container">
+                    <div id="sphere-container" style={{ maxWidth: '100%', maxHeight: '100%' }}>
 
                         <SphereTwo x={45} y={210} z={0} color='#353535' text='Education' id='1' onClick={() => setSelectedId(1)} hoverColor='transparent linear-gradient(180deg, #535353 0%, #111111 100%) 0% 0% no-repeat padding-box' srcIcon={collegeIcon} textColor='#535353' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='25%' height='25%' width2='250px' height2='250px' text2={`UCLA (2022-2023):\nCertified Full-Stack Web Developer Boot Camp\n` + `\n` + `~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` + `\r` + ` UC Berkeley (2016-2020): \r\n B.S. in Molecular & Cellular Biology`} className='sphere' />
 
 
-                        <SphereTwo x={105} y={225} z={0} color='#FF5722' text='Perceptual Abilities' id='sphere-2' onClick={() => this.handleSphereClick(2)} hoverColor='transparent linear-gradient(180deg, #212326 0%, #6A6C6E 100%) 0% 0% no-repeat padding-box' srcIcon={threeDIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='My pre-medical journey involved interpreting & creating visual representations of data to reveal patterns and relationships, which combined theoretical knowledge with analytical skill. My free time creating vectors allows me to build and deconstruct, utilizing the power of reverse engineering and code.' className='sphere' />
+                        <SphereTwo x={105} y={225} z={0} color='#FF5722' text='Perceptual Abilities' id='sphere-2' onClick={() => this.handleSphereClick(2)} hoverColor='transparent linear-gradient(180deg, #212326 0%, #6A6C6E 100%) 0% 0% no-repeat padding-box' srcIcon={threeDIcon} textColor='#000000' notHoverColor='transparent linear-gradient(180deg, #EAD5FE 0%, #E0E0E0 11%, #E4E4E6 26%, #EFEEF5 50%, #E7EAE9 71%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='25%' height='25%' width2='250px' height2='250px' text2='My pre-medical journey involved interpreting & creating visual representations of data to reveal patterns and relationships, which combined theoretical knowledge with analytical skill. My free time creating vectors allows me to build and deconstruct, utilizing the power of reverse engineering and code.' className='sphere' />
 
 
                         <SphereTwo x={163} y={215} z={0} color='#FF5722' text='Communication' id='sphere-3' onClick={() => handleSphereClick(3)} hoverColor='transparent linear-gradient(180deg, #3685C6 0%, #27469F 100%) 0% 0% no-repeat padding-box' srcIcon={communicationIcon} textColor='#3685C6' notHoverColor='transparent linear-gradient(180deg, #E5E4EA 0%, #EFEEF5 50%, #ECFBF2 81%, #FFF5FC 100%) 0% 0% no-repeat padding-box' width='75px' height='75px' width2='250px' height2='250px' text2='My experience as an Undergraduate Instructor and the Chi Omega Sorority Social Coordinator over several years required strong communication and leadership skills, and the ability to adapt to diverse groups and work styles.' className='sphere' />

@@ -1,4 +1,5 @@
 // import zIndex from "@mui/material/styles/zIndex";
+import '../styles/SphereTwoStyle.css'
 import { height } from "@mui/system";
 import React, { useState } from "react";
 
@@ -53,9 +54,10 @@ const SphereTwo = (props) => {
         // setActiveSphere(index)
         // const newX = '50px'
         // const newY = '200px'
+        const x2 = '-183%';
+        // const x2 = -550;
+        const y2 = '40%';
 
-        const x2 = -550;
-        const y2 = 125;
         // const z2 = 3;
 
         setPosition({ x: x2, y: y2, z: 10 });
@@ -131,7 +133,7 @@ const SphereTwo = (props) => {
 
 
             >
-                <span style={{ fontSize: '14px', maxWidth: '100%', maxHeight: '100%', color: `${textColor}` }}>{isText ? `${text}` : ''}<img src={clicked ? null : `${srcIcon}`} style={{ maxWidth: '60%', maxHeight: '60%', marginTop: '0%', marginBottom: '0%', opacity: isOpaque ? `${hoverOpacity}` : `${notHoverOpacity}` }}></img><p style={{ fontSize: '11px', margin: '15px' }} >{isText2 ? `${text2}` : ''}</p></span>
+                <span class='popper' style={{ fontSize: '14px', maxWidth: '100%', maxHeight: '100%', color: `${textColor}` }}>{isText ? `${text}` : ''}<img src={clicked ? null : `${srcIcon}`} style={{ maxWidth: '60%', maxHeight: '60%', marginTop: '0%', marginBottom: '0%', opacity: isOpaque ? `${hoverOpacity}` : `${notHoverOpacity}` }}></img><p style={{ fontSize: '11px', margin: '15px' }} >{isText2 ? `${text2}` : ''}</p></span>
                 {/* <button onClick={() => handleResetClick()}>Reset Sphere Position</button> */}
 
             </div>

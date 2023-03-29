@@ -1,0 +1,45 @@
+/* @media screen and (max-width: 767px) {
+    .container {
+        width: 50%;
+        top: 100px;
+    }
+}
+
+
+/* For screens between 768px and 1024px */
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sphere-holder {
+        width: 200px;
+        height: 200px;
+    } */
+
+
+/* For screens with a width less than or equal to 480px */
+@media screen and (max-width: 480px) {
+    .spheres-wrapper {
+        transform: scale(0.7);
+        transform: translate(-40%, -200%);
+        margin-top: -300%;
+        margin-left: 40%;
+    }
+
+
+}
+
+/* For screens between 481px and 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .spheres-wrapper {
+        transform: scale(0.8);
+        margin-top: -20%;
+    }
+
+
+}
+
+/* For screens larger than 768px */
+@media screen and (min-width: 769px) {
+    .spheres-wrapper {
+        transform: scale(1);
+        /* margin-left: 80%; */
+    }
+}
