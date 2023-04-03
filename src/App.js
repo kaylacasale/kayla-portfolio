@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { initializeReactGA } from './components/GoogleAnalytics.js';
+
 import $ from 'jquery';
 
 // import {
@@ -203,6 +205,9 @@ function App() {
 
     });
 
+  useEffect(() => {
+    initializeReactGA();
+  }, []);
 
   // const options = {
   //   method: 'GET',
